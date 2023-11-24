@@ -1,11 +1,16 @@
 import React from 'react'
+import Banner from './Banner'
+import Work from './Works'
+import Testimonials from './Testimonials'
+import Testimonials2 from './Testimonials2'
 
 const Main = () => {
   return (
     <>
-      <section className="h-screen w-full bg-red-500">
-        dfdfd
-      </section>
+      <Banner />
+      <Work />
+      <Testimonials />
+      <Testimonials2 />
     </>
   )
 }

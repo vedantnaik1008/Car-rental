@@ -5,8 +5,8 @@ import image from '@/public/assets/temp-logo.png'
 
 const Footer = () => {
   return (
-    <footer className="w-full px-[20px]  bg-white text-[#9a9b9c]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 items-center justify-between py-[40px]">
+    <footer className="w-full bg-white text-[#9a9b9c]">
+      <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 items-center justify-between py-[40px]">
         <div className="flex flex-col gap-y-4 col-span-2">
         <Link href="/" className=''>
         <Image src={image} alt="items-image" width={100} height={100} className='object-cover'/>
@@ -92,12 +92,9 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-black borde mb-10"/>
-      <div className="flex justify-between items-center pb-10 text-black">
+      <div className="flex justify-between items-center pb-10 text-black w-[90%] mx-auto">
         <p>&copy; 2023 Drive On. All rights reserved</p>
-        <div className="flex gap-8">
-          <p>Privacy & Policy</p>
-          <p>Terms & Condition</p>
-        </div>
+        <p>Terms & Condition</p>
       </div>
     </footer>
   );

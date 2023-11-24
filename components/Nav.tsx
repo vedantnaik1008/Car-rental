@@ -29,7 +29,7 @@ const Nav = () => {
                       spy={true} offset={-10} className='cursor-pointer active text-[#9a9b9c]'>
                           Services
                       </Link>
-                      <IoIosArrowDown onMouseout={() => isClicked(false)} onClick={()=> isClicked(!false)} className={clicked ? "text-[#9a9b9c] rotate-180 hover:text-black pt-1 text-[20px] transition-all duration-300 ease-in-out" : "text-[#9a9b9c] hover:text-black pt-1 text-[20px] rotate-0 transition-all duration-300 ease-in-out"}/>
+                      <IoIosArrowDown  onClick={()=> isClicked((prev) => !prev)} className={clicked ? "text-[#9a9b9c] rotate-180 hover:text-black pt-1 text-[20px] transition-all duration-300 ease-in-out" : "text-[#9a9b9c] hover:text-black pt-1 text-[20px] rotate-0 transition-all duration-300 ease-in-out"}/>
                       <DropDown clicked={clicked}/> 
                     </div>
                     

@@ -23,56 +23,6 @@ const Footer = () => {
                         enhancing your personal mobility and freedom.&quot;
                     </p>
                 </div>
-                {/* <div>
-                    <p className='text-xl mb-6 text-sky-950 font-semibold'>About</p>
-                    <ul className='text-base font-light mt-2 flex flex-col gap-y-4'>
-                        <li className='flex flex-col'>
-                            <span className='text-sky-900 text-opacity-80 hover:text-sky-950 cursor-pointer duration-200'>
-                                How it works
-                            </span>
-                        </li>
-                        <li className='flex flex-col'>
-                            <span className='text-sky-900 text-opacity-80 hover:text-sky-950 cursor-pointer duration-200'>
-                                Featured
-                            </span>
-                        </li>
-                        <li className='flex flex-col'>
-                            <span className='text-sky-900 text-opacity-80 hover:text-sky-950 cursor-pointer duration-200'>
-                                Partnership
-                            </span>
-                        </li>
-                        <li className='flex flex-col'>
-                            <span className='text-sky-900 text-opacity-80 hover:text-sky-950 cursor-pointer duration-200'>
-                                Business Relation
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p className='text-xl mb-6 text-sky-950 font-semibold'>Community</p>
-                    <ul className='text-base font-light mt-2 flex flex-col gap-y-4'>
-                        <li className='flex flex-col'>
-                            <span className='text-sky-900 text-opacity-80 hover:text-sky-950 cursor-pointer duration-200'>
-                                Events
-                            </span>
-                        </li>
-                        <li className='flex flex-col'>
-                            <span className='text-sky-900 text-opacity-80 hover:text-sky-950 cursor-pointer duration-200'>
-                                Blog
-                            </span>
-                        </li>
-                        <li className='flex flex-col'>
-                            <span className='text-sky-900 text-opacity-80 hover:text-sky-950 cursor-pointer duration-200'>
-                                Podcast
-                            </span>
-                        </li>
-                        <li className='flex flex-col'>
-                            <span className='text-sky-900 text-opacity-80 hover:text-sky-950 cursor-pointer duration-200'>
-                                Invite a ifrend
-                            </span>
-                        </li>
-                    </ul>
-                </div> */}
                 <div>
                     <p className='text-lg mb-6 text-sky-950 font-semibold'>Information</p>
                     <ul className='text-sky-900 text-opacity-80 font-light text-base mt-2 flex flex-col gap-y-4'>

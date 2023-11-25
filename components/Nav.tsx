@@ -18,36 +18,45 @@ const Nav = () => {
 <Image src={image} alt="items-image" width={100} height={100} className='object-cover'/>
      {/* {kkhk} */}
   <ul className="md:flex md:items-center md:justify-center md:gap-8">
-     <Link href="/home" to='home' activeClass='active-on'
+    <li className="">
+    <Link href="/home" to='home' activeClass='active-on'
                     smooth={true}
-                    spy={true} offset={-200} className='cursor-pointer active text-[#9a9b9c]'>
+                    spy={true} offset={-200} className='cursor-pointer active text-black'>
                         Home
-                    </Link>
-                    <div className="flex justify-center items-center hover:text-black relative">
+    </Link>
+    </li>
+    <li className="">
+    <div className="flex justify-center items-center hover:text-black relative">
                       <Link href='/services' to='services' activeClass='active-on'
                       smooth={true}
-                      spy={true} offset={-10} className='cursor-pointer active text-[#9a9b9c]'>
+                      spy={true} offset={-10} className='cursor-pointer active text-black'>
                           Services
                       </Link>
-                      <IoIosArrowDown  onClick={()=> isClicked((prev) => !prev)} className={clicked ? "text-[#9a9b9c] rotate-180 hover:text-black pt-1 text-[20px] transition-all duration-300 ease-in-out" : "text-[#9a9b9c] hover:text-black pt-1 text-[20px] rotate-0 transition-all duration-300 ease-in-out"}/>
+                      <IoIosArrowDown  onClick={()=> isClicked((prev) => !prev)} className={clicked ? "text-black rotate-180 hover:text-black pt-1 text-[20px] transition-all duration-300 ease-in-out" : "text-black hover:text-black pt-1 text-[20px] rotate-0 transition-all duration-300 ease-in-out"}/>
                       <DropDown clicked={clicked}/> 
                     </div>
-                    
-                    <Link href='/about' to='about'activeClass='active-on'
+    </li>
+    <li className=""><Link href='/about' to='about'activeClass='active-on'
                     smooth={true}
-                    spy={true}  className='cursor-pointer  active text-[#9a9b9c]'>
+                    spy={true}  className='cursor-pointer  active text-black'>
                         About us
-                    </Link>
-                    <Link href='/faqs' to='faqs' activeClass='active-on'
+                    </Link></li>
+    <li className=""><Link href='/faqs' to='faqs' activeClass='active-on'
                     smooth={true}
-                    spy={true} offset={15} className='cursor-pointer  active text-[#9a9b9c]'>
+                    spy={true} offset={15} className='cursor-pointer  active text-black'>
                         FAQs
-                    </Link>
-                    <Link href='/contact' to='contact' offset={-28} activeClass='active-on'
+                    </Link></li>
+    <li className=""><Link href='/contact' to='contact' offset={-28} activeClass='active-on'
                     smooth={true}
-                    spy={true} className='cursor-pointer  active text-[#9a9b9c]'>
+                    spy={true} className='cursor-pointer  active text-black'>
                         Contacts
-                    </Link>     
+                    </Link></li>
+     
+                    
+                    
+                    
+                    
+                       
 
   </ul>  
   <div className="flex justify-center items-center gap-4">
@@ -57,7 +66,7 @@ const Nav = () => {
 
 
 
-  <>
+  {/* <>
   <nav className="fixed z-50 -bottom-0 right-0 h-[40px] w-[100%] bg-white  md:hidden sm:border sm:border-t-1 sm:border-x-0 sm:border-b-0 sm:border-black md:border-none">
           <div className={" md:hidden max-w-7xl mx-auto min-[320px]:p-2"}>
             <div className="" >
@@ -67,11 +76,11 @@ const Nav = () => {
                     
                   </li>
                 ))} */}
-              </ul>
+              {/* </ul>
               
             </div>
           </div>
-        </nav></>
+        </nav></> */}
 
 </nav>
   )

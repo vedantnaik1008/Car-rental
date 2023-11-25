@@ -14,7 +14,7 @@ const Banner = () => {
             <button className="bg-black px-8 py-3 rounded-lg text-white">EXPLORE</button>
         </div>
         <div className="absolute right-0 top-30 ">
-            <Image alt="Banner-image" width={600} height={600} className='object-cover' src={HeroImage}/>
+            <Image priority={true} alt="Banner-image" width={600} height={600} className='object-cover' src={HeroImage}/>
         </div>
       </Container>
     </div>

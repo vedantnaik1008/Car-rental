@@ -8,7 +8,7 @@ const popins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'goa car on rent',
+  title: 'Car Rental',
   description: 'Goa car on rent. Rent any ride you want for minimum 2 days with very cheap price just for you',
 }
 

@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         sm: '320px',
+        lgg: '826px'
       },
     },
   },

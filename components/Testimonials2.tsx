@@ -4,8 +4,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { TestimonialProps, testimonials } from './API';
-
+import Image from 'next/image';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle} from "react-icons/io";
+import image from "@/public/assets/testimonial-asset.png"
+
 const Testimonials2 = () => {
     const [data, setData] = useState<TestimonialProps[]>(testimonials as TestimonialProps[])
 
@@ -16,12 +18,12 @@ const Testimonials2 = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-         nextArrow: <IoIosArrowDroprightCircle  color="red"/>,
-         prevArrow: <IoIosArrowDropleftCircle  color="red"/>,
+         nextArrow: <IoIosArrowDroprightCircle  color="blue"/>,
+         prevArrow: <IoIosArrowDropleftCircle  color="blue"/>,
       };
   return (
     <>
-       <section id="faqs"  className="bg-[#f5f7fb] flex justify-between items-center py-40">
+       <section id="faqs"  className="bg-[#f5f7fb] flex justify-between items-center py-40 relative">
         <div className="w-[90%] mx-auto">
             <div className="text-center mb-14"> 
                 <h2 className=" font-bold text-[#1089ff] py-5 uppercase ">Testimonials</h2>
@@ -37,6 +39,7 @@ const Testimonials2 = () => {
                 ))} 
             </Slider>
             </div>
+            <Image src={image} alt="items-image" width={200} height={200} className="rounded-lg object-cover mb-3  mx-auto absolute right-0 top-[400px] sm:hidden lgg:block"/>
         </div>
     </section>
     </>

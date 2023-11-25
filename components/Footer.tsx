@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <footer className='w-full px-[20px] mx-auto bg-white text-[#9a9b9c]'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 items-center justify-between py-[40px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-center justify-between py-[40px]'>
                 <div className='flex flex-col gap-y- col-span-2'>
                     <Link href='/' className=''>
                         <Image
@@ -76,49 +76,49 @@ const Footer = () => {
                 <div>
                     <p className='text-lg mb-6 text-sky-950 font-semibold'>Information</p>
                     <ul className='text-sky-900 text-opacity-80 font-light text-base mt-2 flex flex-col gap-y-4'>
-                        <Link href={'/'}>
+                        
                             <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                                About Us
+                            <Link href={'/'}> About Us</Link>
                             </li>
-                        </Link>
-                        <Link href={'/'}>
+                        
+                        
                             <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                                Self Drive
+                            <Link href={'/'}>Self Drive</Link>
                             </li>
-                        </Link>
-                        <Link href={'/'}>
+                        
+                        
                             <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                                Book a Cab
+                            <Link href={'/'}>Book a Cab</Link>
                             </li>
-                        </Link>
-                        <Link href={'/'}>
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'>FAQs</li>
-                        </Link>
-                        <Link href={'/'}>
+                        
+                        
+                            <li className='hover:text-sky-950 cursor-pointer duration-200'><Link href={'/'}>FAQs</Link></li>
+                        
+                        
                             <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                                Contacts
+                            <Link href={'/'}>Contacts</Link>
                             </li>
-                        </Link>
+                        
                     </ul>
                 </div>
                 <div>
                     <h3 className='text-lg mb-6 text-sky-950 font-semibold'>Have a Question?</h3>
                     <ul className='text-sky-900 text-opacity-80 font-light text-base mt-2 flex flex-col gap-y-4'>
-                        <Link href={'/'}>
+                        
                             <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                                Vasco, Mormugao, Goa, 1234
+                            <Link href={'/'}>Vasco, Mormugao, Goa, 1234</Link>
                             </li>
-                        </Link>
-                        <Link href={'/'}>
+                        
+                        
                             <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                                <a href='tel:+9133378901'>+91 333 78 901</a>
+                            <Link href={'tel:+9133378901'}>+91 333 78 901</Link>
                             </li>
-                        </Link>
-                        <Link href={'mailto:info@yourdomain.com'}>
+                        
+                        
                             <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                                <a href='mailto:info@yourdomain.com'>info@yourdomain.com</a>
+                            <Link href={'mailto:info@yourdomain.com'}>info@yourdomain.com</Link>
                             </li>
-                        </Link>
+                        
                     </ul>
                 </div>
             </div>

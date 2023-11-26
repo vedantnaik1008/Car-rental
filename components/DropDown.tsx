@@ -8,7 +8,7 @@ interface Props{
 const DropDown = ({clicked}: Props) => {
   return (
     <>
-      {clicked && <ul className={clicked ? 'block py-5 text-center shadow-2xl rounded-lg bg-gray-100 absolute top-8 left-0 w-[150px]' : 'hidden p-5 rounded-lg bg-white'}>
+      {clicked && <ul className={clicked ? 'block py-5 text-center shadow-2xl rounded-lg bg-[#ffd700] absolute top-8 left-0 w-[150px] text-black' : 'hidden'}>
         <li className='flex flex-col gap-2'>
             <Link href='/'>Self Drive</Link>
             <Link href='/'>Book a cab</Link>

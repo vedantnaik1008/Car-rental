@@ -79,11 +79,11 @@ const Testimonials = () => {
                         </div>
                         <hr className="border-[#ffd700] borde my-5"/>
                         <div className="flex items-center justify-between">
-                        <Link href={'/'} className="bg-[#ffd700] px-8 py-2 rounded-lg text-white text-[14px]">
-                          <IoMdCall color="white" size="18px"/>
+                        <Link href={'/'} className="bg-[#ffd700] px-8 py-2 rounded-lg text-[14px]">
+                          <IoMdCall color="black" size="18px"/>
                         </Link>
-                        <Link href={'/'} className="bg-[#ffd700] px-8 py-2 rounded-lg text-white text-[14px]">
-                          <IoLogoWhatsapp color="white" size="20px"/>
+                        <Link href={'/'} className="bg-[#ffd700] px-8 py-2 rounded-lg text-[14px]">
+                          <IoLogoWhatsapp color="black" size="20px"/>
                         </Link>
                         </div>
                     </div>

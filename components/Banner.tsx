@@ -6,7 +6,7 @@ import HeroImage from '@/public/assets/hero-car.png'
 const Banner = () => {
   return (
    <>
-    <div id='home' className="bg-[#f5f7fb]">
+    <div id='home' className="bg-[#ffd700]">
       <Container>
         <div>
             <h1 className="text-black mb-6 text-5xl max-w-[400px]">Book your Ride Now!</h1>
@@ -14,7 +14,7 @@ const Banner = () => {
             <button className="bg-black px-8 py-3 rounded-lg text-white">EXPLORE</button>
         </div>
         <div className="absolute right-0 top-30 ">
-            <Image priority={true} alt="Banner-image" width={600} height={600} className='object-cover' src={HeroImage}/>
+            <Image priority={true} alt="Banner-image" width={600} height={600} className='object-cover' src={'https://purepng.com/public/uploads/large/purepng.com-yellow-lamborghini-aventador-carcarvehicletransportlamborghini-961524660480glnlw.png'}/>
         </div>
       </Container>
     </div>

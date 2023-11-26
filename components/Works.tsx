@@ -7,7 +7,7 @@ import image_three from '@/public/assets/enjoy-ride.png'
 const Work = () => {
   return (
     <>
-      <section id='services' className="bg-[#f5f7fb] h-[100vh] flex justify-between items-center py-20">
+      <section id='services' className="bg-[#ffd700] h-[100vh] flex justify-between items-center py-20">
         <div className="w-[90%] mx-auto">
             <div className="text-center mb-14"> 
                 <h2 className="text-5xl font-bold text-[#2f4d6a] py-5">How it Works</h2>

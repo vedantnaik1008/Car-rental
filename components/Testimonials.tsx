@@ -55,7 +55,7 @@ const Testimonials = () => {
       };
   return (
     <>
-       <section id="about"  className="bg-[#f5f7fb] flex justify-between items-center py-40">
+       <section id="about"  className="bg-[#ffd700] flex justify-between items-center py-40">
         <div className="w-[90%] mx-auto">
             <div className="text-center mb-14"> 
                 <h2 className=" font-bold text-[#1089ff] py-5 uppercase ">What we offer</h2>
@@ -65,7 +65,7 @@ const Testimonials = () => {
             <Slider {...settings}>
                 {data.map((res) => (
                     <div key={res.id} className=" rounded-[30px] w-[50%] h-[650px] p-5">
-                        <Image src={res.image} alt="items-image" width={200} height={200} className="bg-gray-500  rounded-lg object-cover mb-3  mx-auto w-[99%] h-[250px]"/>
+                        <Image src={res.image} alt="items-image" width={200} height={200} className="bg-black  rounded-lg object-cover mb-3  mx-auto w-[99%] h-[250px]"/>
                         <div className="text-black mb-3">
                             <p className="">{res.brandName}</p>
                             <p className="">Start From {res.price}</p>

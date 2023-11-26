@@ -7,7 +7,7 @@ const Nav = dynamic(() => import('@/components/Nav'), {
 const Header = () => {
 
   return (
-    <header className='fixed z-50 w-full  py-[10px] sm:px-[10px] md:px-[20px] bg-white shadow-2xl '>
+    <header className='fixed z-50 w-full  py-[10px] sm:px-[10px] md:px-[20px] bg-[#ffd700] shadow-2xl '>
       <div className="flex items-center justify-center">
         <Nav />
       </div>

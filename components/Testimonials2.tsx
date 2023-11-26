@@ -23,7 +23,7 @@ const Testimonials2 = () => {
       };
   return (
     <>
-       <section id="faqs"  className="bg-[#f5f7fb] flex justify-between items-center py-40 relative">
+       <section id="faqs"  className="bg-[#ffd700] flex justify-between items-center py-40 relative">
         <div className="w-[90%] mx-auto">
             <div className="text-center mb-14"> 
                 <h2 className=" font-bold text-[#1089ff] py-5 uppercase ">Testimonials</h2>

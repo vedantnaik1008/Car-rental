@@ -8,8 +8,8 @@ const popins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Car Rental',
-  description: 'Goa car on rent. Rent any ride you want for minimum 2 days with very cheap price just for you',
+  title: 'car rental goa',
+  description: 'We are a Goa-based car rental service offering a wide range of affordable rental cars for short and long term rent. Our goal is to provide our customers with the best car rental experience at competitive prices. Browse through our large fleet of well-maintained cars and book online easily. We strive to give you an enjoyable and hassle-free rental experience.',
 }
 
 export default function RootLayout({

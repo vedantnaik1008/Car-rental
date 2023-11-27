@@ -15,7 +15,7 @@ const Nav = () => {
   return (
 <nav className="md:w-full">
 <div className="min-[320px]:hidden md:flex justify-between items-center">
-<Image src={image} alt="items-image" width={100} height={100} className='object-cover'/>
+<Image src={image} alt="goa car rental own wheels logo" width={100} height={100} className='object-cover'/>
   <ul className="md:flex md:items-center md:justify-center md:gap-8">
     <li className="">
     <Link href="/home" to='home' activeClass='active-on'
@@ -80,7 +80,46 @@ const Nav = () => {
             </div>
           </div>
         </nav></> */}
-
+  <div className="absolute top-[50px] left-0  w-[100%] bg-[#131313] rounded-sm sm:hidden">
+          <div className={"h-[100vh] xs:transition-all xs:duration-500 xs:ease-out xs:translate-y-0 md:hidden max-w-7xl mx-auto xs:p-4" }>
+          <ul className="flex flex-col items-start sm:items-center justify-center gap-4 p-1">
+          <li className="">
+    <Link href="/home" to='home' activeClass='active-on'
+                    smooth={true}
+                    spy={true} offset={-200} className='cursor-pointer active text-[#ffd700]'>
+                        Home
+    </Link>
+    </li>
+    <li className="">
+    <div className="flex justify-center items-center hover:text-[#ffd700] relative">
+                      <Link href='/services' to='services' activeClass='active-on'
+                      smooth={true}
+                      spy={true} offset={-10} className='cursor-pointer active text-[#ffd700]'>
+                          Services
+                      </Link>
+                      <IoIosArrowDown  onClick={()=> isClicked((prev) => !prev)} className={clicked ? "text-[#ffd700] rotate-180 hover:text-[#ffd700] pt-1 text-[20px] transition-all duration-300 ease-in-out" : "text-[#ffd700] hover:text-[#ffd700] pt-1 text-[20px] rotate-0 transition-all duration-300 ease-in-out"}/>
+                      <DropDown clicked={clicked}/> 
+                    </div>
+    </li>
+    <li className=""><Link href='/about' to='about'activeClass='active-on'
+                    smooth={true}
+                    spy={true}  className='cursor-pointer  active text-[#ffd700]'>
+                        About us
+                    </Link></li>
+    <li className=""><Link href='/faqs' to='faqs' activeClass='active-on'
+                    smooth={true}
+                    spy={true} offset={15} className='cursor-pointer  active text-[#ffd700]'>
+                        FAQs
+                    </Link></li>
+    <li className=""><Link href='/contact' to='contact' offset={-28} activeClass='active-on'
+                    smooth={true}
+                    spy={true} className='cursor-pointer  active text-[#ffd700]'>
+                        Contacts
+                    </Link></li>
+     
+          </ul>  
+                </div>
+        </div>
 </nav>
   )
 }

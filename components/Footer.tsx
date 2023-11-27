@@ -12,7 +12,7 @@ const Footer = () => {
                     <Link href='/' className=''>
                         <Image
                             src={image}
-                            alt='items-image'
+                            alt='goa car rental own wheels logo'
                             width={100}
                             height={10}
                             className='object-cover'

@@ -65,7 +65,7 @@ const Testimonials = () => {
             <Slider {...settings}>
                 {data.map((res) => (
                     <div key={res.id} className=" rounded-[30px] w-[50%] h-[650px] p-5">
-                        <Image src={res.image} alt="items-image" sizes='200' width={200} height={200} className=" rounded-lg object-cover mb-3  mx-auto w-[99%] h-[250px]"/>
+                        <Image src={res.image} alt={res.brandName} sizes='200' width={200} height={200} className=" rounded-lg object-cover mb-3  mx-auto w-[99%] h-[250px]"/>
                         <div className="text-[#ffd700] mb-3">
                             <p className="">{res.brandName}</p>
                             <p className="">Start From {res.price}</p>

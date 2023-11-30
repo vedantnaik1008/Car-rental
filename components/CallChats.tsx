@@ -1,18 +1,23 @@
-import Link from 'next/link'
-import React from 'react'
-import { IoMdCall, IoLogoWhatsapp } from "react-icons/io";
+import Link from 'next/link';
+import { IoLogoWhatsapp, IoMdCall } from 'react-icons/io';
 
 const CallChats = () => {
   return (
     <>
-      <Link aria-label="Call to rent car" href={'/'} className="bg-[#ffd700] px-8 py-2 rounded-lg">
-        <IoMdCall color="black" size="18px"/>
+      <Link
+        aria-label='Call to rent car'
+        href={'/'}
+        className='rounded-lg bg-sky-500 px-10 py-2 hover:bg-sky-600'>
+        <IoMdCall color='white' size='21px' />
       </Link>
-      <Link aria-label="Whatsapp to rent car" href={'/'} className="bg-[#ffd700] px-8 py-2 rounded-lg">
-      <IoLogoWhatsapp color="black" size="20px"/>
+      <Link
+        aria-label='Whatsapp to rent car'
+        href={'/'}
+        className='rounded-lg bg-green-500 px-10 py-2 opacity-90 hover:bg-green-600'>
+        <IoLogoWhatsapp color='white' size='21px' />
       </Link>
     </>
-  )
-}
+  );
+};
 
-export default CallChats
+export default CallChats;

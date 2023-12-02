@@ -109,10 +109,10 @@ const Nav = () => {
             <FaBarsStaggered size="25px"/>
           </div>
               <div className={open ? "absolute z-50 top-0 right-0 bg-white shadow-2xl w-[80%] h-screen px-5 py-10 rounded-l-md translate-x-0 transition-all duration-300 ease-in-out" : "absolute z-50 top-0 right-0 bg-white shadow-2xl w-[80%] h-screen px-5 py-10 rounded-l-md  translate-x-[200%] transition-all duration-300 ease-in-out"}>
-                <ul className='h-full flex flex-col items-center justify-start gap-y-8'>
-                  <div onClick={() => isOpen(false)} className="absolute top-5 left-5">
+              <div onClick={() => isOpen(false)} className="absolute top-5 left-5">
                     <IoClose size="25px"/>
                   </div>
+                <ul className='h-full flex flex-col items-center justify-start gap-y-8'>
                 <li className=''>
                 <Link
                 href='/home'

@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className='mb-10 border border-slate-200' />
-      <div className='mx-auto flex max-w-7xl items-center justify-between px-5 pb-10 text-sky-950'>
+      <div className='mx-auto sm:flex-col md:flex-row flex max-w-7xl md:items-center gap-4 md:justify-between px-5 pb-10 text-sky-950'>
         <p className=''>&copy; 2023 Own Wheels Goa. All rights reserved</p>
         <div className='flex gap-8 hover:text-sky-500'>
           <Link href={'/'}>

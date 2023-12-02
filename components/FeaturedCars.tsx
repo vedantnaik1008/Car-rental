@@ -57,7 +57,7 @@ const FeaturedCars = () => {
 
   return (
     <>
-      <section id='about' className='flex items-center justify-between bg-white py-20'>
+      <section id='about' className='flex items-center justify-center bg-white py-20'>
         <div className='mx-auto w-[90%]'>
           <div className='mb-16 text-center'>
             <h3 className=' py-5 font-bold uppercase tracking-wide text-sky-500'>What we offer</h3>
@@ -124,6 +124,9 @@ const FeaturedCars = () => {
                 ))
                 .splice(9)}
             </Slider>
+          </div>
+          <div className="flex items-center justify-center w-[90%] mx-auto">
+            <Link href="" className='rounded-2xl text-[16px] px-8 py-2 border-black border-[2px] bg-white font-medium text-sky-950 sm:mt-px md:mt-16 hover:bg-gray-100'>Show All Vehicles</Link>
           </div>
         </div>
       </section>

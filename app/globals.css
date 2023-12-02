@@ -10,6 +10,15 @@
   color: rgb(56, 189, 248);
 }
 
+.hero-image{
+    width: 100%;
+    float: left;
+    background-image: url('../public/assets/output-onlinepngtools.png');
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: 100%;
+}
+
 .slick-dots li button::before {
   font-family: 'slick';
   font-size: 6px;
@@ -65,5 +74,8 @@
   }
   .slick-prev {
     left: -18px !important;
+  }
+  .hero-image{
+    background-image: none;
   }
 }

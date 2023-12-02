@@ -15,6 +15,9 @@ const config: Config = {
         lgg: '826px'
       },
     },
+    backgroundSize: {
+      '100%': '100%',
+    }
   },
   plugins: [],
 }

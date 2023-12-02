@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './Container';
 import Image from 'next/image';
-
+import heroImage from '@/public/assets/banner-img.png';
 const Hero = () => {
   return (
     <>
@@ -24,10 +24,8 @@ const Hero = () => {
               alt='Hero-image'
               width={900}
               height={900}
-              className='object-cover sm:hidden md:block'
-              src={
-                'https://purepng.com/public/uploads/large/purepng.com-yellow-lamborghini-aventador-carcarvehicletransportlamborghini-961524660480glnlw.png'
-              }
+              className='sm:hidden md:block'
+              src={heroImage}
             />
           </div>
         </Container>

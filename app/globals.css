@@ -26,3 +26,44 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.slick-next, .slick-prev {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 40px !important;
+	height: 40px !important;
+	padding: 0;
+	transform: translateY(-50%);
+	cursor: pointer;
+	border: none;
+}
+.slick-next {
+	right: -40px !important;
+}
+.slick-prev {
+	left: -40px !important;
+}
+
+@media screen and (max-width:770px){
+  .slick-next, .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+  }
+  .slick-next {
+    right: -18px !important;
+  }
+  .slick-prev {
+    left: -18px !important;
+  }
+}

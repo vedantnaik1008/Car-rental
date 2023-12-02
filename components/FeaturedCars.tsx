@@ -36,7 +36,7 @@ const FeaturedCars = () => {
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1088,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -76,7 +76,7 @@ const FeaturedCars = () => {
                       sizes='200'
                       width={200}
                       height={200}
-                      className=' mx-auto mb-4 h-[250px]  w-[99%] rounded-lg object-cover'
+                      className=' mx-auto mb-4 md:h-[250px]  w-[99%] rounded-lg object-cover'
                     />
                     <div className='mb-5 font-semibold tracking-wide text-sky-950'>
                       <p className='mb-2 text-sky-950'>
@@ -108,15 +108,15 @@ const FeaturedCars = () => {
                     </div>
 
                     <hr className='my-5 border border-slate-200' />
-                    <div className='flex items-center justify-between'>
+                    <div className='flex items-center gap-1 justify-between'>
                       <Link
                         href={'/'}
-                        className='rounded-lg bg-sky-500 px-8 py-2 text-[14px] text-white hover:bg-sky-600'>
+                        className=' rounded-lg bg-sky-500 px-4 py-2 sm:text-[11px] sm360:text-[14px] text-center text-white hover:bg-sky-600'>
                         Call to Book
                       </Link>
                       <Link
                         href={'/'}
-                        className='rounded-lg bg-green-500 px-8 py-2 text-[14px] text-white opacity-90 hover:bg-green-600'>
+                        className=' rounded-lg bg-green-500 px-4 py-2 sm:text-[11px] sm360:text-[14px] text-center text-white opacity-90 hover:bg-green-600'>
                         Book on WhatsApp
                       </Link>
                     </div>

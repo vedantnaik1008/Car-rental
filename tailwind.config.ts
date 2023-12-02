@@ -11,6 +11,7 @@ const config: Config = {
       screens: {
         sm: '320px',
         sm360: '360px',
+        lg964: '964px',
         lgg: '826px'
       },
     },

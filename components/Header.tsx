@@ -9,8 +9,8 @@ const Nav = dynamic(() => import('@/components/Nav'), {
 
 const Header = () => {
   return (
-    <header className='fixed z-50 w-full bg-white py-5 drop-shadow-md sm:px-[10px] md:px-[20px]'>
-      <div className='mx-auto flex max-w-7xl items-center justify-center'>
+    <header className='fixed z-50 w-full bg-white py-5 drop-shadow-md px-[20px]'>
+      <div className='mx-auto flex items-center justify-center'>
         <Nav />
       </div>
     </header>

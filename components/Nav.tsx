@@ -10,7 +10,6 @@ const Nav = () => {
   const [clicked, isClicked] = useState(false);
 
   return (
-
     <nav className='md:w-full'>
       <div className='items-center justify-between min-[320px]:hidden md:flex'>
         <Link href='/home' to='home'>

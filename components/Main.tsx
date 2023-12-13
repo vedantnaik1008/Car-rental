@@ -4,6 +4,7 @@ import React from 'react';
 import Hero from './Hero';
 import RentalProcess from './RentalProcess';
 import dynamic from 'next/dynamic';
+import Contact from './Contact';
 
 const FeaturedCars = dynamic(() => import('@/components/FeaturedCars'), {
   ssr: false,
@@ -19,6 +20,7 @@ const Main = () => {
       <RentalProcess />
       <FeaturedCars />
       <Testimonials />
+      <Contact />
     </>
   );
 };

@@ -22,13 +22,13 @@ export type TestimonialProps = {
 export const testimonials = [
   {
     id: 1,
-    user: 'John Doe',
+    user: 'Amit Singh',
     comment:
       'Had a fantastic experience renting a car in Goa. The service was excellent and hassle-free.',
   },
   {
     id: 2,
-    user: 'Jane Smith',
+    user: 'Shreya Naik',
     comment:
       'Renting a car in Goa was a breeze. The entire process was smooth and the customer service was top-notch.',
   },

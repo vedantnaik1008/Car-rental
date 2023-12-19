@@ -1,15 +1,30 @@
 'use client';
 
-import React from 'react';
-import dynamic from 'next/dynamic';
+import React, { useEffect, useState } from 'react';
+import Nav from '@/components/Nav';
 
-const Nav = dynamic(() => import('@/components/Nav'), {
-  ssr: false,
-});
+interface HeaderProps {
+  whiteBackground: boolean;
+}
 
-const Header = () => {
+const Header = ({ whiteBackground }: HeaderProps) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    if (whiteBackground) return;
+
+    const scrollHandler = () => {
+      window.pageYOffset > 0 ? setIsScrolled(true) : setIsScrolled(false);
+    };
+    window.addEventListener('scroll', scrollHandler);
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, [whiteBackground]);
+
   return (
-    <header className='fixed z-50 w-full bg-white py-5 drop-shadow-md sm:px-[10px] md:px-[20px]'>
+    <header
+      className={`fixed z-50 w-full py-4 drop-shadow-md sm:px-[10px] md:px-[20px] ${
+        isScrolled ? 'bg-white' : ''
+      } ${whiteBackground ? 'bg-white' : ''}`}>
       <div className='mx-auto flex max-w-7xl items-center justify-center'>
         <Nav />
       </div>

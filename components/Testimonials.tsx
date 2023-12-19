@@ -22,20 +22,22 @@ const Testimonials = () => {
   };
   return (
     <>
-      <section id='faqs' className='relative flex items-center justify-between bg-white py-20'>
-        <div className='mx-auto w-[90%]'>
-          <div className='mb-14 text-center'>
-            <h2 className=' py-5 font-bold uppercase text-sky-500 '>Testimonials</h2>
+      <section id='faqs' className='relative flex items-center justify-between py-10'>
+        <div className='mx-auto sm:w-4/5 md:w-[90%]'>
+          <div className='mb-10 text-center'>
+            <h2 className=' py-5 font-bold uppercase text-sky-500'>Testimonials</h2>
             <h3 className='text-4xl font-bold text-sky-950 opacity-90'>
               What people say about us?
             </h3>
           </div>
-          <div className='mx-auto md:w-[70%] lg:w-[60%]'>
+          <div className='mx-auto mb-12 md:w-[70%] lg:w-[60%]'>
             <ImQuotesLeft color='rgb(14, 165, 233)' size='32px' className='mx-auto mb-8' />
             <Slider {...settings}>
               {data.map((res) => (
                 <div key={res.id} className='mb-5 w-full rounded-[30px]'>
-                  <p className='mb-5 w-full text-center text-3xl text-gray-500'>{res.comment}</p>
+                  <p className='mb-5 w-full text-center text-gray-500 sm:text-lg md:text-2xl'>
+                    {res.comment}
+                  </p>
                   <p className='text-center text-sky-950'>{res.user}</p>
                 </div>
               ))}

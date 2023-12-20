@@ -63,62 +63,86 @@ const OurServices = () => {
     <section className='py-14' id='OurServices'>
       <div className='mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-20'>
         <div className='mx-auto max-w-lg text-center'>
-          <h3 className='font-semibold  tracking-wide text-sky-500'>
+          <h3 className='font-semibold  tracking-wider text-sky-500'>
             Your Journey, Your Choice: <span className='uppercase'>Car, Bike, or Taxi</span>.
           </h3>
-          <h2 className='mt-4 font-bold tracking-wide text-sky-950/90 sm:text-4xl md:text-5xl'>
+          <h2 className='mt-4 font-bold tracking-wider text-sky-950/90 sm:text-4xl md:text-5xl'>
             Our Services
           </h2>
         </div>
-        <div className='mt-14 grid grid-cols-1 place-items-center gap-10 md:grid-cols-2 lg:grid-cols-3'>
-          <div className='block rounded-lg border border-sky-900/10 bg-white  p-10 shadow-lg shadow-sky-900/20 focus:outline-none focus-visible:ring sm:w-4/5 md:w-auto'>
-            <div className='w-fit rounded-md bg-sky-900/90 p-3 shadow-lg shadow-sky-900/20'>
-              <MdOutlineCarRental className='h-7 w-7 text-gray-200' />
+        <div className='mt-14 grid grid-cols-1 place-items-center items-stretch gap-10 md:grid-cols-2 lg:grid-cols-3'>
+          <div className='flex flex-col rounded-lg border border-sky-900/10 bg-white p-10 shadow-lg shadow-sky-900/20 focus:outline-none focus-visible:ring sm:w-4/5 md:w-auto'>
+            <div className='flex flex-grow flex-col justify-between'>
+              <div>
+                <div className='w-fit rounded-md bg-sky-900/90 sm:p-2 md:p-3 shadow-lg shadow-sky-900/20'>
+                  <MdOutlineCarRental className='sm:h-6 sm:w-6 md:h-7 md:w-7 text-gray-200' />
+                </div>
+                <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
+                  Rent a Car
+                </h2>
+                <p className='min-h-[4em] leading-relaxed tracking-wide text-gray-600'>
+                  &quot;Explore our diverse car fleet with effortless booking. Browse cars
+                  now!&quot;
+                </p>
+              </div>
+              <div>
+                <Link
+                  href={'/'}
+                  className='mt-6 block w-max rounded bg-sky-400 px-3 py-1.5 text-center text-[15px] font-medium tracking-wide text-white transition-shadow duration-200 hover:bg-sky-900 hover:shadow-lg hover:shadow-sky-500/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 active:bg-sky-900'>
+                  Browse Cars
+                </Link>
+              </div>
             </div>
-            <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>Rent a Car</h2>
-            <p className='tracking-wide text-gray-600'>
-              &quot;Experience the freedom of the open road with our premium car rental services.
-              Drive with confidence in Goa&apos;s stunning landscapes.&quot;
-            </p>
-            <Link
-              href={'/'}
-              className='mt-6 block w-max rounded bg-sky-400 px-3 py-1.5 text-center text-[15px] font-medium tracking-wide text-white transition-shadow duration-200 hover:bg-sky-900 hover:shadow-lg hover:shadow-sky-500/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 active:bg-sky-900'>
-              Browse Cars
-            </Link>
           </div>
           <div
             id='rent-a-bike'
-            className='block rounded-lg border border-sky-900/10 bg-white  p-10 shadow-lg shadow-sky-900/20 focus:outline-none focus-visible:ring sm:w-4/5 md:w-auto'>
-            <div className='w-fit rounded-md bg-sky-900/90 p-3 shadow-lg shadow-sky-900/20'>
-              <RiMotorbikeLine className='h-7 w-7 text-gray-200' />
+            className='flex flex-col rounded-lg border  border-sky-900/10 bg-white p-10 shadow-lg shadow-sky-900/20 focus:outline-none focus-visible:ring sm:w-4/5 md:w-auto'>
+            <div className='flex flex-grow flex-col justify-between'>
+              <div>
+                <div className='w-fit rounded-md bg-sky-900/90 sm:p-2 md:p-3 shadow-lg shadow-sky-900/20'>
+                  <RiMotorbikeLine className='sm:h-6 sm:w-6 md:h-7 md:w-7 text-gray-200' />
+                </div>
+                <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
+                  Rent a Bike
+                </h2>
+                <p className='min-h-[4em] leading-relaxed tracking-wide text-gray-600 '>
+                  &quot;Experience convenience like never before with our top-notch bike rental
+                  services&quot;
+                </p>
+              </div>
+              <div>
+                <Link
+                  href={'/'}
+                  className='mt-6 block w-max rounded bg-sky-400 px-3 py-1.5 text-center text-[15px] font-medium tracking-wide text-white transition-shadow duration-200 hover:bg-sky-900 hover:shadow-lg hover:shadow-sky-500/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 active:bg-sky-900'>
+                  Call to Book
+                </Link>
+              </div>
             </div>
-            <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>Rent a Bike</h2>
-            <p className='tracking-wide text-gray-600'>
-              &quot;Embrace the thrill of the open road on two wheels with our bike rental services.
-              Ride with the wind in Goa&apos;s beautiful landscapes.&quot;
-            </p>
-            <Link
-              href={'/'}
-              className='mt-6 block w-max rounded bg-sky-400 px-3 py-1.5 text-center text-[15px] font-medium tracking-wide text-white transition-shadow duration-200 hover:bg-sky-900 hover:shadow-lg hover:shadow-sky-500/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 active:bg-sky-900'>
-              Call to Book
-            </Link>
           </div>
           <div
             id='book-a-cab'
-            className='block rounded-lg border border-sky-900/10 bg-white  p-10 shadow-lg shadow-sky-900/20 focus:outline-none focus-visible:ring sm:w-4/5 md:w-auto md:translate-x-1/2 lg:translate-x-0'>
-            <div className='w-fit rounded-md bg-sky-900/90 p-3 shadow-lg shadow-sky-900/20'>
-              <LiaTaxiSolid className='h-7 w-7 text-gray-200' />
+            className='flex flex-col rounded-lg border  border-sky-900/10 bg-white p-10 shadow-lg shadow-sky-900/20 focus:outline-none focus-visible:ring sm:w-4/5 md:w-auto md:translate-x-1/2 lg:translate-x-0'>
+            <div className='flex flex-grow flex-col justify-between'>
+              <div>
+                <div className='w-fit rounded-md bg-sky-900/90 sm:p-2 md:p-3 shadow-lg shadow-sky-900/20'>
+                  <LiaTaxiSolid className='sm:h-6 sm:w-6 md:h-7 md:w-7 text-gray-200' />
+                </div>
+                <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
+                  Book a Cab
+                </h2>
+                <p className='min-h-[4em] leading-relaxed tracking-wide text-gray-600 '>
+                  &quot;Looking for reliable cab services? Trust us for a seamless, hassle-free
+                  journey&quot;
+                </p>
+              </div>
+              <div>
+                <Link
+                  href={'/'}
+                  className='mt-6 block w-max rounded bg-sky-400 px-3 py-1.5 text-center text-[15px] font-medium tracking-wide text-white transition-shadow duration-200 hover:bg-sky-900 hover:shadow-lg hover:shadow-sky-500/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 active:bg-sky-900'>
+                  Call to Book
+                </Link>
+              </div>
             </div>
-            <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>Book a Cab</h2>
-            <p className='tracking-wide text-gray-600'>
-              &quot;Need a reliable cab service in Goa? Our booking platform ensures a smooth and
-              hassle-free ride to your destination.&quot;
-            </p>
-            <Link
-              href={'/'}
-              className='mt-6 block w-max rounded bg-sky-400 px-3 py-1.5 text-center text-[15px] font-medium tracking-wide text-white transition-shadow duration-200 hover:bg-sky-900 hover:shadow-lg hover:shadow-sky-500/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 active:bg-sky-900'>
-              Call to Book
-            </Link>
           </div>
         </div>
       </div>

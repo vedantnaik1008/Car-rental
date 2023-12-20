@@ -194,8 +194,8 @@ const FeaturedCars = () => {
       <section id='about' className='flex items-center justify-between py-20'>
         <div className='mx-auto w-[90%]'>
           <div className='mb-5 text-center'>
-            <h3 className=' py-5 font-bold uppercase tracking-wide text-sky-500'>What we offer</h3>
-            <h2 className='text-5xl font-bold tracking-wide text-sky-950/90'>Featured Cars</h2>
+            <h3 className=' py-5 font-bold uppercase tracking-wider text-sky-500'>What we offer</h3>
+            <h2 className='text-5xl font-bold tracking-wider text-sky-950/90'>Featured Cars</h2>
           </div>
           <div className='mx-auto w-[90%]'>
             <Slider {...settings}>

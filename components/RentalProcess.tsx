@@ -9,10 +9,10 @@ const RentalProcess = () => {
     <>
       <section className='body-font mx-auto max-w-7xl text-gray-600'>
         <div className='mx-auto text-center'>
-          <h3 className='pb-5 font-bold uppercase tracking-wide text-sky-500'>
+          <h3 className='pb-5 font-bold uppercase tracking-wider text-sky-500'>
             make it happen in 3 steps
           </h3>
-          <h2 className='text-5xl font-bold tracking-wide text-sky-950/90'>How it Works</h2>
+          <h2 className='text-5xl font-bold tracking-wider text-sky-950/90'>How it Works</h2>
         </div>
         <div className='container mx-auto flex flex-wrap px-5 pb-16 pt-20'>
           <div className='flex w-full flex-wrap'>

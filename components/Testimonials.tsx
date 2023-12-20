@@ -25,8 +25,8 @@ const Testimonials = () => {
       <section id='faqs' className='relative flex items-center justify-between py-10'>
         <div className='mx-auto sm:w-4/5 md:w-[90%]'>
           <div className='mb-10 text-center'>
-            <h2 className=' py-5 font-bold uppercase text-sky-500'>Testimonials</h2>
-            <h3 className='text-4xl font-bold text-sky-950 opacity-90'>
+            <h2 className=' py-5 font-bold uppercase tracking-wider text-sky-500'>Testimonials</h2>
+            <h3 className='text-4xl font-bold tracking-wider text-sky-950 opacity-90'>
               What people say about us?
             </h3>
           </div>

@@ -53,8 +53,8 @@ const Faq = ({
       <section className='flex justify-center py-20 md:py-36 lg:py-36'>
         <div className='container'>
           <div className='heading text-center'>
-            <h6 className='text-xl font-semibold tracking-wide  text-sky-500'>FAQs</h6>
-            <h4 className='mt-4 text-4xl font-bold tracking-wide text-sky-950/90'>
+            <h6 className='text-xl font-semibold tracking-wider  text-sky-500'>FAQs</h6>
+            <h4 className='mt-4 text-4xl font-bold tracking-wider text-sky-950/90'>
               Frequently Asked
               <span className=''> Questions</span>
             </h4>

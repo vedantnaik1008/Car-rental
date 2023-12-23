@@ -8,16 +8,21 @@ import { IoClose } from 'react-icons/io5';
 import DropDown from './DropDown';
 import { IoIosArrowDown } from 'react-icons/io';
 import Logo from './logo';
+import useScroll from '../hooks/useScroll';
 
-const Hamburger = () => {
+interface HeaderProps {
+  whiteBackground: boolean;
+}
+
+const Hamburger = ({ whiteBackground }: HeaderProps) => {
   const [clicked, isClicked] = useState(false);
   const [open, isOpen] = useState(false);
-
+  const isScrolled = useScroll(whiteBackground);
   return (
-    <>
-      <div className='fixed right-0 top-0 z-50  w-[100%] bg-white  p-5 lg:hidden'>
+    <div className={`w-full ${isScrolled ? 'bg-white' : ''} ${whiteBackground ? 'bg-white' : ''}}`}>
+      <div className={`right-0 top-0 z-50 w-full lg:hidden`}>
         <div className='flex items-center justify-between'>
-          <Logo textColor='text-sky-950' spanColor='text-sky-700'/>
+          <Logo textColor='text-sky-950' spanColor='text-sky-700' />
           <div onClick={() => isOpen((prev) => !prev)} className=''>
             <FaBarsStaggered size='25px' />
           </div>
@@ -35,7 +40,6 @@ const Hamburger = () => {
                 <Link
                   href='/home'
                   to='home'
-                  // activeClass='active-on'
                   smooth={true}
                   spy={true}
                   offset={-200}
@@ -48,7 +52,6 @@ const Hamburger = () => {
                   <Link
                     href='/services'
                     to='services'
-                    // activeClass='active-on'
                     smooth={true}
                     spy={true}
                     offset={-10}
@@ -70,7 +73,6 @@ const Hamburger = () => {
                 <Link
                   href='/about'
                   to='about'
-                  // activeClass='active-on'
                   smooth={true}
                   spy={true}
                   className='active  cursor-pointer text-sky-950 hover:text-sky-500'>
@@ -81,7 +83,6 @@ const Hamburger = () => {
                 <Link
                   href='/faqs'
                   to='faqs'
-                  // activeClass='active-on'
                   smooth={true}
                   spy={true}
                   offset={15}
@@ -94,7 +95,6 @@ const Hamburger = () => {
                   href='/contact'
                   to='contact'
                   offset={-28}
-                  // activeClass='active-on'
                   smooth={true}
                   spy={true}
                   className='active  cursor-pointer text-sky-950 hover:text-sky-500'>
@@ -105,7 +105,7 @@ const Hamburger = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

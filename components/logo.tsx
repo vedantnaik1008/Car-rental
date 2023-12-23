@@ -10,7 +10,7 @@ const Logo: React.FC<LogoProps> = ({ textColor, spanColor }) => {
   return (
     <Link
       href='/'
-      className='w-fit focus:outline-none  focus-visible:ring focus-visible:ring-sky-500'
+      className='w-fit focus:outline-none antialiased focus-visible:ring focus-visible:ring-sky-500'
       style={{ fontFamily: `Zen Dots` }}>
       <div className={`sm:text-2xl md:text-3xl ${textColor}`}>
         OwnWheelz<span className={`text-base ${spanColor}`}>.com</span>

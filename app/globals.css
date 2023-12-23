@@ -7,14 +7,6 @@
   src: url('/assets/ZenDots-Regular.ttf');
 }
 
-.active:hover {
-  color: rgb(56, 189, 248);
-}
-
-.active-on {
-  color: rgb(56, 189, 248);
-}
-
 .slick-dots li button::before {
   font-family: 'slick';
   font-size: 6px;
@@ -30,6 +22,49 @@
   color: rgb(148, 163, 184) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.slick-next,
+.slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 30px !important;
+  height: 30px !important;
+  padding: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+}
+.slick-next {
+  right: -50px !important;
+}
+.slick-prev {
+  left: -50px !important;
+}
+
+@media screen and (max-width: 770px) {
+  .slick-next,
+  .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+  }
+  .slick-next {
+    right: -18px !important;
+  }
+  .slick-prev {
+    left: -18px !important;
+  }
 }
 
 #hero .scroll-arrow {

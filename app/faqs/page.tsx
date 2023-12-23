@@ -50,19 +50,19 @@ const Faq = ({
   return (
     <>
       <Header whiteBackground={true} />
-      <section className='flex justify-center py-20 md:py-36 lg:py-36'>
-        <div className='container'>
+      <section className='flex justify-center py-28 md:py-36 lg:py-36'>
+        <div className='container max-w-xl md:w-auto'>
           <div className='heading text-center'>
             <h6 className='text-xl font-semibold tracking-wider  text-sky-500'>FAQs</h6>
-            <h4 className='mt-4 text-4xl font-bold tracking-wider text-sky-950/90'>
+            <h4 className='mt-4 font-bold tracking-wider text-sky-950/90 max-[360px]:text-xl min-[361px]:text-2xl md:text-4xl'>
               Frequently Asked
               <span className=''> Questions</span>
             </h4>
-            <p className='mt-5 text-lg font-semibold tracking-wide text-gray-400'>
+            <p className='mt-5 text-base md:text-lg font-semibold tracking-wide text-gray-400'>
               Have questions? We&apos;ll help you.
             </p>
           </div>
-          <div className='mx-auto sm:px-5 md:w-4/5 md:px-0 lg:w-[730px]'>
+          <div className='mx-auto sm:max-w-lg sm:px-5 md:max-w-2xl md:px-0 lg:max-w-3xl'>
             {queries.map((faq: any, i: number) => {
               return (
                 <div

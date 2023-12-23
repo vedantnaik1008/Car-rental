@@ -24,19 +24,19 @@ export const testimonials = [
     id: 1,
     user: 'Amit Singh',
     comment:
-      'Had a fantastic experience renting a car in Goa. The service was excellent and hassle-free.',
+      'I was very impressed by OwnWheelz. The service was fast and efficient, and the car was clean and well-maintained.',
   },
   {
     id: 2,
     user: 'Shreya Naik',
     comment:
-      'Renting a car in Goa was a breeze. The entire process was smooth and the customer service was top-notch.',
+      'I had a pleasant and easy experience with OwnWheelz. The confirmation process was straightforward and the customer service was polite and responsive.',
   },
   {
     id: 3,
     user: 'Bob Johnson',
     comment:
-      'I highly recommend renting a car from Goa. The service provided was outstanding and made my trip even more enjoyable.',
+      'OwnWheelz provided a great car rental service. The service was excellent and the car was spacious and dependable.',
   },
 ];
 

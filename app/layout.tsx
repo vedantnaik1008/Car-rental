@@ -8,11 +8,13 @@ import GoToTop from '@/components/goToTop';
 const popins = Poppins({
   subsets: ['latin'],
   weight: '400',
+  style:'normal',
 });
 
 const inter = Inter({
   subsets: ['latin'],
   weight: '400',
+  style: 'normal',
 });
 
 export const metadata: Metadata = {

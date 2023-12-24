@@ -234,7 +234,7 @@ const FeaturedCars = () => {
                       </p>
                       <p className='flex items-center gap-x-2 text-[14px]'>
                         <PiSteeringWheelBold size='20px' color='gray' />
-                        <span className='truncate'>{res.features.gear}</span>
+                        <span className='md:truncate'>{res.features.gear}</span>
                       </p>
                     </div>
                     <hr className='my-5 border border-slate-200' />

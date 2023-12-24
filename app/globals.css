@@ -12,11 +12,9 @@
 
 .hero-image{
     width: 100%;
-    float: left;
+    height: 100%;
     background-image: url('../public/assets/output-onlinepngtools.png');
     background-repeat: no-repeat;
-    height: auto;
-    background-size: 100%;
 }
 
 .slick-dots li button::before {

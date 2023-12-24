@@ -5,8 +5,6 @@ import React, { useState } from 'react';
 import AnimateHeight from 'react-animate-height';
 
 const Faq = ({
-  showTitle = true,
-  type = 'faq',
   queries = [
     {
       id: 1,

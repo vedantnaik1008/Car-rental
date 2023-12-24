@@ -1,24 +1,30 @@
-'use client'
-import React from 'react'
+'use client';
+
+import dynamic from 'next/dynamic';
+import React from 'react';
+import Hero from './Hero';
+import RentalProcess from './RentalProcess';
+import OurServices from './OurServices';
+
+const FeaturedCars = dynamic(() => import('@/components/FeaturedCars'), {
+  ssr: false,
+});
 const Testimonials = dynamic(() => import('@/components/Testimonials'), {
-  ssr: false
-})
- const Testimonials2 = dynamic(() => import('@/components/Testimonials2'), {
-  ssr: false
-}) 
-import Banner from './Banner'
-import Work from './Works'
-import dynamic from 'next/dynamic'
+  ssr: false,
+});
 
 const Main = () => {
   return (
     <>
-      <Banner />
-      <Work />
-      <Testimonials />
-      <Testimonials2 />
+      <main className='bg-white bg-gradient-to-r from-sky-50/60 to-green-50/40'>
+        <Hero />
+        <OurServices />
+        <RentalProcess />
+        <FeaturedCars />
+        <Testimonials />
+      </main>
     </>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

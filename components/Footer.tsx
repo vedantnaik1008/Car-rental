@@ -1,86 +1,95 @@
 'use client';
+
+import { Zen_Dots } from 'next/font/google';
 import Link from 'next/link';
-import Image from 'next/image';
-import image from '../public/assets/temp-logo.png';
+import { IoMdCall } from 'react-icons/io';
+import { MdEmail, MdLocationPin } from 'react-icons/md';
+import Logo from './logo';
 
 const Footer = () => {
+  return (
+    <footer className='mx-auto w-full bg-slate-950 px-[20px]'>
+      <div className='mx-auto grid w-[90%] max-w-7xl items-start justify-between sm:gap-10 lg:gap-5 py-14 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='flex flex-col gap-5 md:col-span-2'>
+          <Logo textColor='text-white' spanColor='text-cyan-400' />
+          <p className='max-w-[320px] text-slate-400'>
+            &quot;Our vision is to make car rentals easy, convenient, and affordable, enhancing your
+            personal mobility and freedom.&quot;
+          </p>
+        </div>
+        <div>
+          <p className='mb-6 text-lg font-semibold text-slate-300'>Information</p>
+          <ul className='mt-2 flex flex-col gap-y-4 text-base font-light text-slate-400'>
+            <li className='cursor-pointer duration-200 hover:text-sky-300'>
+              <Link href={'/'} className='focus:outline-none focus-visible:ring'>
+                About Us
+              </Link>
+            </li>
 
-    return (
-        <footer className='w-full px-[20px] mx-auto bg-white text-[#9a9b9c]'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-center justify-between py-[40px]'>
-                <div className='flex flex-col gap-y- col-span-2'>
-                    <Link href='/' className=''>
-                        <Image
-                            src={image}
-                            alt='items-image'
-                            width={100}
-                            height={10}
-                            className='object-cover'
-                        />
-                    </Link>
-                    <p className='max-w-[320px] text-sky-950'>
-                        &quot;Our vision is to make car rentals easy, convenient, and affordable,
-                        enhancing your personal mobility and freedom.&quot;
-                    </p>
-                </div>
-                <div>
-                    <p className='text-lg mb-6 text-sky-950 font-semibold'>Information</p>
-                    <ul className='text-sky-900 text-opacity-80 font-light text-base mt-2 flex flex-col gap-y-4'>
-                        
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                            <Link href={'/'}> About Us</Link>
-                            </li>
-                        
-                        
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                            <Link href={'/'}>Self Drive</Link>
-                            </li>
-                        
-                        
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                            <Link href={'/'}>Book a Cab</Link>
-                            </li>
-                        
-                        
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'><Link href={'/'}>FAQs</Link></li>
-                        
-                        
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                            <Link href={'/'}>Contacts</Link>
-                            </li>
-                        
-                    </ul>
-                </div>
-                <div>
-                    <h3 className='text-lg mb-6 text-sky-950 font-semibold'>Have a Question?</h3>
-                    <ul className='text-sky-900 text-opacity-80 font-light text-base mt-2 flex flex-col gap-y-4'>
-                        
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                            <Link href={'/'}>Vasco, Mormugao, Goa, 1234</Link>
-                            </li>
-                        
-                        
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                            <Link href={'tel:+9133378901'}>+91 333 78 901</Link>
-                            </li>
-                        
-                        
-                            <li className='hover:text-sky-950 cursor-pointer duration-200'>
-                            <Link href={'mailto:info@yourdomain.com'}>info@yourdomain.com</Link>
-                            </li>
-                        
-                    </ul>
-                </div>
-            </div>
-            <hr className='border-sky-200 border mb-10' />
-            <div className='flex justify-between items-center pb-10 px-5 text-sky-950'>
-                <p className=''>&copy; 2023 Own Wheels Goa. All rights reserved</p>
-                <div className='flex gap-8'>
-                    <p>Terms & Condition</p>
-                </div>
-            </div>
-        </footer>
-    );
+            <li className='cursor-pointer duration-200 hover:text-sky-300'>
+              <Link href={'/'} className='focus:outline-none focus-visible:ring'>
+                Self Drive
+              </Link>
+            </li>
+
+            <li className='cursor-pointer duration-200 hover:text-sky-300'>
+              <Link href={'/'} className='focus:outline-none focus-visible:ring'>
+                Book a Cab
+              </Link>
+            </li>
+
+            <li className='cursor-pointer duration-200 hover:text-sky-300'>
+              <Link href={'/'} className='focus:outline-none focus-visible:ring'>
+                FAQs
+              </Link>
+            </li>
+
+            <li className='cursor-pointer duration-200 hover:text-sky-300'>
+              <Link href={'/'} className='focus:outline-none focus-visible:ring'>
+                Contacts
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 className='mb-6 text-lg font-semibold text-slate-300'>Have a Question?</h3>
+          <ul className='mt-2 flex flex-col gap-y-4 text-base font-light text-slate-400'>
+            <li className='flex cursor-pointer flex-wrap items-center gap-3 duration-200 hover:text-sky-300'>
+              <MdLocationPin size={20} color='' className='inline-block' />
+              <Link href={'/'} className='focus:outline-none focus-visible:ring'>
+                Vasco, Mormugao, Goa, 1234
+              </Link>
+            </li>
+
+            <li className='flex cursor-pointer flex-wrap items-center gap-3 duration-200 hover:text-sky-300'>
+              <IoMdCall size={20} color='' className='inline-block' />
+              <Link href={'tel:+9133378901'} className='focus:outline-none focus-visible:ring'>
+                +91 333 78 901
+              </Link>
+            </li>
+
+            <li className='flex cursor-pointer flex-wrap items-center gap-3 duration-200 hover:text-sky-300'>
+              <MdEmail size={20} color='' className='inline-block' />
+              <Link
+                href={'mailto:info@yourdomain.com'}
+                className='focus:outline-none focus-visible:ring'>
+                info@yourdomain.com
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr className='mb-10 border-slate-400 border-opacity-30' />
+      <div className='mx-auto flex w-[90%] max-w-7xl items-center justify-between px-5 pb-10 text-slate-400 sm:flex-col md:flex-row'>
+        <p className=''>&copy; 2023 Own Wheels Goa. All rights reserved</p>
+        <div className='flex gap-8 hover:text-sky-300'>
+          <Link href={'/'} className='focus:outline-none focus-visible:ring'>
+            <p>Terms & Conditions</p>
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

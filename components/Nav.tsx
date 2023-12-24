@@ -1,89 +1,73 @@
-"use client"
-import Image from 'next/image'
-import image from '@/public/assets/temp-logo.png'
-import { Link } from "react-scroll";
+import Link from 'next/link';
 import CallChats from './CallChats';
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown } from 'react-icons/io';
 import { useState } from 'react';
 import DropDown from './DropDown';
-
-
+import Logo from './logo';
 
 const Nav = () => {
-  const [clicked, isClicked] = useState(false)
+  const [clicked, setClicked] = useState(false);
 
   return (
-<nav className="md:w-full">
-<div className="min-[320px]:hidden md:flex justify-between items-center">
-<Image src={image} alt="items-image" width={100} height={100} className='object-cover'/>
-     {/* {kkhk} */}
-  <ul className="md:flex md:items-center md:justify-center md:gap-8">
-    <li className="">
-    <Link href="/home" to='home' activeClass='active-on'
-                    smooth={true}
-                    spy={true} offset={-200} className='cursor-pointer active text-black'>
-                        Home
-    </Link>
-    </li>
-    <li className="">
-    <div className="flex justify-center items-center hover:text-black relative">
-                      <Link href='/services' to='services' activeClass='active-on'
-                      smooth={true}
-                      spy={true} offset={-10} className='cursor-pointer active text-black'>
-                          Services
-                      </Link>
-                      <IoIosArrowDown  onClick={()=> isClicked((prev) => !prev)} className={clicked ? "text-black rotate-180 hover:text-black pt-1 text-[20px] transition-all duration-300 ease-in-out" : "text-black hover:text-black pt-1 text-[20px] rotate-0 transition-all duration-300 ease-in-out"}/>
-                      <DropDown clicked={clicked}/> 
-                    </div>
-    </li>
-    <li className=""><Link href='/about' to='about'activeClass='active-on'
-                    smooth={true}
-                    spy={true}  className='cursor-pointer  active text-black'>
-                        About us
-                    </Link></li>
-    <li className=""><Link href='/faqs' to='faqs' activeClass='active-on'
-                    smooth={true}
-                    spy={true} offset={15} className='cursor-pointer  active text-black'>
-                        FAQs
-                    </Link></li>
-    <li className=""><Link href='/contact' to='contact' offset={-28} activeClass='active-on'
-                    smooth={true}
-                    spy={true} className='cursor-pointer  active text-black'>
-                        Contacts
-                    </Link></li>
-     
-                    
-                    
-                    
-                    
-                       
-
-  </ul>  
-  <div className="flex justify-center items-center gap-4">
-    <CallChats />
-  </div>
-</div>
-
-
-
-  {/* <>
-  <nav className="fixed z-50 -bottom-0 right-0 h-[40px] w-[100%] bg-white  md:hidden sm:border sm:border-t-1 sm:border-x-0 sm:border-b-0 sm:border-black md:border-none">
-          <div className={" md:hidden max-w-7xl mx-auto min-[320px]:p-2"}>
-            <div className="" >
-              <ul className='flex items-center justify-between gap-4'>
-                {/* {items.map((item) => (
-                  <li key={item.id} className="text-black hover:underline underline-offset-1 font-bold">
-                    
-                  </li>
-                ))} */}
-              {/* </ul>
-              
+    <nav className='sm:hidden lg:block lg:w-full'>
+      <div className='items-center justify-between min-[200px]:hidden md:flex'>
+        <Logo textColor='text-sky-950' spanColor='text-sky-700' />
+        <ul className='text-base tracking-wider md:flex md:items-center md:justify-center md:gap-8'>
+          <li className=''>
+            <Link
+              href='/'
+              className='active cursor-pointer text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              Home
+            </Link>
+          </li>
+          <li className='relative'>
+            <div
+              className='flex items-center justify-center'
+              onMouseEnter={() => setClicked(true)}
+              onMouseLeave={() => setClicked(false)}>
+              <Link
+                href='/#OurServices'
+                className='cursor-pointer text-black hover:font-semibold hover:text-slate-500  focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+                Services
+              </Link>
+              <IoIosArrowDown
+                className={
+                  clicked
+                    ? 'rotate-180 cursor-pointer pt-1 text-[20px] text-black transition-all duration-300 ease-in-out hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'
+                    : 'rotate-0 cursor-pointer pt-1 text-[20px] text-black transition-all duration-300 ease-in-out hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'
+                }
+              />
+              <DropDown clicked={clicked} setClicked={setClicked} />
             </div>
-          </div>
-        </nav></> */}
+          </li>
+          <li className=''>
+            <Link
+              href='/about-us'
+              className='active  cursor-pointer text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              About us
+            </Link>
+          </li>
+          <li className=''>
+            <Link
+              href='/faqs'
+              className='active  cursor-pointer text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              FAQs
+            </Link>
+          </li>
+          <li className=''>
+            <Link
+              href='/contact'
+              className='active cursor-pointer text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring  focus-visible:ring-sky-500'>
+              Contact
+            </Link>
+          </li>
+        </ul>
+        <div className='flex items-center justify-center gap-4'>
+          <CallChats />
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-</nav>
-  )
-}
-
-export default Nav
+export default Nav;

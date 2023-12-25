@@ -1,15 +1,15 @@
-'use client';
+'use client'
+import dynamic from 'next/dynamic'
+const AboutUs = dynamic(() => import('@/components/AboutUs'), {
+  ssr: false
+})
 
-import Header from '@/components/Header';
-import React from 'react';
-
-const AboutUs = () => {
+const Page = () => {
   return (
     <>
-      <Header whiteBackground={true} />
-      <section className='h-screen'></section>
+      <AboutUs />
     </>
   );
 };
 
-export default AboutUs;
+export default Page;

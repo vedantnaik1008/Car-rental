@@ -12,7 +12,10 @@ const config: Config = {
         sm: '320px',
         sm360: '360px',
         lg964: '964px',
-        lgg: '826px'
+        lgg: '826px',
+      },
+      fontFamily: {
+        zen: ['var(--font-zenDots)'],
       },
     },
     plugins: [],

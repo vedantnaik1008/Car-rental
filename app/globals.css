@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Zen Dots';
-  src: url('/assets/ZenDots-Regular.ttf');
-}
-
 .slick-dots li button::before {
   font-family: 'slick';
   font-size: 6px;

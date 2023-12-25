@@ -1,10 +1,7 @@
 'use client';
-
-import { Zen_Dots } from 'next/font/google';
 import Link from 'next/link';
-import { IoMdCall } from 'react-icons/io';
-import { MdEmail, MdLocationPin } from 'react-icons/md';
 import Logo from './logo';
+import { IoMdCall, MdEmail, MdLocationPin } from '@/lib/ReactIcons';
 
 const Footer = () => {
   return (

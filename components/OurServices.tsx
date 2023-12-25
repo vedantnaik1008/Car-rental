@@ -1,8 +1,6 @@
 import React from 'react';
-import { MdOutlineCarRental } from 'react-icons/md';
-import { LiaTaxiSolid } from 'react-icons/lia';
-import { RiMotorbikeLine } from 'react-icons/ri';
 import Link from 'next/link';
+import { LiaTaxiSolid, MdOutlineCarRental, RiMotorbikeLine } from '@/lib/ReactIcons';
 
 const OurServices = () => {
   return (

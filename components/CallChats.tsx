@@ -1,5 +1,6 @@
+import { IoLogoWhatsapp, IoMdCall } from '@/lib/ReactIcons';
 import Link from 'next/link';
-import { IoLogoWhatsapp, IoMdCall } from 'react-icons/io';
+
 
 const CallChats = () => {
   return (

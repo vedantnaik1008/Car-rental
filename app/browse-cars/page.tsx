@@ -1,13 +1,10 @@
 'use client';
 
-import { Cars, cars } from '@/components/API';
+import { Cars, cars } from '@/data/API';
 import Link from 'next/link';
 import React from 'react';
-import { BsFuelPumpFill } from 'react-icons/bs';
-import { GoPeople } from 'react-icons/go';
-import { ImMeter } from 'react-icons/im';
-import { PiSteeringWheelBold } from 'react-icons/pi';
 import Image from 'next/image';
+import { BsFuelPumpFill, GoPeople, ImMeter, PiSteeringWheelBold } from '@/lib/ReactIcons';
 
 const BrowseCars = () => {
 

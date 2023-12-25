@@ -3,12 +3,12 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import { FaBarsStaggered } from 'react-icons/fa6';
-import { IoClose } from 'react-icons/io5';
+
 import DropDown from './DropDown';
-import { IoIosArrowDown } from 'react-icons/io';
+
 import Logo from './logo';
 import useScroll from '../hooks/useScroll';
+import { FaBarsStaggered, IoClose, IoIosArrowDown } from '@/lib/ReactIcons';
 
 interface HeaderProps {
   whiteBackground: boolean;

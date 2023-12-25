@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import CallChats from './CallChats';
-import { IoIosArrowDown } from 'react-icons/io';
 import { useState } from 'react';
 import DropDown from './DropDown';
 import Logo from './logo';
+import { IoIosArrowDown } from '@/lib/ReactIcons';
 
 const Nav = () => {
   const [clicked, setClicked] = useState(false);

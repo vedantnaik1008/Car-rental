@@ -1,8 +1,6 @@
 import React from 'react';
-import { MdOutlineTouchApp } from 'react-icons/md';
-import { LuPhoneCall } from 'react-icons/lu';
-import { MdOutlineCarRental } from 'react-icons/md';
 import Image from 'next/image';
+import { LuPhoneCall, MdOutlineCarRental, MdOutlineTouchApp } from '@/lib/ReactIcons';
 
 const RentalProcess = () => {
   return (

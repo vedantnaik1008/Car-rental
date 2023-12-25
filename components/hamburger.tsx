@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
 
 import DropDown from './DropDown';
 
@@ -39,10 +39,6 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
               <li className=''>
                 <Link
                   href='/home'
-                  to='home'
-                  smooth={true}
-                  spy={true}
-                  offset={-200}
                   className='active cursor-pointer text-sky-950 hover:text-sky-500'>
                   Home
                 </Link>
@@ -51,10 +47,6 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
                 <div className='items-cente relative flex justify-center'>
                   <Link
                     href='/services'
-                    to='services'
-                    smooth={true}
-                    spy={true}
-                    offset={-10}
                     className='active cursor-pointer text-sky-950 hover:text-sky-500'>
                     Services
                   </Link>
@@ -71,10 +63,7 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
               </li>
               <li className=''>
                 <Link
-                  href='/about'
-                  to='about'
-                  smooth={true}
-                  spy={true}
+                  href='/about-us'
                   className='active  cursor-pointer text-sky-950 hover:text-sky-500'>
                   About us
                 </Link>
@@ -82,10 +71,6 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
               <li className=''>
                 <Link
                   href='/faqs'
-                  to='faqs'
-                  smooth={true}
-                  spy={true}
-                  offset={15}
                   className='active  cursor-pointer text-sky-950 hover:text-sky-500'>
                   FAQs
                 </Link>
@@ -93,10 +78,6 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
               <li className=''>
                 <Link
                   href='/contact'
-                  to='contact'
-                  offset={-28}
-                  smooth={true}
-                  spy={true}
                   className='active  cursor-pointer text-sky-950 hover:text-sky-500'>
                   Contact
                 </Link>

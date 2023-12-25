@@ -8,6 +8,7 @@ const zenDots = Zen_Dots({
   weight: '400',
   variable: '--font-zenDots',
 });
+
 interface LogoProps {
   textColor: string;
   spanColor: string;

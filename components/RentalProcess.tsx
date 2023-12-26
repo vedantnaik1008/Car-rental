@@ -65,6 +65,7 @@ const RentalProcess = () => {
               className='mt-12 rounded-lg object-cover object-center shadow-lg md:mt-0 md:w-1/2 lg:w-3/5'
               width={500}
               height={500}
+              sizes='200'
               src='/assets/rent-car-keys.jpg'
               alt='Rental Process'
             />

@@ -16,7 +16,11 @@ const config: Config = {
       },
       fontFamily: {
         zen: ['var(--font-zenDots)'],
+        pop_inter: ['var(--font-poppins)', 'var(--font-inter)', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero': "url('/assets/hero-car.png')",
+      }
     },
     plugins: [],
   },

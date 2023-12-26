@@ -10,12 +10,14 @@ import 'slick-carousel/slick/slick.css';
 const popins = Poppins({
   subsets: ['latin'],
   weight: '400',
+  variable: '--font-poppins',
   style:'normal',
 });
 
 const inter = Inter({
   subsets: ['latin'],
   weight: '400',
+  variable: '--font-inter',
   style: 'normal',
 });
 
@@ -29,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body
-        style={{ fontFamily: `${inter.style.fontFamily}, ${popins.style.fontFamily}, sans-serif` }}>
+        className={`${inter.variable} ${popins.variable} font-pop_inter` }>
         <Header whiteBackground={false} />
         {children}
         <Footer />

@@ -5,10 +5,7 @@ const Hero = () => {
   return (
     <section
       id='hero'
-      className='relative bg-cover bg-right-bottom bg-no-repeat'
-      style={{
-        backgroundImage: `url(/assets/hero-car.png)`,
-      }}>
+      className='relative bg-cover bg-right-bottom bg-no-repeat bg-hero'>
       <div className='absolute inset-0 from-white to-transparent sm:bg-gradient-to-br sm:backdrop-blur-[6px] lg:bg-gradient-to-r lg:backdrop-blur-none'></div>
       <div className='relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8'>
         <div className='max-w-xl text-center sm:mx-auto ltr:sm:text-left lg:mx-0 lg:text-left'>

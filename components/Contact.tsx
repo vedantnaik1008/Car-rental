@@ -29,13 +29,8 @@ const Contact: React.FC = () => {
             <iframe
               width='100%'
               height='100%'
-              className='absolute inset-0'
+              className='grayscale absolute inset-0 overflow-hidden border-none opacity-40 contrast-125'
               title='map'
-              style={{
-                border: '0',
-                filter: 'grayscale(1) contrast(1.2) opacity(0.4)',
-                overflow: 'hidden',
-              }}
               src='https://maps.google.com/maps?width=100%&height=600&hl=en&q=Vasco%2C%20Mormugao%2C%20Goa&ie=UTF8&t=&z=14&iwloc=B&output=embed'
             />
             <div className='relative flex flex-wrap rounded bg-white py-6 shadow-md'>

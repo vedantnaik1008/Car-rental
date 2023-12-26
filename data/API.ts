@@ -22,7 +22,7 @@ export const cars = [
     model: 'Fortuner',
     year: 2022,
     price: '₹ 2000',
-    image: '/assets/Cars/asset 1.png',
+    image: '/assets/Cars/asset 1.webp',
     features: {
       seats: '4 Seats',
       fuel: 'Petrol',
@@ -36,7 +36,7 @@ export const cars = [
     model: 'Swift',
     year: 2023,
     price: '₹ 1200',
-    image: '/assets/Cars/asset 2.png',
+    image: '/assets/Cars/asset 2.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -50,7 +50,7 @@ export const cars = [
     model: 'Verna',
     year: 2023,
     price: '₹ 1200',
-    image: '/assets/Cars/asset 3.png',
+    image: '/assets/Cars/asset 3.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -64,7 +64,7 @@ export const cars = [
     model: 'Ciaz',
     year: 2023,
     price: '₹ 1500',
-    image: '/assets/Cars/asset 4.png',
+    image: '/assets/Cars/asset 4.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -78,7 +78,7 @@ export const cars = [
     model: 'Creta',
     year: 2023,
     price: '₹ 1200',
-    image: '/assets/Cars/asset 5.png',
+    image: '/assets/Cars/asset 5.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -92,7 +92,7 @@ export const cars = [
     model: 'Ertiga',
     year: 2023,
     price: '₹ 1500',
-    image: '/assets/Cars/asset 6.png',
+    image: '/assets/Cars/asset 6.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -106,7 +106,7 @@ export const cars = [
     model: 'Sonet',
     year: 2023,
     price: '₹ 2000',
-    image: '/assets/Cars/asset 7.png',
+    image: '/assets/Cars/asset 7.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -120,7 +120,7 @@ export const cars = [
     model: 'City',
     year: 2023,
     price: '₹ 1200',
-    image: '/assets/Cars/asset 8.png',
+    image: '/assets/Cars/asset 8.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -134,7 +134,7 @@ export const cars = [
     model: 'i10 Grand',
     year: 2023,
     price: '₹ 1200',
-    image: '/assets/Cars/asset 9.png',
+    image: '/assets/Cars/asset 9.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -148,7 +148,7 @@ export const cars = [
     model: 'Celerio',
     year: 2023,
     price: '₹ 1200',
-    image: '/assets/Cars/asset 10.png',
+    image: '/assets/Cars/asset 10.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -162,7 +162,7 @@ export const cars = [
     model: 'Wagon R',
     year: 2023,
     price: '₹ 1000',
-    image: '/assets/Cars/asset 11.png',
+    image: '/assets/Cars/asset 11.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -176,7 +176,7 @@ export const cars = [
     model: 'Amaze',
     year: 2023,
     price: '₹ 1500',
-    image: '/assets/Cars/asset 12.png',
+    image: '/assets/Cars/asset 12.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -190,7 +190,7 @@ export const cars = [
     model: 'Duster',
     year: 2023,
     price: '₹ 2000',
-    image: '/assets/Cars/asset 13.png',
+    image: '/assets/Cars/asset 13.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -204,7 +204,7 @@ export const cars = [
     model: 'Innova Crysta',
     year: 2023,
     price: '₹ 2000',
-    image: '/assets/Cars/asset 14.png',
+    image: '/assets/Cars/asset 14.webp',
     features: {
       seats: '7 Seats',
       fuel: 'Petrol',
@@ -218,7 +218,7 @@ export const cars = [
     model: 'Baleno',
     year: 2023,
     price: '₹ 1500',
-    image: '/assets/Cars/asset 15.png',
+    image: '/assets/Cars/asset 15.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -232,7 +232,7 @@ export const cars = [
     model: 'Thar Suv',
     year: 2023,
     price: '₹ 3500',
-    image: '/assets/Cars/asset 16.png',
+    image: '/assets/Cars/asset 16.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Diesel',
@@ -246,7 +246,7 @@ export const cars = [
     model: 'Scorpio',
     year: 2023,
     price: '₹ 3500',
-    image: '/assets/Cars/asset 17.png',
+    image: '/assets/Cars/asset 17.webp',
     features: {
       seats: '8 Seats',
       fuel: 'Diesel',
@@ -260,7 +260,7 @@ export const cars = [
     model: 'Alto 800',
     year: 2023,
     price: '₹ 1000',
-    image: '/assets/Cars/asset 18.png',
+    image: '/assets/Cars/asset 18.webp',
     features: {
       seats: '4 Seats',
       fuel: 'Petrol',
@@ -274,7 +274,7 @@ export const cars = [
     model: 'Brezza',
     year: 2023,
     price: '₹ 2000',
-    image: '/assets/Cars/asset 19.png',
+    image: '/assets/Cars/asset 19.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Petrol',
@@ -288,7 +288,7 @@ export const cars = [
     model: 'Nexon',
     year: 2023,
     price: '₹ 3500',
-    image: '/assets/Cars/asset 20.png',
+    image: '/assets/Cars/asset 20.webp',
     features: {
       seats: '5 Seats',
       fuel: 'Diesel',

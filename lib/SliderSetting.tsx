@@ -1,4 +1,6 @@
-import Slider from 'react-slick';
+'use client'
+import dynamic from 'next/dynamic';
+const  Slider = dynamic(() => import('react-slick'))
 import { IoIosArrowBack, IoIosArrowForward } from './ReactIcons';
 
 export const TestimonialSettings = {

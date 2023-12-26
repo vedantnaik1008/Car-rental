@@ -2,23 +2,11 @@
 
 import React from 'react';
 import { useState } from 'react';
-<<<<<<< HEAD
 import Link from 'next/link';
-
-import DropDown from './DropDown';
-
 import Logo from './logo';
 import useScroll from '../hooks/useScroll';
 import { FaBarsStaggered, IoClose, IoIosArrowDown } from '@/lib/ReactIcons';
-=======
-import { Link } from 'react-scroll';
-import { FaBarsStaggered } from 'react-icons/fa6';
-import { IoClose } from 'react-icons/io5';
-import { IoIosArrowDown } from 'react-icons/io';
-import Logo from './logo';
-import useScroll from '../hooks/useScroll';
 import dynamic from 'next/dynamic';
->>>>>>> color-tone
 
 interface HeaderProps {
   whiteBackground: boolean;
@@ -52,26 +40,15 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
             </div>
             <ul className='flex h-full flex-col items-center justify-start gap-y-8'>
               <li className=''>
-                <Link
-                  href='/'
-                  className='active cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link href='/' className='active cursor-pointer text-sky-950 hover:text-sky-500'>
                   Home
                 </Link>
               </li>
-<<<<<<< HEAD
               <li className=''>
                 <div className='items-cente relative flex justify-center'>
                   <Link
                     href='/services'
                     className='active cursor-pointer text-sky-950 hover:text-sky-500'>
-=======
-              <li className='group relative'>
-                <div
-                  onMouseEnter={() => setHovered(true)}
-                  onMouseLeave={() => setHovered(false)}
-                  className={`flex cursor-pointer items-center justify-center text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500`}>
-                  <Link href='/home' to='home' smooth={true} spy={true} offset={-200} className=''>
->>>>>>> color-tone
                     Services
                   </Link>
                   <IoIosArrowDown

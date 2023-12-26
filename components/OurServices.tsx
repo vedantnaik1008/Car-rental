@@ -17,8 +17,8 @@ const OurServices = () => {
         <div className='mt-14 grid grid-cols-1 place-items-center gap-10 *:flex *:flex-grow *:flex-col *:justify-between *:rounded-md *:border *:border-sky-900/10 *:bg-white *:p-10 *:shadow-lg *:shadow-sky-900/10 *:focus:outline-none *:focus-visible:ring *:sm:w-4/5 md:grid-cols-2 *:md:w-auto lg:grid-cols-3'>
           <section id='rent-a-bike' className=''>
             <div>
-              <div className='w-fit rounded-md bg-sky-900/90 shadow-lg shadow-sky-900/20 sm:p-2 md:p-3'>
-                <RiMotorbikeLine className='text-gray-200 sm:h-6 sm:w-6 md:h-7 md:w-7' />
+              <div className='w-fit rounded-md bg-sky-900/90 shadow-lg shadow-sky-900/20 p-2 md:p-3'>
+                <RiMotorbikeLine className='text-gray-200 h-6 w-6 md:h-7 md:w-7' />
               </div>
               <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
                 Rent a Bike
@@ -39,8 +39,8 @@ const OurServices = () => {
 
           <section id='rent-a-car' className=''>
             <div>
-              <div className='w-fit rounded-md bg-sky-900/90 shadow-lg shadow-sky-900/20 sm:p-2 md:p-3'>
-                <MdOutlineCarRental className='text-gray-200 sm:h-6 sm:w-6 md:h-7 md:w-7' />
+              <div className='w-fit rounded-md bg-sky-900/90 shadow-lg shadow-sky-900/20 p-2 md:p-3'>
+                <MdOutlineCarRental className='text-gray-200 h-6 w-6 md:h-7 md:w-7' />
               </div>
               <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
                 Rent a Car
@@ -60,8 +60,8 @@ const OurServices = () => {
 
           <section id='book-a-cab' className=''>
             <div>
-              <div className='w-fit rounded-md bg-sky-900/90 shadow-lg shadow-sky-900/20 sm:p-2 md:p-3'>
-                <LiaTaxiSolid className='text-gray-200 sm:h-6 sm:w-6 md:h-7 md:w-7' />
+              <div className='w-fit rounded-md bg-sky-900/90 shadow-lg shadow-sky-900/20 p-2 md:p-3'>
+                <LiaTaxiSolid className='text-gray-200 h-6 w-6 md:h-7 md:w-7' />
               </div>
               <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
                 Book a Cab

@@ -19,7 +19,7 @@ const config: Config = {
         pop_inter: ['var(--font-poppins)', 'var(--font-inter)', 'sans-serif'],
       },
       backgroundImage: {
-        'hero': "url('/assets/hero-car.png')",
+        'hero': "url('/assets/hero-car.webp')",
       }
     },
     plugins: [],

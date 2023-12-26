@@ -38,7 +38,7 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
             <ul className='flex h-full flex-col items-center justify-start gap-y-8'>
               <li className=''>
                 <Link
-                  href='/home'
+                  href='/'
                   className='active cursor-pointer text-sky-950 hover:text-sky-500'>
                   Home
                 </Link>

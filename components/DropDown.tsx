@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 interface Props {
@@ -6,38 +5,11 @@ interface Props {
   setClicked: (value: boolean) => void;
 }
 
-const DropDown = ({ clicked, setClicked }: Props) => {
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setClicked(false);
-      }
-    };
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setClicked(false);
-      }
-    };
-
-    if (clicked) {
-      document.addEventListener('mousedown', handleClickOutside);
-      document.addEventListener('keydown', handleKeyDown);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('keydown', handleKeyDown);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [clicked, setClicked]);
+const DropDown = ({ clicked }: Props) => {
+  
 
   return (
-    <div ref={dropdownRef}>
+    <div >
       {clicked && (
         <div
           className={

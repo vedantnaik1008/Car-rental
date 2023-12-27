@@ -4,15 +4,15 @@ const  Slider = dynamic(() => import('react-slick'))
 import { IoIosArrowBack, IoIosArrowForward } from './ReactIcons';
 
 export const TestimonialSettings = {
-    dots: true,
-    infinite: true,
-    autoplay: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    nextArrow: <IoIosArrowForward color='rgb(203, 213, 225)' />,
-    prevArrow: <IoIosArrowBack color='rgb(203, 213, 225)' />,
-  };
+  dots: true,
+  infinite: true,
+  autoplay: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  nextArrow: <IoIosArrowForward color='rgb(203, 213, 225)' />,
+  prevArrow: <IoIosArrowBack color='rgb(203, 213, 225)' />,
+};
 
 export const FeaturedCarSettings = {
   dots: true,
@@ -53,4 +53,4 @@ export const FeaturedCarSettings = {
   ],
 };
 
-export {Slider}
+export { Slider };

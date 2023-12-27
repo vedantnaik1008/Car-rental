@@ -3,21 +3,24 @@
 import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
-
-import DropDown from './DropDown';
-
 import Logo from './logo';
 import useScroll from '../hooks/useScroll';
 import { FaBarsStaggered, IoClose, IoIosArrowDown } from '@/lib/ReactIcons';
+import dynamic from 'next/dynamic';
 
 interface HeaderProps {
   whiteBackground: boolean;
 }
 
+const DropDown = dynamic(() => import('./DropDown'), {
+  ssr: false,
+});
+
 const Hamburger = ({ whiteBackground }: HeaderProps) => {
-  const [clicked, isClicked] = useState(false);
+  const [hovered, setHovered] = useState(false);
   const [open, isOpen] = useState(false);
   const isScrolled = useScroll(whiteBackground);
+
   return (
     <div className={`w-full ${isScrolled ? 'bg-white' : ''} ${whiteBackground ? 'bg-white' : ''}}`}>
       <div className={`right-0 top-0 z-50 w-full lg:hidden`}>
@@ -37,9 +40,7 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
             </div>
             <ul className='flex h-full flex-col items-center justify-start gap-y-8'>
               <li className=''>
-                <Link
-                  href='/'
-                  className='active cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link href='/' className='active cursor-pointer text-sky-950 hover:text-sky-500'>
                   Home
                 </Link>
               </li>
@@ -51,14 +52,11 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
                     Services
                   </Link>
                   <IoIosArrowDown
-                    onClick={() => isClicked((prev) => !prev)}
-                    className={
-                      clicked
-                        ? 'rotate-180 pt-1 text-[20px] text-sky-950 transition-all duration-300 ease-in-out hover:text-sky-500'
-                        : 'rotate-0 pt-1 text-[20px] text-sky-950 transition-all duration-300 ease-in-out hover:text-sky-500'
-                    }
+                    className={`ml-0.5 text-[16px] transition-transform duration-300 ease-in-out ${
+                      hovered ? 'rotate-180' : 'rotate-0'
+                    }`}
                   />
-                  <DropDown clicked={clicked} setClicked={isClicked} />
+                  <DropDown hovered={hovered} setHovered={setHovered} />
                 </div>
               </li>
               <li className=''>

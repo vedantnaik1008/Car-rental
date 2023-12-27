@@ -1,26 +1,27 @@
 'use client';
-
 import Image from 'next/image';
-import Link from 'next/link';
-import { Cars, cars } from '../data/API';
-import { FeaturedCarSettings, Slider } from '@/lib/SliderSetting';
-import { BsFuelPumpFill, GoPeople, ImMeter, PiSteeringWheelBold } from '@/lib/ReactIcons';
+import { cars, Cars } from "@/data/API";
+import Link from "next/link";
+import { BsFuelPumpFill } from "react-icons/bs";
+import { GoPeople } from "react-icons/go";
+import { ImMeter } from "react-icons/im";
+import { PiSteeringWheelBold } from "react-icons/pi";
 
 const FeaturedCars = () => {
 
   return (
     <>
-      <section id='about' className='flex items-center justify-between py-20'>
+      <section id='about' className='flex items-center justify-between overflow-hidden py-20'>
         <div className='mx-auto w-[90%]'>
           <div className='mb-5 text-center'>
             <h3 className=' py-5 font-bold uppercase tracking-wide text-sky-500'>What we offer</h3>
             <h2 className='text-5xl font-bold tracking-wide text-sky-950/90'>Featured Cars</h2>
           </div>
-          <div className='mx-auto w-[90%]'>
-            <Slider {...FeaturedCarSettings}>
-              {cars
-                .map((res: Cars) => (
-                  <div key={res.id} className=' w-[50%] rounded-[30px] px-8 py-5 outline-none'>
+          <div className='flex w-full snap-x snap-mandatory scrollbar overflow-y-hidden overflow-x-scroll'>
+            {cars
+              .map((res: Cars) => (
+                <div key={res.id} className='w-screen md:w-[50%] lg:w-[40%] xl:w-[30%] flex-shrink-0 snap-center flex flex-col items-center justify-center'>
+                  <div className='rounded-[30px] px-8 py-5 outline-none'>
                     <Image
                       src={res.image}
                       alt='items-image'
@@ -70,9 +71,9 @@ const FeaturedCars = () => {
                       </Link>
                     </div>
                   </div>
-                ))
-                .splice(9)}
-            </Slider>
+                </div>
+              ))
+              .splice(9)}
           </div>
         </div>
       </section>

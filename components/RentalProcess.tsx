@@ -19,14 +19,14 @@ const RentalProcess = () => {
                 <div className='absolute inset-0 flex h-full w-10 items-center justify-center'>
                   <div className='pointer-events-none h-full w-1 bg-gray-200' />
                 </div>
-                <div className='relative z-10 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-sky-500 text-white'>
+                <div className='relative z-10 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-sky-900 font-light text-white'>
                   <MdOutlineTouchApp className='h-6 w-6' />
                 </div>
                 <div className='flex-grow pl-4'>
-                  <h2 className='title-font mb-1.5 text-base font-semibold tracking-wide text-sky-950'>
+                  <h2 className='title-font mb-1.5 text-lg font-semibold tracking-wide text-sky-950'>
                     01. Choose your car
                   </h2>
-                  <p className='text-lg leading-normal text-gray-600 md:max-w-xs'>
+                  <p className='text-base leading-normal text-gray-600 md:max-w-xs'>
                     Explore our car selection and choose the perfect one for you.
                   </p>
                 </div>
@@ -35,27 +35,27 @@ const RentalProcess = () => {
                 <div className='absolute inset-0 flex h-full w-10 items-center justify-center'>
                   <div className='pointer-events-none h-full w-1 bg-gray-200' />
                 </div>
-                <div className='relative z-10 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-sky-500 text-white'>
+                <div className='relative z-10 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-sky-900 text-white'>
                   <LuPhoneCall className='h-5 w-6' />
                 </div>
                 <div className='flex-grow pl-4'>
-                  <h2 className='title-font mb-1.5 text-base font-semibold tracking-wide text-sky-950'>
+                  <h2 className='title-font mb-1.5 text-lg font-semibold tracking-wide text-sky-950'>
                     02. Contact us
                   </h2>
-                  <p className='text-lg leading-normal text-gray-600 md:max-w-xs'>
+                  <p className='text-base leading-normal text-gray-600 md:max-w-xs'>
                     Call or WhatsApp us to provide your details and confirm your booking.
                   </p>
                 </div>
               </div>
               <div className='relative flex'>
-                <div className='relative z-10 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-sky-500 text-white'>
+                <div className='relative z-10 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-sky-900 text-white'>
                   <MdOutlineCarRental className='h-6 w-6' />
                 </div>
                 <div className='flex-grow pl-4'>
-                  <h2 className='title-font mb-1.5 text-base font-semibold tracking-wide text-sky-950'>
+                  <h2 className='title-font mb-1.5 text-lg font-semibold tracking-wide text-sky-950'>
                     03. Enjoy your ride
                   </h2>
-                  <p className='text-lg leading-normal text-gray-600 md:max-w-xs'>
+                  <p className='text-base leading-normal text-gray-600 md:max-w-xs'>
                     Pick your ride from our location and embark on a comfortable journey.
                   </p>
                 </div>
@@ -66,7 +66,7 @@ const RentalProcess = () => {
               width={500}
               height={500}
               sizes='(min-width: 1280px) 744px, (min-width: 1040px) 590px, (min-width: 980px) 462px, (min-width: 840px) 393px, (min-width: 780px) 364px, (min-width: 360px) 320px, calc(50vw + 110px)'
-              src='/assets/rent-car-keys.jpg'
+              src='/assets/rent-car-keys.webp'
               alt='Rental Process'
             />
           </div>

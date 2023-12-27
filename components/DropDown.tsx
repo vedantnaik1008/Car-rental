@@ -3,18 +3,15 @@ import React from 'react';
 
 interface Props {
   hovered: boolean;
-  setHovered: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const DropDown: React.FC<Props> = ({ hovered, setHovered }) => {
+const DropDown: React.FC<Props> = ({ hovered }) => {
   return (
     <ul
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className={`absolute left-0 top-6 block w-[150px] bg-transparent py-2 ${
-        hovered ? 'block' : 'hidden'
+      className={`absolute left-0 top-6 block w-[150px] bg-transparent py-2 transition-all duration-200 ${
+        hovered ? 'visible opacity-100' : 'invisible opacity-0'
       }`}>
-      <div className='w-full rounded-lg bg-white py-5 shadow-lg shadow-sky-500/10'>
+      <div className='w-full rounded-lg bg-white py-5 shadow-lg'>
         <li className='flex justify-center font-normal text-black'>
           <div className='flex flex-col gap-3 text-start'>
             <Link

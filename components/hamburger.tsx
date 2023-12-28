@@ -26,7 +26,7 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
       <div className={`right-0 top-0 z-50 w-full lg:hidden`}>
         <div className='flex items-center justify-between'>
           <Logo textColor='text-sky-950' spanColor='text-sky-700' />
-          <div onClick={() => isOpen((prev) => !prev)} className=''>
+          <div onClick={() => isOpen((prev) => !prev)} className='cursor-pointer'>
             <FaBarsStaggered size='25px' />
           </div>
           <div
@@ -40,43 +40,38 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
             </div>
             <ul className='flex h-full flex-col items-center justify-start gap-y-8'>
               <li className=''>
-                <Link href='/' className='active cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link href='/' className='cursor-pointer text-sky-950 hover:text-sky-500'>
                   Home
                 </Link>
               </li>
-              <li className=''>
-                <div className='items-cente relative flex justify-center'>
-                  <Link
-                    href='/services'
-                    className='active cursor-pointer text-sky-950 hover:text-sky-500'>
+              <li className='group relative'>
+                <div
+                  onMouseEnter={() => setHovered(true)}
+                  onMouseLeave={() => setHovered(false)}
+                  className={`flex cursor-pointer items-center justify-center text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500`}>
+                  <Link href='/#OurServices' className=''>
                     Services
                   </Link>
                   <IoIosArrowDown
-                    className={`ml-0.5 text-[16px] transition-transform duration-300 ease-in-out ${
+                    className={`ml-0.5 text-[16px] transition-transform duration-200 ease-in-out ${
                       hovered ? 'rotate-180' : 'rotate-0'
                     }`}
                   />
-                  <DropDown hovered={hovered} setHovered={setHovered} />
+                  <DropDown hovered={hovered} />
                 </div>
               </li>
               <li className=''>
-                <Link
-                  href='/about-us'
-                  className='active  cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link href='/about-us' className='cursor-pointer text-sky-950 hover:text-sky-500'>
                   About us
                 </Link>
               </li>
               <li className=''>
-                <Link
-                  href='/faqs'
-                  className='active  cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link href='/faqs' className='cursor-pointer text-sky-950 hover:text-sky-500'>
                   FAQs
                 </Link>
               </li>
               <li className=''>
-                <Link
-                  href='/contact'
-                  className='active  cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link href='/contact' className='cursor-pointer text-sky-950 hover:text-sky-500'>
                   Contact
                 </Link>
               </li>

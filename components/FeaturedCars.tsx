@@ -7,7 +7,6 @@ import { FeaturedCarSettings, Slider } from '@/lib/SliderSetting';
 import { BsFuelPumpFill, GoPeople, ImMeter, PiSteeringWheelBold } from '@/lib/ReactIcons';
 
 const FeaturedCars = () => {
-
   return (
     <>
       <section id='about' className='flex items-center justify-between py-20'>
@@ -60,12 +59,12 @@ const FeaturedCars = () => {
                     <div className='flex flex-col items-center justify-between gap-5'>
                       <Link
                         href={'/'}
-                        className='w-full rounded-md bg-sky-500 px-8 py-2 text-center text-sm font-semibold text-white transition-shadow duration-200 hover:bg-sky-600 hover:shadow-lg hover:shadow-sky-500/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-600'>
+                        className='w-full rounded-3xl bg-sky-950 px-8 py-2.5 text-center text-sm font-semibold text-white transition-shadow duration-200 hover:bg-sky-950/90 focus:outline-none focus-visible:ring focus-visible:ring-sky-700'>
                         Call to Book
                       </Link>
                       <Link
                         href={'/'}
-                        className='w-full rounded-md bg-green-500/95 px-8 py-2 text-center text-sm font-semibold text-white transition-shadow duration-200 hover:bg-green-600 hover:shadow-lg hover:shadow-green-200/60 focus:outline-none focus-visible:ring focus-visible:ring-green-600'>
+                        className='w-full rounded-3xl bg-emerald-400 px-8 py-2.5 text-center text-sm font-semibold text-white transition-shadow duration-200 hover:bg-emerald-500/90  focus:outline-none focus-visible:ring focus-visible:ring-emerald-600'>
                         Book on WhatsApp
                       </Link>
                     </div>
@@ -73,6 +72,13 @@ const FeaturedCars = () => {
                 ))
                 .splice(9)}
             </Slider>
+          </div>
+          <div className='mt-10 flex justify-center'>
+            <Link
+              href={'/browse-cars'}
+              className='inline-block rounded-xl bg-gray-800 px-10 py-2.5 text-base  text-white transition duration-200 ease-out hover:scale-105 hover:bg-gray-800/90  focus:outline-none focus-visible:ring focus-visible:ring-gray-500'>
+              Explore Our Fleet
+            </Link>
           </div>
         </div>
       </section>

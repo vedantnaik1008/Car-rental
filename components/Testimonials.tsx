@@ -22,7 +22,9 @@ const Testimonials = () => {
                   <p className='w-full text-pretty pb-5 text-center text-lg text-gray-500 md:text-xl'>
                     {res.comment}
                   </p>
-                  <p className='text-center text-sky-950'>{res.user}</p>
+                  <p className='text-center font-semibold tracking-wide text-sky-950/90'>
+                    {res.user}
+                  </p>
                 </div>
               ))}
             </Slider>

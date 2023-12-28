@@ -18,7 +18,7 @@ const Nav = () => {
     <nav className='sm:hidden lg:block lg:w-full'>
       <div className='items-center justify-between min-[200px]:hidden md:flex'>
         <Logo textColor='text-sky-950' spanColor='text-sky-700' />
-        <ul className='text-[0.9375rem] leading-[1.375rem]  tracking-wider md:flex md:items-center md:justify-center md:gap-8'>
+        <ul className='text-base tracking-wider md:flex md:items-center md:justify-center md:gap-8'>
           <li className=''>
             <Link
               href='/'
@@ -30,23 +30,25 @@ const Nav = () => {
             <div
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
-              className={`flex cursor-pointer items-center justify-center text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500`}>
-              <Link href='/#OurServices' className=''>
+              className={`flex cursor-pointer items-center justify-center text-black hover:font-semibold hover:text-slate-500 `}>
+              <Link
+                href='/#OurServices'
+                className='focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
                 Services
               </Link>
               <IoIosArrowDown
-                className={`ml-0.5 text-[16px] transition-transform duration-300 ease-in-out ${
+                className={`ml-0.5 text-[16px] transition-transform duration-200 ease-in-out ${
                   hovered ? 'rotate-180' : 'rotate-0'
                 }`}
               />
-              <DropDown hovered={hovered} setHovered={setHovered} />
+              <DropDown hovered={hovered} />
             </div>
           </li>
           <li className=''>
             <Link
               href='/about-us'
               className='cursor-pointer text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
-              About us
+              About Us
             </Link>
           </li>
           <li className=''>

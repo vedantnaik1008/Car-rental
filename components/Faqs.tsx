@@ -10,7 +10,7 @@ const Faqs = () => {
     <>
       <Header whiteBackground={true} />
       <section className='flex justify-center py-28 md:py-36 lg:py-36'>
-        <div className='container max-w-xl md:w-auto'>
+        <div className='container max-w-xl'>
           <div className='heading text-center'>
             <h6 className='text-xl font-semibold tracking-wider  text-sky-500'>FAQs</h6>
             <h4 className='mt-4 font-bold tracking-wider text-sky-950/90 max-[360px]:text-xl min-[361px]:text-2xl md:text-4xl'>
@@ -21,7 +21,7 @@ const Faqs = () => {
               Have questions? We&apos;ll help you.
             </p>
           </div>
-          <div className='mx-auto sm:max-w-lg sm:px-5 md:max-w-2xl md:px-0 lg:max-w-3xl'>
+          <div className='mx-auto max-w-lg px-5 md:max-w-2xl md:px-0 lg:max-w-3xl'>
             {queries.map((faq, i: number) => {
               return (
                 <div
@@ -30,7 +30,8 @@ const Faqs = () => {
                   <button
                     type='button'
                     className='relative !flex w-full items-center justify-between gap-2 py-2.5 text-lg font-bold text-gray-800 ltr:text-left rtl:text-right dark:text-white'
-                    onClick={() => setActive(active === i ? null : i)}>
+                    onClick={() => setActive(active === i ? null : i)}
+                    aria-label={`Toggle FAQ ${i + 1}`}>
                     <p className='text-start tracking-wide text-gray-800'>{faq.question}</p>
                     <div
                       className={`border-gray text-gray ml-5 grid h-6 w-6 flex-shrink-0 place-content-center rounded-full border-2 transition ${
@@ -58,7 +59,7 @@ const Faqs = () => {
                   </button>
                   <AnimateHeight duration={600} height={active === i ? 'auto' : 0}>
                     <div className='lg:w-4/5'>
-                      <p className='px-0 pb-5 pr-5 pt-0 font-medium leading-[18px]  tracking-wide text-gray-500'>
+                      <p className='px-0 pb-5 pr-5 pt-0 font-medium leading-[18px] tracking-wide text-gray-500'>
                         {faq.answer}
                       </p>
                     </div>

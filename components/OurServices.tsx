@@ -39,7 +39,7 @@ const OurServices = () => {
 
           <section id='rent-a-car' className=''>
             <div>
-              <div className='w-fit rounded-full bg-sky-950/90  text-white shadow-lg shadow-sky-900/20 md:p-3'>
+              <div className='w-fit rounded-full bg-sky-950/90 p-2  text-white shadow-lg shadow-sky-900/20 md:p-3'>
                 <MdOutlineCarRental className='h-6 w-6 text-gray-200 md:h-7 md:w-7' />
               </div>
               <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
@@ -53,7 +53,7 @@ const OurServices = () => {
               <Link
                 href={'/'}
                 className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-200 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
-                Browse Cars <span className='font-bold'>→</span>
+                Browse Cars <span className='font-medium'>↗</span>
               </Link>
             </div>
           </section>

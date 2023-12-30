@@ -14,16 +14,16 @@ const OurServices = () => {
             Our Services
           </h2>
         </div>
-        <div className='mt-14 grid grid-cols-1 place-items-center gap-10 *:flex *:flex-grow *:flex-col *:justify-between *:rounded-md *:border *:border-sky-900/10 *:bg-white *:p-10 *:shadow-lg *:shadow-sky-900/10 *:focus:outline-none *:focus-visible:ring *:sm:w-4/5 md:grid-cols-2 *:md:w-auto lg:grid-cols-3'>
+        <div className='mt-14 grid grid-cols-1 place-items-center gap-10 *:flex *:flex-grow *:flex-col *:justify-between *:rounded-md *:border *:border-sky-900/10 *:bg-white *:p-10 *:shadow-lg *:shadow-gray-200 *:focus:outline-none *:focus-visible:ring *:sm:w-4/5 md:grid-cols-2 *:md:w-auto lg:grid-cols-3'>
           <section id='rent-a-bike' className=''>
             <div>
-              <div className='w-fit rounded-full bg-sky-900 p-2 text-gray-200 shadow-lg shadow-sky-900/20 md:p-3'>
+              <div className='w-fit rounded-full bg-sky-950/90 p-2 text-white shadow-lg shadow-sky-900/20 md:p-3'>
                 <RiMotorbikeLine className='h-6 w-6 text-gray-200 md:h-7 md:w-7' />
               </div>
               <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
                 Rent a Bike
               </h2>
-              <p className='min-h-[4em] leading-relaxed tracking-tight text-base lg:text-lg text-gray-600'>
+              <p className='min-h-[4em] text-base leading-relaxed tracking-tight text-gray-600 lg:text-lg'>
                 &quot;Experience convenience like never before with our top-notch bike rental
                 services&quot;
               </p>
@@ -31,7 +31,7 @@ const OurServices = () => {
             <div>
               <Link
                 href={'/'}
-                className='mt-6 block w-max rounded-md bg-sky-900 px-6 py-2 text-center text-base font-medium tracking-tight text-white transition-shadow duration-200 hover:bg-sky-900/90 hover:shadow-lg hover:shadow-sky-900/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-700 active:bg-sky-900'>
+                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-200 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
                 Call to Inquire
               </Link>
             </div>
@@ -39,20 +39,20 @@ const OurServices = () => {
 
           <section id='rent-a-car' className=''>
             <div>
-              <div className='w-fit rounded-full bg-sky-900 p-2  text-gray-200 shadow-lg shadow-sky-900/20 md:p-3'>
+              <div className='w-fit rounded-full bg-sky-950/90  text-white shadow-lg shadow-sky-900/20 md:p-3'>
                 <MdOutlineCarRental className='h-6 w-6 text-gray-200 md:h-7 md:w-7' />
               </div>
               <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
                 Rent a Car
               </h2>
-              <p className='min-h-[4em] leading-relaxed tracking-tight text-base lg:text-lg text-gray-600'>
+              <p className='min-h-[4em] text-base leading-relaxed tracking-tight text-gray-600 lg:text-lg'>
                 &quot;Explore our diverse car fleet with effortless booking. Browse cars now!&quot;
               </p>
             </div>
             <div>
               <Link
                 href={'/'}
-                className='mt-6 block w-max rounded-md bg-sky-900 px-6 py-2 text-center text-base font-medium tracking-tight text-white transition-shadow duration-200 hover:bg-sky-900/90 hover:shadow-lg hover:shadow-sky-900/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-700 active:bg-sky-900'>
+                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-200 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
                 Browse Cars <span className='font-bold'>→</span>
               </Link>
             </div>
@@ -60,13 +60,13 @@ const OurServices = () => {
 
           <section id='book-a-cab' className=''>
             <div>
-              <div className='w-fit rounded-full bg-sky-900 p-2 text-gray-200 shadow-lg shadow-sky-900/20 md:p-3'>
+              <div className='w-fit rounded-full bg-sky-950/90 p-2 text-white shadow-lg shadow-sky-900/20 md:p-3'>
                 <LiaTaxiSolid className='h-6 w-6 text-gray-200 md:h-7 md:w-7' />
               </div>
               <h2 className='my-5 pt-1 text-xl font-bold tracking-wide text-gray-800'>
                 Book a Cab
               </h2>
-              <p className='min-h-[4em] leading-relaxed tracking-tight text-base lg:text-lg text-gray-600'>
+              <p className='min-h-[4em] text-base leading-relaxed tracking-tight text-gray-600 lg:text-lg'>
                 &quot;Looking for reliable cab services? Trust us for a seamless, hassle-free
                 journey&quot;
               </p>
@@ -74,7 +74,7 @@ const OurServices = () => {
             <div>
               <Link
                 href={'/'}
-                className='mt-6 block w-max rounded-md bg-sky-900 px-6 py-2 text-center text-base font-medium tracking-tight text-white transition-shadow duration-200 hover:bg-sky-900/90 hover:shadow-lg hover:shadow-sky-900/20 focus:outline-none focus-visible:ring focus-visible:ring-sky-700 active:bg-sky-900'>
+                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-200 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
                 Call to Inquire
               </Link>
             </div>

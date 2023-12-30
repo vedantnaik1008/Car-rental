@@ -7,17 +7,17 @@ import Logo from './logo';
 import useScroll from '../hooks/useScroll';
 import { FaBarsStaggered, IoClose, IoIosArrowDown } from '@/lib/ReactIcons';
 import dynamic from 'next/dynamic';
+import { Menu } from '@headlessui/react';
 
 interface HeaderProps {
   whiteBackground: boolean;
 }
 
-const DropDown = dynamic(() => import('./DropDown'), {
-  ssr: false,
-});
+// const DropDown = dynamic(() => import('./DropDown'), {
+//   ssr: false,
+// });
 
 const Hamburger = ({ whiteBackground }: HeaderProps) => {
-  const [hovered, setHovered] = useState(false);
   const [open, isOpen] = useState(false);
   const isScrolled = useScroll(whiteBackground);
 
@@ -29,13 +29,13 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
           <div onClick={() => isOpen((prev) => !prev)} className='cursor-pointer'>
             <FaBarsStaggered size='25px' />
           </div>
-          <div
+          <div  
             className={
               open
                 ? 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-0 rounded-l-md bg-white px-5 py-10 shadow-2xl transition-all duration-300 ease-in-out'
                 : 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-[200%] rounded-l-md bg-white px-5 py-10  shadow-2xl transition-all duration-300 ease-in-out'
             }>
-            <div onClick={() => isOpen(false)} className='absolute left-5 top-5'>
+            <div onClick={() => isOpen(false)} className='absolute left-5 top-5 cursor-pointer'>
               <IoClose size='25px' />
             </div>
             <ul className='flex h-full flex-col items-center justify-start gap-y-8'>
@@ -45,20 +45,43 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
                 </Link>
               </li>
               <li className='group relative'>
-                <div
-                  onMouseEnter={() => setHovered(true)}
-                  onMouseLeave={() => setHovered(false)}
-                  className={`flex cursor-pointer items-center justify-center text-black hover:font-semibold hover:text-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-sky-500`}>
-                  <Link href='/#OurServices' className=''>
-                    Services
-                  </Link>
-                  <IoIosArrowDown
-                    className={`ml-0.5 text-[16px] transition-transform duration-200 ease-in-out ${
-                      hovered ? 'rotate-180' : 'rotate-0'
-                    }`}
-                  />
-                  <DropDown hovered={hovered} />
-                </div>
+                <Menu as='div' className='relative inline-block text-left'>
+                  {({ open }) => (
+                    <>
+                      <Menu.Button className='flex cursor-pointer items-center justify-center hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+                        Services
+                        <IoIosArrowDown
+                          className={`ml-0.5 text-[16px] transition-transform duration-300  ease-in-out ${
+                            open ? 'rotate-180' : 'rotate-0'
+                          }`}
+                        />
+                      </Menu.Button>
+                      <Menu.Items className='absolute left-0 top-6 mt-2 block  w-[150px] rounded-lg bg-white py-5 text-black outline-none'>
+                        <div className='flex flex-col items-center'>
+                          <div className='flex flex-col items-start gap-3'>
+                            <Menu.Item>
+                              <Link
+                                href='/browse-cars'
+                                className={`hover:font-semibold hover:text-gray-600`}>
+                                Rent a Car
+                              </Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                              <Link href='/' className={`hover:font-semibold hover:text-gray-600`}>
+                                Rent a Bike
+                              </Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                              <Link href='/' className={`hover:font-semibold hover:text-gray-600`}>
+                                Book a Cab
+                              </Link>
+                            </Menu.Item>
+                          </div>
+                        </div>
+                      </Menu.Items>
+                    </>
+                  )}
+                </Menu>
               </li>
               <li className=''>
                 <Link href='/about-us' className='cursor-pointer text-sky-950 hover:text-sky-500'>

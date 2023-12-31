@@ -31,7 +31,7 @@ const OurServices = () => {
             <div>
               <Link
                 href={'/'}
-                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-200 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
+                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-300 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50 '>
                 Call to Inquire
               </Link>
             </div>
@@ -52,7 +52,7 @@ const OurServices = () => {
             <div>
               <Link
                 href={'/'}
-                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-200 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
+                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-300 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
                 Browse Cars <span className='font-medium'>↗</span>
               </Link>
             </div>
@@ -74,7 +74,7 @@ const OurServices = () => {
             <div>
               <Link
                 href={'/'}
-                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-200 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
+                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-300 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
                 Call to Inquire
               </Link>
             </div>

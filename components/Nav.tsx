@@ -2,14 +2,9 @@
 
 import Link from 'next/link';
 import CallChats from './CallChats';
-import dynamic from 'next/dynamic';
 import Logo from './logo';
 import { IoIosArrowDown } from '@/lib/ReactIcons';
 import { Menu } from '@headlessui/react';
-
-// const DropDown = dynamic(() => import('./DropDown'), {
-//   ssr: false,
-// });
 
 const Nav = () => {
   return (
@@ -20,7 +15,7 @@ const Nav = () => {
           <li className=''>
             <Link
               href='/'
-              className='active cursor-pointer text-black hover:font-semibold hover:text-sky-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
               Home
             </Link>
           </li>
@@ -66,21 +61,21 @@ const Nav = () => {
           <li className=''>
             <Link
               href='/about-us'
-              className='active  cursor-pointer text-black hover:font-semibold hover:text-sky-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
               About us
             </Link>
           </li>
           <li className=''>
             <Link
               href='/faqs'
-              className='active  cursor-pointer text-black hover:font-semibold hover:text-sky-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
               FAQs
             </Link>
           </li>
           <li className=''>
             <Link
               href='/contact'
-              className='active cursor-pointer text-black hover:font-semibold hover:text-sky-600 focus:outline-none focus-visible:ring  focus-visible:ring-sky-500'>
+              className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring  focus-visible:ring-sky-500'>
               Contact
             </Link>
           </li>

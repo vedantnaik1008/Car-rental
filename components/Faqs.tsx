@@ -13,7 +13,7 @@ const Faqs: React.FC = () => {
           <h6 className='text-xl font-semibold tracking-wider  text-sky-500'>FAQs</h6>
           <h4 className='mt-4 font-bold tracking-wider text-sky-950/90 max-[360px]:text-xl min-[361px]:text-2xl md:text-4xl'>
             Frequently Asked
-            <span>Questions</span>
+            <span className=''> Questions</span>
           </h4>
           <p className='mt-5 text-base font-semibold tracking-wide text-gray-400 md:text-lg'>
             Have questions? We&apos;ll help you.

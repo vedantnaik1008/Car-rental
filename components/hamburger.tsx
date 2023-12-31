@@ -6,16 +6,11 @@ import Link from 'next/link';
 import Logo from './logo';
 import useScroll from '../hooks/useScroll';
 import { FaBarsStaggered, IoClose, IoIosArrowDown } from '@/lib/ReactIcons';
-import dynamic from 'next/dynamic';
 import { Menu } from '@headlessui/react';
 
 interface HeaderProps {
   whiteBackground: boolean;
 }
-
-// const DropDown = dynamic(() => import('./DropDown'), {
-//   ssr: false,
-// });
 
 const Hamburger = ({ whiteBackground }: HeaderProps) => {
   const [open, isOpen] = useState(false);
@@ -29,7 +24,7 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
           <div onClick={() => isOpen((prev) => !prev)} className='cursor-pointer'>
             <FaBarsStaggered size='25px' />
           </div>
-          <div  
+          <div
             className={
               open
                 ? 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-0 rounded-l-md bg-white px-5 py-10 shadow-2xl transition-all duration-300 ease-in-out'
@@ -40,7 +35,9 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
             </div>
             <ul className='flex h-full flex-col items-center justify-start gap-y-8'>
               <li className=''>
-                <Link href='/' className='cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link
+                  href='/'
+                  className='cursor-pointer text-black hover:font-semibold hover:text-gray-600'>
                   Home
                 </Link>
               </li>
@@ -84,17 +81,21 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
                 </Menu>
               </li>
               <li className=''>
-                <Link href='/about-us' className='cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link
+                  href='/about-us'
+                  className='cursor-pointer text-black hover:font-semibold hover:text-gray-600'>
                   About us
                 </Link>
               </li>
               <li className=''>
-                <Link href='/faqs' className='cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link
+                  href='/faqs'
+                  className='cursor-pointer text-black hover:font-semibold hover:text-gray-600'>
                   FAQs
                 </Link>
               </li>
               <li className=''>
-                <Link href='/contact' className='cursor-pointer text-sky-950 hover:text-sky-500'>
+                <Link href='/contact' className='cursor-pointer text-black hover:text-gray-600'>
                   Contact
                 </Link>
               </li>

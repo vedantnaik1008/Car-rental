@@ -2,25 +2,20 @@
 
 import Link from 'next/link';
 import CallChats from './CallChats';
-import dynamic from 'next/dynamic';
 import Logo from './logo';
 import { IoIosArrowDown } from '@/lib/ReactIcons';
 import { Menu } from '@headlessui/react';
 
-// const DropDown = dynamic(() => import('./DropDown'), {
-//   ssr: false,
-// });
-
 const Nav = () => {
   return (
-    <nav className='sm:hidden lg:block lg:w-full'>
+    <nav className='hidden lg:block lg:w-full'>
       <div className='items-center justify-between min-[320px]:hidden md:flex'>
         <Logo textColor='text-sky-950' spanColor='text-sky-700' />
         <ul className='text-base font-medium md:flex md:items-center md:justify-center md:gap-8'>
           <li className=''>
             <Link
               href='/'
-              className='active cursor-pointer text-black hover:font-semibold hover:text-sky-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
               Home
             </Link>
           </li>
@@ -66,21 +61,21 @@ const Nav = () => {
           <li className=''>
             <Link
               href='/about-us'
-              className='active  cursor-pointer text-black hover:font-semibold hover:text-sky-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
               About us
             </Link>
           </li>
           <li className=''>
             <Link
               href='/faqs'
-              className='active  cursor-pointer text-black hover:font-semibold hover:text-sky-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
+              className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-sky-500'>
               FAQs
             </Link>
           </li>
           <li className=''>
             <Link
               href='/contact'
-              className='active cursor-pointer text-black hover:font-semibold hover:text-sky-600 focus:outline-none focus-visible:ring  focus-visible:ring-sky-500'>
+              className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring  focus-visible:ring-sky-500'>
               Contact
             </Link>
           </li>

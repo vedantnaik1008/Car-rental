@@ -15,7 +15,7 @@ const Testimonials = dynamic(() => import('@/components/Testimonials'), {
 const Main = () => {
   return (
     <>
-      <main className='bg-white bg-gradient-to-r from-sky-50/60 to-green-50/40'>
+      <main className='bg-accent'>
         <Hero />
         <OurServices />
         <RentalProcess />

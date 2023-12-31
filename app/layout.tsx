@@ -11,7 +11,7 @@ const popins = Poppins({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-poppins',
-  style:'normal',
+  style: 'normal',
 });
 
 const inter = Inter({
@@ -22,16 +22,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'car rental goa',
+  title: 'OwnWheelz.com',
   description:
-    'We are a Goa-based car rental service offering a wide range of affordable rental cars for short and long term rent. Our goal is to provide our customers with the best car rental experience at competitive prices. Browse through our large fleet of well-maintained cars and book online easily. We strive to give you an enjoyable and hassle-free rental experience.',
+    'OwnWheelz is a premier rental service based in Goa, offering a comprehensive range of transportation solutions. Our services include short-term and long-term car rentals, bike rentals, and reliable cab services. We pride ourselves on our extensive and well-maintained fleet, competitive pricing, and commitment to customer satisfaction. With a user-friendly online booking system, customers can effortlessly browse and select the vehicle that best suits their needs. OwnWheelz is committed to providing a seamless rental experience, offering car, bike, and cab or taxi services tailored to your needs.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body
-        className={`${inter.variable} ${popins.variable} font-pop_inter` }>
+      <body className={`${inter.variable} ${popins.variable} font-pop_inter`}>
         <Header whiteBackground={false} />
         {children}
         <Footer />

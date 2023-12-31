@@ -31,7 +31,7 @@ const Footer = () => {
 
             <li className='cursor-pointer duration-200 hover:text-sky-300'>
               <Link href={'/'} className='focus:outline-none focus-visible:ring'>
-                Contacts
+                Contact
               </Link>
             </li>
           </ul>

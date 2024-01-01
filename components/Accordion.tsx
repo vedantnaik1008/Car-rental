@@ -4,7 +4,7 @@ import { queries } from '@/data/queries';
 import Header from './Header';
 import { IoIosArrowDown } from 'react-icons/io';
 
-const Faqs: React.FC = () => {
+const Accordion: React.FC = () => {
   return (
     <>
       <Header whiteBackground={true} />
@@ -48,4 +48,4 @@ const Faqs: React.FC = () => {
   );
 };
 
-export default Faqs;
+export default Accordion;

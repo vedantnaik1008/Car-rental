@@ -25,6 +25,7 @@ const Header = () => {
 
      return () => window.removeEventListener('scroll', onScroll);
    }, []);    
+   
   return (
     <header id='navbar'
       className={`${dynamicStyle} fixed z-50 w-full py-4 drop-shadow-md sm:px-[10px] md:px-[20px]`}>

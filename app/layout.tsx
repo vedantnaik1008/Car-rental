@@ -31,10 +31,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body className={`${inter.variable} ${popins.variable} bg-accent font-pop_inter`}>
-        <Header whiteBackground={false} />
+        <Header />
         {children}
-        <Footer />
         <GoToTop />
+        <Footer />
       </body>
     </html>
   );

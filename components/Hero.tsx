@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import HeroImage from '../public/assets/hero-car.webp';
+// import Image from 'next/image';
+// import HeroImage from '../public/assets/hero-car.webp';
 const Hero = () => {
   return (
     <>
-      <section id='hero' className='relative bg-cover bg-right-bottom bg-no-repeat lg:bg-hero'>
-        <Image
+      <section id='hero' className='relative bg-cover bg-right-bottom bg-no-repeat md:bg-hero'>
+        {/* <Image
           width={1023}
           height={1000}
           alt='hero-image'
@@ -15,8 +15,8 @@ const Hero = () => {
           priority
           placeholder='blur'
           sizes='100vw'
-        />
-        <div className='absolute inset-0 h-screen from-white to-transparent sm:bg-gradient-to-br sm:backdrop-blur-[6px] lg:bg-gradient-to-r lg:backdrop-blur-none'></div>
+        /> */}
+        <div className='absolute inset-0 h-screen from-white to-transparent sm:hidden sm:bg-gradient-to-br sm:backdrop-blur-[6px] md:block lg:bg-gradient-to-r lg:backdrop-blur-none'></div>
         <div className='relative mx-auto max-w-screen-xl px-4 py-28 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:h-screen lg:justify-start lg:px-8'>
           <div className='ltr:sm:text -left max-w-xl text-center sm:mx-auto lg:mx-0 lg:text-left'>
             <h1 className='text-4xl font-extrabold md:text-5xl'>

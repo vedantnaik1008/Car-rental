@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <>
       <Image
-        width={2992}
-        height={3992}
+        width={1023}
+        height={1000}
         alt='hero-image'
         src={HeroImage}
         className='absolute inset-0 h-screen overflow-hidden bg-cover bg-right-bottom bg-no-repeat sm:block lg:hidden'

@@ -1,19 +1,20 @@
 import { useState, useEffect } from 'react';
 
 const useScroll = (whiteBackground: boolean) => {
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    if (whiteBackground) return;
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-    const scrollHandler = () => {
-      window.pageYOffset > 0 ? setIsScrolled(true) : setIsScrolled(false);
-    };
-    window.addEventListener('scroll', scrollHandler);
-    return () => window.removeEventListener('scroll', scrollHandler);
-  }, [whiteBackground]);
+  // useEffect(() => {
+  //   if (whiteBackground) return;
 
-  return isScrolled;
+  //   const scrollHandler = () => {
+  //     window.pageYOffset > 0 ? setIsScrolled(true) : setIsScrolled(false);
+  //   };
+  //   window.addEventListener('scroll', scrollHandler);
+  //   return () => window.removeEventListener('scroll', scrollHandler);
+  // }, [whiteBackground]);
+
+  // return isScrolled;
 };
 
 export default useScroll;

@@ -12,6 +12,10 @@
   background: white;
 }
 
+.show{
+  background: white;
+}
+
 .slick-dots li button::before {
   font-family: 'slick';
   font-size: 6px;

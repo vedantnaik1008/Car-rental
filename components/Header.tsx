@@ -3,7 +3,7 @@
 import React from 'react';
 import Nav from '@/components/Nav';
 import useScroll from '../hooks/useScroll';
-import Hamburger from './hamburger';
+import Hamburger from './MobileNav';
 
 interface HeaderProps {
   whiteBackground: boolean;

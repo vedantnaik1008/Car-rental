@@ -12,7 +12,7 @@ interface HeaderProps {
   whiteBackground: boolean;
 }
 
-const Hamburger = ({ whiteBackground }: HeaderProps) => {
+const MobileNav = ({ whiteBackground }: HeaderProps) => {
   const [open, isOpen] = useState(false);
   const isScrolled = useScroll(whiteBackground);
 
@@ -21,7 +21,7 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
       <div className={`right-0 top-0 z-50 w-full lg:hidden`}>
         <div className='flex items-center justify-between'>
           <Logo textColor='text-sky-950' spanColor='text-sky-700' />
-          <div onClick={() => isOpen((prev) => !prev)} className='cursor-pointer'>
+          <div onClick={() => isOpen(true)} className='cursor-pointer'>
             <FaBarsStaggered size='25px' />
           </div>
           <div
@@ -107,4 +107,4 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
   );
 };
 
-export default Hamburger;
+export default MobileNav;

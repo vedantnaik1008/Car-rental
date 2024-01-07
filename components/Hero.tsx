@@ -5,17 +5,17 @@ import HeroImage from '../public/assets/hero-car.webp';
 const Hero = () => {
   return (
     <>
-      <Image
-        width={1023}
-        height={1000}
-        alt='hero-image'
-        src={HeroImage}
-        className='absolute inset-0 h-screen overflow-hidden bg-cover bg-right-bottom bg-no-repeat sm:block lg:hidden'
-        priority
-        placeholder='blur'
-        sizes='100vw'
-      />
       <section id='hero' className='relative bg-cover bg-right-bottom bg-no-repeat lg:bg-hero'>
+        <Image
+          width={1023}
+          height={1000}
+          alt='hero-image'
+          src={HeroImage}
+          className='absolute inset-0 h-screen overflow-hidden bg-cover bg-right-bottom bg-no-repeat sm:block lg:hidden'
+          priority
+          placeholder='blur'
+          sizes='100vw'
+        />
         <div className='absolute inset-0 h-screen from-white to-transparent sm:bg-gradient-to-br sm:backdrop-blur-[6px] lg:bg-gradient-to-r lg:backdrop-blur-none'></div>
         <div className='relative mx-auto max-w-screen-xl px-4 py-28 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:h-screen lg:justify-start lg:px-8'>
           <div className='ltr:sm:text -left max-w-xl text-center sm:mx-auto lg:mx-0 lg:text-left'>

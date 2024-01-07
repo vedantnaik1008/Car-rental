@@ -14,7 +14,7 @@ const Header = ({ whiteBackground }: HeaderProps) => {
 
   return (
     <header
-      className={`fixed  z-50 w-full py-4 drop-shadow-md sm:px-[10px] md:px-[20px] ${
+      className={`fixed z-50 w-full py-4 drop-shadow-md sm:px-[10px] md:px-[20px] ${
         isScrolled ? 'bg-white' : ''
       } ${whiteBackground ? 'bg-white' : ''}`}>
       <div className='mx-auto flex max-w-7xl items-center justify-center'>

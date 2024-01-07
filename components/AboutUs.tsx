@@ -1,10 +1,8 @@
 import React from 'react';
-import Header from './Header';
 
 const AboutUs = () => {
   return (
     <>
-      <Header whiteBackground={true} />
       <section className='flex flex-col items-center justify-center bg-sky-50 p-8'>
         <h1 className='mb-8 text-4xl font-bold text-sky-900'>About Us</h1>
 

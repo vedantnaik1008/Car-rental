@@ -27,8 +27,8 @@ const MobileNav = ({ whiteBackground }: HeaderProps) => {
           <div
             className={
               open
-                ? 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-0 rounded-l-md bg-white px-5 py-10 shadow-2xl transition-all duration-300 ease-in-out'
-                : 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-[200%] rounded-l-md bg-white px-5 py-10  shadow-2xl transition-all duration-300 ease-in-out'
+                ? 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-0 rounded-l-md bg-white px-5 py-10 shadow-2xl transition-all duration-300 ease-in-out sm:block lg:hidden'
+                : 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-[200%] rounded-l-md bg-white px-5 py-10  shadow-2xl transition-all duration-300 ease-in-out sm:block lg:hidden'
             }>
             <div onClick={() => isOpen(false)} className='absolute left-5 top-5 cursor-pointer'>
               <IoClose size='25px' />

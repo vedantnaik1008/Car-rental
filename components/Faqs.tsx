@@ -1,13 +1,11 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { queries } from '@/data/queries';
-import Header from './Header';
 import { IoIosArrowDown } from 'react-icons/io';
 
 const Faqs: React.FC = () => {
   return (
     <>
-      <Header whiteBackground={true} />
       <section className='flex flex-col justify-center py-28 md:py-36 lg:py-36'>
         <div className='mb-10 text-center'>
           <h6 className='text-xl font-semibold tracking-wider  text-sky-500'>FAQs</h6>

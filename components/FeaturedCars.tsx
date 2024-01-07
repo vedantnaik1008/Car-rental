@@ -19,7 +19,7 @@ const FeaturedCars = () => {
             <Slider {...FeaturedCarSettings}>
               {cars
                 .map((res: Cars) => (
-                  <div key={res.id} className=' w-[50%] rounded-[30px] px-8 py-5 outline-none'>
+                  <div key={res.id} className=' w-[50%] rounded-[30px] space-x-8 py-5 outline-none'>
                     <Image
                       src={res.image}
                       alt='items-image'
@@ -51,8 +51,8 @@ const FeaturedCars = () => {
                         {res.features.mileage}
                       </p>
                       <p className='flex items-center gap-x-2 text-[14px]'>
-                        <PiSteeringWheelBold size='20px' color='gray' />
-                        <span className='md:truncate'>{res.features.gear}</span>
+                        <PiSteeringWheelBold size='20px' color='gray' className="shrink-0"/>
+                        <span className='truncate'>{res.features.gear}</span>
                       </p>
                     </div>
                     <hr className='my-5 border border-slate-200' />

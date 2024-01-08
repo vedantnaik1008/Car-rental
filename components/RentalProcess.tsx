@@ -10,7 +10,9 @@ const RentalProcess = () => {
           <h3 className='pb-5 font-bold uppercase tracking-wide text-sky-500'>
             make it happen in 3 steps
           </h3>
-          <h2 className='text-5xl font-bold tracking-wide text-sky-950/90'>How it Works</h2>
+          <h2 className='sm:text-4xl md:text-5xl font-bold tracking-wide text-sky-950/90'>
+            How it Works
+          </h2>
         </div>
         <div className='container mx-auto flex flex-wrap px-5 pb-16 pt-20'>
           <div className='flex w-full flex-wrap'>

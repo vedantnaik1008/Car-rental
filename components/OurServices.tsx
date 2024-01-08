@@ -14,7 +14,7 @@ const OurServices = () => {
             Our Services
           </h2>
         </div>
-        <div className='mt-14 grid grid-cols-1 place-items-center gap-10 *:flex *:flex-grow *:flex-col *:justify-between *:rounded-md *:border *:border-sky-900/10 *:bg-white *:p-10 *:shadow-lg *:shadow-gray-200 *:focus:outline-none *:focus-visible:ring *:sm:w-4/5 md:grid-cols-2 *:md:w-auto lg:grid-cols-3'>
+        <div className='mt-14 grid grid-cols-1 place-items-center gap-10 *:flex *:flex-grow *:flex-col *:justify-between *:rounded-md *:border *:border-sky-900/10 *:bg-white *:p-10 *:shadow-lg *:shadow-gray-200 *:focus:outline-none *:focus-visible:ring md:grid-cols-2 *:md:w-auto lg:grid-cols-3'>
           <section id='rent-a-bike' className=''>
             <div>
               <div className='w-fit rounded-full bg-sky-950/90 p-2 text-white shadow-lg shadow-sky-900/20 md:p-3'>

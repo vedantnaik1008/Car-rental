@@ -4,31 +4,29 @@ import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 import Logo from './logo';
-import useScroll from '../hooks/useScroll';
 import { FaBarsStaggered, IoClose, IoIosArrowDown } from '@/lib/ReactIcons';
 import { Menu } from '@headlessui/react';
 
 interface HeaderProps {
-  whiteBackground: boolean;
+  dynamicStyles: string;
 }
 
-const Hamburger = ({ whiteBackground }: HeaderProps) => {
+const MobileNav = ({ dynamicStyles }: HeaderProps) => {
   const [open, isOpen] = useState(false);
-  const isScrolled = useScroll(whiteBackground);
 
   return (
-    <div className={`w-full ${isScrolled ? 'bg-white' : ''} ${whiteBackground ? 'bg-white' : ''}}`}>
+    <div id="navbar" className={`w-full ${dynamicStyles}`}>
       <div className={`right-0 top-0 z-50 w-full lg:hidden`}>
         <div className='flex items-center justify-between'>
           <Logo textColor='text-sky-950' spanColor='text-sky-700' />
-          <div onClick={() => isOpen((prev) => !prev)} className='cursor-pointer'>
+          <div onClick={() => isOpen(true)} className='cursor-pointer'>
             <FaBarsStaggered size='25px' />
           </div>
           <div
             className={
               open
-                ? 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-0 rounded-l-md bg-white px-5 py-10 shadow-2xl transition-all duration-300 ease-in-out'
-                : 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-[200%] rounded-l-md bg-white px-5 py-10  shadow-2xl transition-all duration-300 ease-in-out'
+                ? 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-0 rounded-l-md bg-white px-5 py-10 shadow-2xl transition-all duration-300 ease-in-out sm:block lg:hidden'
+                : 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-[200%] rounded-l-md bg-white px-5 py-10  shadow-2xl transition-all duration-300 ease-in-out sm:block lg:hidden'
             }>
             <div onClick={() => isOpen(false)} className='absolute left-5 top-5 cursor-pointer'>
               <IoClose size='25px' />
@@ -107,4 +105,4 @@ const Hamburger = ({ whiteBackground }: HeaderProps) => {
   );
 };
 
-export default Hamburger;
+export default MobileNav;

@@ -1,7 +1,4 @@
-
-
 import React, { useState } from 'react';
-import Header from '@/components/Header';
 
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
@@ -22,7 +19,6 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <Header whiteBackground={true} />
       <section className='body-font relative bg-sky-50/70 text-gray-600'>
         <div className='container mx-auto flex flex-wrap px-20 py-48 sm:flex-nowrap'>
           <div className='relative flex items-end justify-start overflow-hidden rounded-lg bg-gray-300 p-10 sm:mr-10 md:w-1/2'>

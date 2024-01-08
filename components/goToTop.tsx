@@ -1,29 +1,8 @@
 'use client';
-import { useEffect, useState } from 'react';
+import useScrollTop from "@/hooks/useScrollTop";
 
 export default function GoToTop() {
-  const [showTopButton, setShowTopButton] = useState(false);
-
-  const goToTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  };
-
-  const onScrollHandler = () => {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      setShowTopButton(true);
-    } else {
-      setShowTopButton(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', onScrollHandler);
-
-    return () => {
-      window.removeEventListener('scroll', onScrollHandler);
-    };
-  }, []);
+  const { showTopButton, goToTop } = useScrollTop();
 
   return (
     showTopButton && (

@@ -13,13 +13,15 @@ const FeaturedCars = () => {
         <div className='mx-auto w-[90%]'>
           <div className='mb-5 text-center'>
             <h3 className=' py-5 font-bold uppercase tracking-wide text-sky-500'>What we offer</h3>
-            <h2 className='text-5xl font-bold tracking-wide text-sky-950/90'>Featured Cars</h2>
+            <h2 className='sm:text-4xl md:text-5xl font-bold tracking-wide text-sky-950/90'>
+              Featured Cars
+            </h2>
           </div>
           <div className='mx-auto w-[90%]'>
             <Slider {...FeaturedCarSettings}>
               {cars
                 .map((res: Cars) => (
-                  <div key={res.id} className=' w-[50%] rounded-[30px] px-8 py-5 outline-none'>
+                  <div key={res.id} className='w-[50%] space-x-8 rounded-[30px] py-5 outline-none'>
                     <Image
                       src={res.image}
                       alt='items-image'
@@ -51,8 +53,8 @@ const FeaturedCars = () => {
                         {res.features.mileage}
                       </p>
                       <p className='flex items-center gap-x-2 text-[14px]'>
-                        <PiSteeringWheelBold size='20px' color='gray' />
-                        <span className='md:truncate'>{res.features.gear}</span>
+                        <PiSteeringWheelBold size='20px' color='gray' className='shrink-0' />
+                        <span className='truncate'>{res.features.gear}</span>
                       </p>
                     </div>
                     <hr className='my-5 border border-slate-200' />

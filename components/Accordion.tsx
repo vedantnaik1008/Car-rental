@@ -3,7 +3,7 @@ import { Disclosure } from '@headlessui/react';
 import { queries } from '@/data/queries';
 import { IoIosArrowDown } from 'react-icons/io';
 
-const Faqs: React.FC = () => {
+const Accordion: React.FC = () => {
   return (
     <>
       <section className='flex flex-col justify-center py-28 md:py-36 lg:py-36'>
@@ -46,4 +46,4 @@ const Faqs: React.FC = () => {
   );
 };
 
-export default Faqs;
+export default Accordion;

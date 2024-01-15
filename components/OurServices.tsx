@@ -31,7 +31,7 @@ const OurServices = () => {
             <div>
               <Link
                 href={'/'}
-                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-300 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50 '>
+                className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-300 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
                 Call to Inquire
               </Link>
             </div>
@@ -53,7 +53,18 @@ const OurServices = () => {
               <Link
                 href={'/'}
                 className='mt-6 block w-max rounded-md border border-gray-300 bg-white px-4 py-2 text-center text-base font-medium tracking-tight text-black transition duration-300 ease-out hover:scale-105 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-300 active:bg-gray-50'>
-                Browse Cars <span className='font-medium'>↗</span>
+                Browse Cars
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 20 20'
+                  fill='currentColor'
+                  className='ml-1 inline h-5 w-5'>
+                  <path
+                    fillRule='evenodd'
+                    d='M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z'
+                    clipRule='evenodd'
+                  />
+                </svg>
               </Link>
             </div>
           </section>

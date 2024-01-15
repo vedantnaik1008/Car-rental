@@ -1,9 +1,12 @@
+'use client';
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
-const Contact: React.FC = () => {
+const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
@@ -17,19 +20,53 @@ const Contact: React.FC = () => {
     setMessage(event.target.value);
   };
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!name || !email || !message) {
+      alert('Please fill in name, email and message fields');
+      return;
+    }
+
+    if (isSubmitting) {
+      return;
+    }
+    const emailParams = {
+      to_email: 'owner email',
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    emailjs
+      .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailParams, 'YOUR_PUBLIC_KEY')
+      .then(() => {
+        alert('Email sent successfully!');
+        setIsSubmitting(false);
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error: any) => {
+        console.error('Error sending email:', error);
+        alert('Error sending email. Please try again later.');
+        setIsSubmitting(false);
+      });
+    console.log({ name: name, email: email, 'message,': message });
+  };
+
   return (
     <>
-      <section className='body-font relative bg-sky-50/70 text-gray-600 pt-10 lg:pt-0'>
-        <div className='w-[90%] mx-auto grid md:grid-cols-1 lg:grid-cols-2 gap-20 sm:py-20 lg:py-48'>
-          <div className='relative sm:h-[40vh] lg:h-full rounded-lg bg-gray-300 '>
+      <section className='body-font relative bg-sky-50/70 pt-10 text-gray-600 lg:pt-0'>
+        <div className='mx-auto grid w-[90%] gap-20 sm:py-20 md:grid-cols-1 lg:grid-cols-2 lg:py-48'>
+          <div className='relative rounded-lg bg-gray-300 sm:h-[40vh] lg:h-full '>
             <iframe
               width='100%'
               height='100%'
-              className='grayscale  border-none opacity-40 contrast-125'
+              className='border-none  opacity-40 contrast-125 grayscale'
               title='map'
               src='https://maps.google.com/maps?width=100%&height=600&hl=en&q=Vasco%2C%20Mormugao%2C%20Goa&ie=UTF8&t=&z=14&iwloc=B&output=embed'
             />
-            <div className='absolute left-0 bottom-0 w-full flex flex-wrap rounded bg-white py-6 shadow-md'>
+            <div className='absolute bottom-0 left-0 flex w-full flex-wrap rounded bg-white py-6 shadow-md'>
               <div className='px-6 lg:w-1/2'>
                 <h2 className='title-font text-xs font-semibold tracking-widest text-gray-900'>
                   ADDRESS
@@ -48,7 +85,7 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className='md:mt-8 flex w-full flex-col'>
+          <form onSubmit={handleSubmit} className='flex w-full flex-col md:mt-8'>
             <h2 className='title-font mb-1 text-2xl font-bold text-gray-900'>Contact Us</h2>
             <p className='mb-5 leading-relaxed text-gray-600'>
               {/* Post-ironic portland shabby chic echo park, banjo fashion axe */}
@@ -60,7 +97,7 @@ const Contact: React.FC = () => {
               <input
                 type='text'
                 id='name'
-                name='name'
+                name='from_name'
                 value={name}
                 onChange={handleNameChange}
                 className='w-full rounded border border-gray-300 bg-white px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-blue-500 focus:ring-2 focus:ring-blue-200'
@@ -73,7 +110,7 @@ const Contact: React.FC = () => {
               <input
                 type='email'
                 id='email'
-                name='email'
+                name='from_email'
                 value={email}
                 onChange={handleEmailChange}
                 className='w-full rounded border border-gray-300 bg-white px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-blue-500 focus:ring-2 focus:ring-blue-200'
@@ -90,13 +127,16 @@ const Contact: React.FC = () => {
                 onChange={handleMessageChange}
                 className='h-32 w-full resize-none rounded border border-gray-300 bg-white px-3 py-1 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-blue-500 focus:ring-2 focus:ring-blue-200'></textarea>
             </div>
-            <button className='rounded border-0 bg-blue-500 px-6 py-2 text-lg text-white hover:bg-blue-600 focus:outline-none'>
-              Submit
+            <button
+              disabled={isSubmitting}
+              type='submit'
+              className='rounded border-0 bg-blue-500 px-6 py-2 text-lg text-white hover:bg-blue-600 focus:outline-none'>
+              {isSubmitting ? 'Submitting...' : 'Submit'}
             </button>
             <p className='mt-3 text-xs text-gray-500'>
               {/* Chicharrones blog helvetica normcore iceland tousled brook viral artisan. */}
             </p>
-          </div>
+          </form>
         </div>
       </section>
     </>

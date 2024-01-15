@@ -7,7 +7,7 @@ import { Menu } from '@headlessui/react';
 
 const Nav = () => {
   return (
-    <nav className='sm:hidden lg:block lg:w-full'>
+    <nav className='hidden lg:block lg:w-full'>
       <div className='items-center justify-between min-[320px]:hidden md:flex'>
         <Logo textColor='text-sky-950' spanColor='text-sky-700' />
         <ul className='text-base font-medium md:flex md:items-center md:justify-center md:gap-8'>

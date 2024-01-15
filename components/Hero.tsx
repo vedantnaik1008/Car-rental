@@ -38,7 +38,7 @@ const Hero = () => {
 
               <Link
                 href='/'
-                className='block w-full rounded bg-white px-10 py-3 text-sm font-medium text-black  transition  duration-300 ease-in-out hover:scale-95 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-gray-200 active:bg-gray-100 active:text-black sm:border-[1px] sm:border-black md:w-auto md:border-none lg:text-base'>
+                className='block w-full rounded bg-white px-10 py-3 text-sm font-medium text-black  transition  duration-300 ease-in-out hover:scale-95 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-gray-200 active:bg-gray-100 active:text-black sm:border-[1px] sm:border-gray-300 md:w-auto lg:text-base'>
                 Contact Us
               </Link>
             </div>

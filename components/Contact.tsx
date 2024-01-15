@@ -19,17 +19,17 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <section className='body-font relative bg-sky-50/70 text-gray-600'>
-        <div className='container mx-auto flex flex-wrap px-20 py-48 sm:flex-nowrap'>
-          <div className='relative flex items-end justify-start overflow-hidden rounded-lg bg-gray-300 p-10 sm:mr-10 md:w-1/2'>
+      <section className='body-font relative bg-sky-50/70 text-gray-600 pt-10 lg:pt-0'>
+        <div className='w-[90%] mx-auto grid md:grid-cols-1 lg:grid-cols-2 gap-20 sm:py-20 lg:py-48'>
+          <div className='relative sm:h-[40vh] lg:h-full rounded-lg bg-gray-300 '>
             <iframe
               width='100%'
               height='100%'
-              className='grayscale absolute inset-0 overflow-hidden border-none opacity-40 contrast-125'
+              className='grayscale  border-none opacity-40 contrast-125'
               title='map'
               src='https://maps.google.com/maps?width=100%&height=600&hl=en&q=Vasco%2C%20Mormugao%2C%20Goa&ie=UTF8&t=&z=14&iwloc=B&output=embed'
             />
-            <div className='relative flex flex-wrap rounded bg-white py-6 shadow-md'>
+            <div className='absolute left-0 bottom-0 w-full flex flex-wrap rounded bg-white py-6 shadow-md'>
               <div className='px-6 lg:w-1/2'>
                 <h2 className='title-font text-xs font-semibold tracking-widest text-gray-900'>
                   ADDRESS
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className='mt-8 flex w-full flex-col md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3'>
+          <div className='md:mt-8 flex w-full flex-col'>
             <h2 className='title-font mb-1 text-2xl font-bold text-gray-900'>Contact Us</h2>
             <p className='mb-5 leading-relaxed text-gray-600'>
               {/* Post-ironic portland shabby chic echo park, banjo fashion axe */}
@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
                 className='h-32 w-full resize-none rounded border border-gray-300 bg-white px-3 py-1 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-blue-500 focus:ring-2 focus:ring-blue-200'></textarea>
             </div>
             <button className='rounded border-0 bg-blue-500 px-6 py-2 text-lg text-white hover:bg-blue-600 focus:outline-none'>
-              Button
+              Submit
             </button>
             <p className='mt-3 text-xs text-gray-500'>
               {/* Chicharrones blog helvetica normcore iceland tousled brook viral artisan. */}

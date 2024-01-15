@@ -32,7 +32,7 @@ const Hero = () => {
             <div className='mx-auto mt-8 flex w-max flex-col justify-center gap-5 text-center md:w-auto md:flex-row lg:justify-start'>
               <Link
                 href={'/browse-cars'}
-                className='active:bg-black-900/90 inline-block w-full whitespace-nowrap rounded bg-black/95 px-10 py-3 text-sm font-medium text-white transition duration-300 ease-in-out hover:scale-95 hover:bg-black/90 focus:outline-none focus-visible:ring focus-visible:ring-black/70 md:w-auto lg:text-base'>
+                className='inline-block w-full whitespace-nowrap rounded bg-black/95 px-10 py-3 text-sm font-medium text-white transition duration-300 ease-in-out hover:scale-95 hover:bg-black/90 focus:outline-none focus-visible:ring focus-visible:ring-black/70 active:bg-black/90 md:w-auto lg:text-base'>
                 Browse Cars
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -49,7 +49,7 @@ const Hero = () => {
 
               <Link
                 href='/'
-                className='inline-block w-full rounded border-[1px] border-gray-300 bg-white px-10 py-3 text-sm  font-medium  text-black transition duration-300 ease-in-out hover:scale-95 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-gray-200 active:bg-gray-100 active:text-black md:w-auto lg:text-base'>
+                className='inline-block w-full rounded border-[1px] border-gray-300 bg-white px-10 py-3 text-sm  font-medium  text-black transition duration-300 ease-in-out hover:scale-95  hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-200 active:bg-gray-50 active:text-black md:w-auto lg:text-base'>
                 Contact Us
               </Link>
             </div>

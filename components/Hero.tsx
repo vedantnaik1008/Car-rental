@@ -38,7 +38,7 @@ const Hero = () => {
 
               <Link
                 href='/'
-                className='block w-full rounded bg-white px-10 py-3 text-sm font-medium text-black  transition  duration-300 ease-in-out hover:scale-95 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-gray-200 active:bg-gray-100 active:text-black md:w-auto lg:text-base sm:border-black sm:border-[1px] md:border-none'>
+                className='block w-full rounded bg-white px-10 py-3 text-sm font-medium text-black  transition  duration-300 ease-in-out hover:scale-95 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-gray-200 active:bg-gray-100 active:text-black sm:border-[1px] sm:border-black md:w-auto md:border-none lg:text-base'>
                 Contact Us
               </Link>
             </div>
@@ -48,7 +48,7 @@ const Hero = () => {
         <div className='scroll-arrow'>
           <svg width='30px' height='20px'>
             <path
-              stroke='#ffffff'
+              className='stroke-black md:stroke-white'
               fill='none'
               strokeWidth='2px'
               d='M2.000,5.000 L15.000,18.000 L28.000,5.000 '></path>

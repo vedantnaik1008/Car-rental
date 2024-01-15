@@ -10,6 +10,7 @@ import 'slick-carousel/slick/slick.css';
 const popins = Poppins({
   subsets: ['latin'],
   weight: '400',
+  fallback: ['system-ui', 'arial'],
   variable: '--font-poppins',
   style: 'normal',
 });

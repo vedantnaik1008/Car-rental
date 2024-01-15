@@ -3,10 +3,10 @@ import React from 'react';
 const AboutUs = () => {
   return (
     <>
-      <section className='flex flex-col items-center justify-center bg-sky-50 p-8'>
+      <section className='flex flex-col items-center justify-center bg-sky-50 py-28 md:py-36 lg:py-36 w-[90%] mx-auto'>
         <h1 className='mb-8 text-4xl font-bold text-sky-900'>About Us</h1>
 
-        <div className='grid grid-cols-2 gap-8'>
+        <div className='grid gap-8 sm:grid-cols-1 md:grid-cols-2'>
           <div className='rounded-lg bg-sky-100 p-8 shadow-lg'>
             <h2 className='mb-4 text-3xl font-bold text-sky-900'>Our Mission</h2>
             <p className='text-sky-700'>

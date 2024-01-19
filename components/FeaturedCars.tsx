@@ -1,12 +1,14 @@
 'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { Cars, cars } from '../data/API';
+import { Cars } from '../data/API';
 import { FeaturedCarSettings, Slider } from '@/lib/SliderSetting';
 import { BsFuelPumpFill, GoPeople, ImMeter, PiSteeringWheelBold } from '@/lib/ReactIcons';
+import useFetch from '@/hooks/useFetch';
 
 const FeaturedCars = () => {
+  const { data }= useFetch()
+
   return (
     <>
       <section id='about' className='flex items-center justify-between py-20'>
@@ -19,8 +21,7 @@ const FeaturedCars = () => {
           </div>
           <div className='mx-auto w-[90%]'>
             <Slider {...FeaturedCarSettings}>
-              {cars
-                .map((res: Cars) => (
+              {data.map((res: Cars) => (
                   <div key={res.id} className='w-[50%] space-x-8 rounded-[30px] py-5 outline-none'>
                     <Image
                       src={res.image}
@@ -72,7 +73,7 @@ const FeaturedCars = () => {
                     </div>
                   </div>
                 ))
-                .splice(9)}
+                .slice(0, 6)}
             </Slider>
           </div>
           <div className='mt-10 flex justify-center'>

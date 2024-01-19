@@ -14,6 +14,8 @@ const Cards = ({res}: Props) => {
         <div key={res.id} className='rounded-[30px]'>
           <Image
             src={res.image}
+            priority={res.id === 1 ? true : false}
+            fetchPriority={res.id === 1 ? 'high': 'low'}
             alt='items-image'
             sizes='200'
             width={200}

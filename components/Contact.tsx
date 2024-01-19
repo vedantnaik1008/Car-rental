@@ -58,7 +58,7 @@ const Contact = () => {
     <>
       <section className='body-font relative bg-sky-50/70 pt-10 text-gray-600 lg:pt-0'>
         <div className='mx-auto grid w-[90%] gap-20 sm:py-20 md:grid-cols-1 lg:grid-cols-2 lg:py-48'>
-          <div className='relative rounded-lg bg-gray-300 sm:h-[40vh] lg:h-full '>
+          <div className='relative rounded-lg bg-gray-300 sm:h-[50vh] lg:h-full '>
             <iframe
               width='100%'
               height='100%'

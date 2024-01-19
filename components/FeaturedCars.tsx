@@ -72,7 +72,7 @@ const FeaturedCars = () => {
                     </div>
                   </div>
                 ))
-                .splice(9)}
+                .splice(4, 6)}
             </Slider>
           </div>
           <div className='mt-10 flex justify-center'>

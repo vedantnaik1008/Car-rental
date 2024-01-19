@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import './globals.css';
@@ -15,12 +15,6 @@ const popins = Poppins({
   style: 'normal',
 });
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-inter',
-  style: 'normal',
-});
 
 export const metadata: Metadata = {
   title: 'OwnWheelz.com',
@@ -31,7 +25,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={`${inter.variable} ${popins.variable} bg-accent font-pop_inter`}>
+      <body className={`${popins.className} bg-accent`}>
         <Header />
         {children}
         <GoToTop />

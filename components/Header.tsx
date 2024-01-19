@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useEffect } from 'react';
 import Nav from '@/components/Nav';
 import Hamburger from './MobileNav';

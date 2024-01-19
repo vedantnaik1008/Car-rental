@@ -1,9 +1,4 @@
-'use client'
-import LoadingSpinner from '@/components/Loading';
-import dynamic from 'next/dynamic';
-const Faqs = dynamic(() => import('@/components/Faqs'), {
-  ssr: false, loading: ()=> <LoadingSpinner/>
-});
+import Faqs from '@/components/Faqs'
 
 const Faq = () => {
   return (

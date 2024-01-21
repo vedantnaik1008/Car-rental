@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Cars, cars } from '../data/API';
-import { FeaturedCarSettings, Slider } from '@/lib/SliderSetting';
 import { BsFuelPumpFill, GoPeople, ImMeter, PiSteeringWheelBold } from '@/lib/ReactIcons';
 
 const FeaturedCars = () => {
@@ -17,11 +16,10 @@ const FeaturedCars = () => {
               Featured Cars
             </h2>
           </div>
-          <div className='mx-auto w-[90%]'>
-            <Slider {...FeaturedCarSettings}>
+          <div className='flex flex-wrap gap-10 justify-center items-center'>
               {cars
                 .map((res: Cars) => (
-                  <div key={res.id} className='w-[50%] space-x-8 rounded-[30px] py-5 outline-none'>
+                  <div key={res.id} className='w-[300px] rounded-[30px] py-5 outline-none'>
                     <Image
                       src={res.image}
                       alt='items-image'
@@ -72,8 +70,7 @@ const FeaturedCars = () => {
                     </div>
                   </div>
                 ))
-                .splice(9)}
-            </Slider>
+                .splice(4, 4)}
           </div>
           <div className='mt-10 flex justify-center'>
             {/* <Link

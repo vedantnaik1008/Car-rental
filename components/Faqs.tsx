@@ -4,6 +4,7 @@ import { queries } from '@/data/queries';
 import { IoIosArrowDown } from 'react-icons/io';
 
 const Faqs = () => {
+
   return (
     <>
       <section className='flex flex-col justify-center py-28 md:py-36 lg:py-36'>

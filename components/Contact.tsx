@@ -38,7 +38,12 @@ const Contact = () => {
     };
 
     emailjs
-      .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailParams, 'YOUR_PUBLIC_KEY')
+      .send(
+        `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
+        `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
+        emailParams,
+        `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
+      )
       .then(() => {
         alert('Email sent successfully!');
         setIsSubmitting(false);

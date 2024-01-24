@@ -9,7 +9,6 @@ import 'slick-carousel/slick/slick.css';
 
 const popins = Poppins({
   subsets: ['latin'],
-  display: 'swap',
   weight: '400',
   fallback: ['system-ui', 'arial'],
   variable: '--font-poppins',
@@ -18,7 +17,6 @@ const popins = Poppins({
 
 const inter = Inter({
   subsets: ['latin'],
-  display: 'swap',
   weight: '400',
   variable: '--font-inter',
   style: 'normal',

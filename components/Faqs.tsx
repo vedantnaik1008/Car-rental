@@ -1,9 +1,10 @@
-import React from 'react';
+'use client'
 import { Disclosure } from '@headlessui/react';
 import { queries } from '@/data/queries';
 import { IoIosArrowDown } from 'react-icons/io';
 
-const Accordion: React.FC = () => {
+const Faqs = () => {
+
   return (
     <>
       <section className='flex flex-col justify-center py-28 md:py-36 lg:py-36'>
@@ -46,4 +47,4 @@ const Accordion: React.FC = () => {
   );
 };
 
-export default Accordion;
+export default Faqs;

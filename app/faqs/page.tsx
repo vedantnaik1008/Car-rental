@@ -1,11 +1,4 @@
-'use client';
-
-import LoadingSpinner from '@/components/Loading';
-import dynamic from 'next/dynamic';
-const Faqs = dynamic(() => import('@/components/Accordion'), {
-  ssr: false,
-  loading: () => <LoadingSpinner />,
-});
+import Faqs from '@/components/Faqs'
 
 const Faq = () => {
   return (

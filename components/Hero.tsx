@@ -30,9 +30,26 @@ const Hero = () => {
             </p>
 
             <div className='mx-auto mt-8 flex w-max flex-col justify-center gap-5 text-center md:w-auto md:flex-row lg:justify-start'>
-              <Link
+              {/* <Link
                 href={'/browse-cars'}
                 className='inline-block w-full whitespace-nowrap rounded bg-black/95 px-10 py-3 text-sm font-medium text-white transition duration-300 ease-in-out hover:scale-95 hover:bg-black/90 focus:outline-none focus-visible:ring focus-visible:ring-black/70 active:bg-black/90 md:w-auto lg:text-base'>
+                Browse Cars
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 20 20'
+                  fill='currentColor'
+                  className='ml-1 inline h-5 w-5'>
+                  <path
+                    fillRule='evenodd'
+                    d='M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z'
+                    clipRule='evenodd'
+                  />
+                </svg>
+              </Link> */}
+
+              <Link
+                href={'/browse-cars'}
+                className='animate-shimmer inline-block w-full  items-center justify-center whitespace-nowrap rounded bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-10 py-3 text-sm font-medium text-slate-200 transition duration-300 ease-in-out hover:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400  focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 md:w-auto lg:text-base'>
                 Browse Cars
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

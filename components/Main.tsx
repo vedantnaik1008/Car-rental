@@ -3,6 +3,7 @@ import RentalProcess from './RentalProcess';
 import OurServices from './OurServices';
 import FeaturedCars from '@/components/FeaturedCars'
 import Testimonials from '@/components/Testimonials'
+import Faqs from './Faqs';
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
         <RentalProcess />
         <FeaturedCars />
         <Testimonials />
+        <Faqs />
       </main>
     </>
   );

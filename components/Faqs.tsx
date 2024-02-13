@@ -1,13 +1,18 @@
-'use client'
+'use client';
 import { Disclosure } from '@headlessui/react';
 import { queries } from '@/data/queries';
 import { IoIosArrowDown } from 'react-icons/io';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Faqs = () => {
+  const pathname = usePathname();
+  const dynamicFaqsStyles = pathname === '/faqs' ? 'py-28 md:py-36 lg:py-36' : 'py-20';
+  const dynamicFaqsSlice = pathname === '/' ? queries.slice(0, -1) : queries;
 
   return (
     <>
-      <section className='flex flex-col justify-center py-28 md:py-36 lg:py-36'>
+      <section className={`flex flex-col justify-center ${dynamicFaqsStyles}`}>
         <div className='mb-10 text-center'>
           <h6 className='text-xl font-semibold tracking-wider  text-sky-500'>FAQs</h6>
           <h4 className='mt-4 font-bold tracking-wider text-sky-950/90 max-[360px]:text-xl min-[361px]:text-2xl md:text-4xl'>
@@ -21,7 +26,7 @@ const Faqs = () => {
 
         <div className='mx-auto w-full max-w-xl p-2 lg:max-w-2xl'>
           <div className='space-y-5'>
-            {queries.map((query, index) => (
+            {dynamicFaqsSlice.map((query, index) => (
               <Disclosure key={index} as='div' className='pt-2'>
                 {({ open }) => (
                   <>
@@ -42,6 +47,13 @@ const Faqs = () => {
             ))}
           </div>
         </div>
+        {pathname === '/' ? (<div className='mt-10 flex justify-center'>
+          <Link
+            href={'/faqs'}
+            className='inline-block rounded-xl  border border-gray-300 bg-white px-6 py-3 text-xl font-medium text-black transition duration-200 ease-out hover:scale-105  hover:bg-gray-50 hover:font-semibold hover:text-black/80 focus:outline-none focus-visible:ring focus-visible:ring-gray-500  lg:px-8 lg:py-4 lg:text-2xl'>
+            View More
+          </Link>
+        </div>) : null}
       </section>
     </>
   );

@@ -28,10 +28,6 @@ export const metadata: Metadata = {
     'OwnWheelz is a premier rental service based in Goa, offering a comprehensive range of transportation solutions. Our services include short-term and long-term car rentals, bike rentals, and reliable cab services. We pride ourselves on our extensive and well-maintained fleet, competitive pricing, and commitment to customer satisfaction. With a user-friendly online booking system, customers can effortlessly browse and select the vehicle that best suits their needs. OwnWheelz is committed to providing a seamless rental experience, offering car, bike, and cab or taxi services tailored to your needs.',
 }
 
-export const metadataTwo: Metadata = {
-  title: 'google-site-verification',
-  description: 'eLhc6fopZ6oe9K0yGwXT2xGoNDF45n7yL7Zv8BBCijE',
-}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

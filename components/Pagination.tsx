@@ -22,11 +22,9 @@ const Pagination = ({ data }: Props) => {
   };
   return (
     <>
-        <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 '>
+        <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {currentItems.map((res) => (
-            <div key={res.id} className='rounded-[30px]'>
-              <Cards res={res} />
-            </div>
+              <Cards res={res} key={res.id}/>
           ))}
         </div>
         <div className='mt-20 flex justify-center gap-4'>

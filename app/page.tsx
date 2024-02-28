@@ -3,6 +3,7 @@ import RentalProcess from '@/components/RentalProcess';
 import OurServices from '@/components//OurServices';
 import FeaturedCars from '@/components/FeaturedCars';
 import Testimonials from '@/components/Testimonials';
+import Faqs from '@/components/Faqs';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <RentalProcess />
         <FeaturedCars />
         <Testimonials />
+        <Faqs />
       </main>
     </>
   );

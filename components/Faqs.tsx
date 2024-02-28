@@ -13,15 +13,11 @@ const Faqs = () => {
 	return (
 		<>
 			<section className={`flex flex-col justify-center ${dynamicFaqsStyles}`}>
-				<div className='mb-10 text-center'>
+				<div className='mb-8 text-center'>
 					<h6 className='text-xl font-semibold tracking-wider  text-sky-500'>FAQs</h6>
 					<h4 className='mt-4 font-bold tracking-wider text-sky-950/90 max-[360px]:text-xl min-[361px]:text-2xl md:text-4xl'>
-						Frequently Asked
-						<span className=''> Questions</span>
-					</h4>
-					<p className='mt-5 text-base font-semibold tracking-wide text-gray-400 md:text-lg'>
 						Have questions? We&apos;ll help you.
-					</p>
+					</h4>
 				</div>
 
 				<div className='mx-auto w-full max-w-xl p-2 lg:max-w-2xl'>

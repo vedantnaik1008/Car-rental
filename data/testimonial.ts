@@ -23,4 +23,22 @@ export const testimonials = [
     comment:
       'OwnWheelz provided a great car rental service. The service was excellent and the car was spacious and dependable.',
   },
+  {
+    id: 4,
+    user: 'Amit Singh',
+    comment:
+      'I was very impressed by OwnWheelz. The service was fast and efficient, and the car was clean and well-maintained.',
+  },
+  {
+    id: 5,
+    user: 'Shreya Naik',
+    comment:
+      'I had a pleasant and easy experience with OwnWheelz. The confirmation process was straightforward and the customer service was polite and responsive.',
+  },
+  {
+    id: 6,
+    user: 'Bob Johnson',
+    comment:
+      'OwnWheelz provided a great car rental service. The service was excellent and the car was spacious and dependable.',
+  },
 ];

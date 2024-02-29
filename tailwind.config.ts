@@ -8,9 +8,23 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
-			animation: { shimmer: 'shimmer 2s linear infinite' },
+			animation: {
+				shimmer: 'shimmer 2s linear infinite',
+				infinateScroll: 'infiniteScroll 10s infinite linear',
+				['infinite-slider']: 'infiniteSlider 20s linear infinite',
+			},
 			keyframes: {
 				shimmer: { from: { backgroundPosition: '0 0' }, to: { backgroundPosition: '-200% 0' } },
+				infiniteScroll: {
+					from: { transform: 'translateX(0)' },
+					to: { transform: 'translateX(-100%)' },
+				},
+				infiniteSlider: {
+					'0%': { transform: 'translateX(0)' },
+					'100%': {
+						transform: 'translateX(calc(-250px * 5))',
+					},
+				},
 			},
 			screens: {
 				sm: '320px',

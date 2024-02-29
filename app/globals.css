@@ -61,6 +61,10 @@
 	animation: fadeBounce 5s infinite;
 }
 
+.img:hover{
+	animation-play-state: paused;
+}
+
 @keyframes fadeBounce {
 	0%,
 	20%,

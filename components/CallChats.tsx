@@ -14,7 +14,7 @@ const CallChats = () => {
 				aria-label='Call to contact OwnWheelz.com'
 				href={'tel:+91'}
 				className=' bg-white flex gap-2 rounded-lg border-[2.5px] border-black/80  px-4 py-2 font-medium text-black transition-shadow duration-200 hover:bg-gray-100 hover:shadow-lg hover:shadow-sky-900/10 focus:outline-none focus-visible:ring focus-visible:ring-black/70'>
-				<IoMdCall color='' size='21px' />
+				<IoMdCall size='21px' />
 				<span>Talk to Us</span>
 			</a>
 

@@ -13,12 +13,9 @@
 	}
 }
 
-.path-show {
-	background: white;
-}
-
-.show {
-	background: white;
+.show{
+	backdrop-filter: blur(10px);
+	border-bottom: 2px solid black;
 }
 
 .slick-dots li button::before {

@@ -36,7 +36,7 @@ const testimonials = [
 export function Testimonials() {
 	return (
 		<section id='faqs' className='relative flex items-center justify-between py-20'>
-			<div className='mx-auto sm:w-4/5 md:w-[90%]'>
+			<div className='mx-auto w-[90%]'>
 				<div className='mb-7 text-center'>
 					<h2 className=' py-5 font-bold uppercase tracking-wide text-sky-500'>Testimonials</h2>
 					<h3 className='text-4xl font-bold tracking-wide text-sky-950 opacity-90'>

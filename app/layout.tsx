@@ -5,8 +5,6 @@ import Header from '@/components/Header';
 import './globals.css';
 import GoToTop from '@/components/goToTop';
 import Fixed_Nav_Buttons from '@/components/FixedNavButtons';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
 
 const popins = Poppins({
 	subsets: ['latin'],

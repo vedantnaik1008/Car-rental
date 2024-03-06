@@ -14,8 +14,7 @@
 }
 
 .show{
-	backdrop-filter: blur(10px);
-	border-bottom: 2px solid black;
+	backdrop-filter: blur(400px);
 }
 
 #hero .scroll-arrow {

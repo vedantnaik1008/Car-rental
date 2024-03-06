@@ -1,6 +1,6 @@
 :root{
-	--slate-800: black;
-	--slate-900: #002002;
+	--slate-800: rgb(2, 6, 23, 1);
+	--slate-900: rgb(2, 6, 23, 1);
 }
 
 @tailwind base;

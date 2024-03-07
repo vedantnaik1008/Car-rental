@@ -4,7 +4,7 @@ import { IoLogoWhatsapp, IoMdCall } from '@/lib/ReactIcons';
 export default function Fixed_Nav_Buttons() {
 	return (
 		// <div className='fixed bottom-0 z-50 flex w-full items-center justify-center gap-2 backdrop-blur backdrop-filter *:rounded-lg *:border-4 md:hidden'>
-		<div className='fixed bottom-0 z-50 flex gap-2 max-md:w-full max-md:items-center max-md:justify-center max-md:backdrop-blur max-md:backdrop-filter md:right-16 md:top-[10px] md:h-fit lg:hidden'>
+		<div className='fixed bottom-0 z-30 flex gap-2 max-md:w-full max-md:items-center max-md:justify-center max-md:backdrop-blur max-md:backdrop-filter md:right-20 md:top-[30px] md:h-fit lg:hidden'>
 			{/* <a
 				aria-label='Call to contact OwnWheelz.com'
 				href={'tel:+91'}

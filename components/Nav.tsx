@@ -79,9 +79,7 @@ const Nav = () => {
 						</Link>
 					</li> */}
 				</ul>
-				<div className='flex items-center justify-center gap-4'>
-					<CallChats />
-				</div>
+				<CallChats className='flex items-center justify-center gap-4' />
 			</div>
 		</nav>
 	);

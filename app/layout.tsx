@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.variable} ${popins.variable} bg-accent font-pop_inter`}>
+			<body className={`${inter.variable} ${popins.variable} bg-accent font-pop_inter relative`}>
 				<Header />
 				{children}
 				<GoToTop />

@@ -1,21 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter, Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import './globals.css';
 import GoToTop from '@/components/goToTop';
 import Fixed_Nav_Buttons from '@/components/FixedNavButtons';
 
-const popins = Poppins({
-	subsets: ['latin'],
-	weight: '400',
-	fallback: ['system-ui', 'arial'],
-	variable: '--font-poppins',
-	style: 'normal',
-});
-
 const inter = Inter({
 	subsets: ['latin'],
+	display: 'swap',
 	weight: '400',
 	variable: '--font-inter',
 	style: 'normal',
@@ -30,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.variable} ${popins.variable} bg-accent font-pop_inter relative`}>
+			<body className={` ${inter.variable} bg-accent relative font-pop_inter`}>
 				<Header />
 				{children}
 				<GoToTop />

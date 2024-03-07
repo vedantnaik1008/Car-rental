@@ -1,3 +1,8 @@
+:root{
+	--slate-800: rgb(2, 6, 23, 1);
+	--slate-900: rgb(2, 6, 23, 1);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,49 +13,8 @@
 	}
 }
 
-.path-show {
-	background: white;
-}
-
-.show {
-	background: white;
-}
-
-.slick-dots li button::before {
-	font-family: 'slick';
-	font-size: 6px;
-	line-height: 20px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	content: '•';
-	text-align: center;
-	opacity: 0.25;
-	color: rgb(148, 163, 184) !important;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-.slick-next,
-.slick-prev {
-	font-size: 0;
-	line-height: 0;
-	position: absolute;
-	top: 50%;
-	display: block;
-	width: 30px !important;
-	height: 30px !important;
-	padding: 0;
-	transform: translateY(-50%);
-	cursor: pointer;
-	border: none;
-}
-.slick-next {
-	right: -50px !important;
-}
-.slick-prev {
-	left: -50px !important;
+.show{
+	backdrop-filter: blur(400px);
 }
 
 #hero .scroll-arrow {
@@ -74,28 +38,5 @@
 	40% {
 		opacity: 1;
 		transform: translateY(0);
-	}
-}
-
-@media screen and (max-width: 770px) {
-	.slick-next,
-	.slick-prev {
-		font-size: 0;
-		line-height: 0;
-		position: absolute;
-		top: 50%;
-		display: block;
-		width: 30px !important;
-		height: 30px !important;
-		padding: 0;
-		transform: translateY(-50%);
-		cursor: pointer;
-		border: none;
-	}
-	.slick-next {
-		right: -18px !important;
-	}
-	.slick-prev {
-		left: -18px !important;
 	}
 }

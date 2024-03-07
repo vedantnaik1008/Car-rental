@@ -5,16 +5,12 @@ import Logo from './logo';
 import { FaBarsStaggered, IoClose, IoIosArrowDown } from '@/lib/ReactIcons';
 import { Menu } from '@headlessui/react';
 
-interface HeaderProps {
-  dynamicStyles: string;
-}
-
-const MobileNav = ({ dynamicStyles }: HeaderProps) => {
+const MobileNav = () => {
   const [open, isOpen] = useState(false);
 
   return (
-    <div id="navbar" className={`w-full ${dynamicStyles}`}>
-      <div className={`right-0 top-0 z-50 w-full lg:hidden`}>
+    <div id="navbar" className='w-full'>
+      <div className={`w-full lg:hidden`}>
         <div className='flex items-center justify-between'>
           <Logo textColor='text-sky-950' spanColor='text-sky-700' />
           <div onClick={() => isOpen(true)} className='cursor-pointer'>
@@ -23,8 +19,8 @@ const MobileNav = ({ dynamicStyles }: HeaderProps) => {
           <div
             className={
               open
-                ? 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-0 rounded-l-md bg-white px-5 py-10 shadow-2xl transition-all duration-300 ease-in-out sm:block lg:hidden'
-                : 'absolute right-0 top-0 z-50 h-screen w-[80%] translate-x-[200%] rounded-l-md bg-white px-5 py-10  shadow-2xl transition-all duration-300 ease-in-out sm:block lg:hidden'
+                ? 'absolute -right-5 top-0 z-[50] h-screen w-[80%] translate-x-0 rounded-l-md bg-white px-5 py-10 shadow-2xl transition-all duration-300 ease-in-out sm:block lg:hidden'
+                : 'absolute -right-5 top-0 z-[50] h-screen w-[80%] translate-x-[200%] rounded-l-md bg-white px-5 py-10  shadow-2xl transition-all duration-300 ease-in-out sm:block lg:hidden'
             }>
             <div onClick={() => isOpen(false)} className='absolute left-5 top-5 cursor-pointer'>
               <IoClose size='25px' />

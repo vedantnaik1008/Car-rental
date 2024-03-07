@@ -1,38 +1,52 @@
 'use client';
-import { ImQuotesLeft } from '@/lib/ReactIcons';
-import { TestimonialProps, testimonials } from '../data/testimonial';
-import { Slider, TestimonialSettings } from '@/lib/SliderSetting';
+import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 
-const Testimonials = () => {
-  return (
-    <>
-      <section id='faqs' className='relative flex items-center justify-between py-20'>
-        <div className='mx-auto sm:w-4/5 md:w-[90%]'>
-          <div className='mb-7 text-center'>
-            <h2 className=' py-5 font-bold uppercase tracking-wide text-sky-500'>Testimonials</h2>
-            <h3 className='text-4xl font-bold tracking-wide text-sky-950 opacity-90'>
-              What people say about us?
-            </h3>
-          </div>
-          <div className='mx-auto mb-12 max-[319px]:max-w-40 md:w-[80%] lg:w-[70%]'>
-            <ImQuotesLeft color='rgb(14, 165, 233)' size='30px' className='mx-auto mb-8' />
-            <Slider {...TestimonialSettings}>
-              {testimonials.map((res: TestimonialProps) => (
-                <div key={res.id} className='w-full rounded-[30px] pb-5'>
-                  <p className='w-full text-pretty pb-5 text-center text-lg text-gray-500 md:text-xl'>
-                    {res.comment}
-                  </p>
-                  <p className='text-center font-semibold tracking-wide text-sky-950/90'>
-                    {res.user}
-                  </p>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
+const testimonials = [
+	{
+		quote:
+			'It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.',
+		name: 'Charles Dickens',
+		title: 'A Tale of Two Cities',
+	},
+	{
+		quote:
+			"To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+		name: 'William Shakespeare',
+		title: 'Hamlet',
+	},
+	{
+		quote: 'All that we see or seem is but a dream within a dream.',
+		name: 'Edgar Allan Poe',
+		title: 'A Dream Within a Dream',
+	},
+	{
+		quote:
+			'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',
+		name: 'Jane Austen',
+		title: 'Pride and Prejudice',
+	},
+	{
+		quote:
+			'Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.',
+		name: 'Herman Melville',
+		title: 'Moby-Dick',
+	},
+];
 
-export default Testimonials;
+export function Testimonials() {
+	return (
+		<section id='faqs' className='relative flex items-center justify-between py-20'>
+			<div className='mx-auto w-[90%]'>
+				<div className='mb-7 text-center'>
+					<h2 className=' py-5 font-bold uppercase tracking-wide text-sky-500'>Testimonials</h2>
+					<h3 className='text-4xl font-bold tracking-wide text-sky-950 opacity-90'>
+						What people say about us?
+					</h3>
+				</div>
+				<div className='dark:bg-grid-white/[0.05] relative flex flex-col items-center justify-center overflow-hidden rounded-md  antialiased dark:bg-black'>
+					<InfiniteMovingCards items={testimonials} direction='right' speed='slow' />
+				</div>
+			</div>
+		</section>
+	);
+}

@@ -25,9 +25,7 @@ const [open, setOpen] = useState(false);
 	return (
 		<header
 			id='navbar'
-			className={`fixed z-20 mx-auto mt-5 w-[95%]  py-3.5 drop-shadow-2xl sm:px-[10px] ${
-				open ? 'rounded-xl bg-white' : 'rounded-xl bg-white'
-			} left-[2.5%]`}>
+			className={`fixed z-20 mx-auto mt-5 w-[95%] py-3.5 drop-shadow-2xl rounded-xl sm:px-[10px] left-[2.5%]`}>
 			<div className='mx-auto flex max-w-7xl items-center justify-center'>
 				<Nav />
 			</div>

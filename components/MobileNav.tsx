@@ -32,8 +32,8 @@ const MobileNav = ({ open, setOpen }: Props) => {
 				<div
 					className={
 						open
-							? 'absolute  left-0 top-20 z-[50] w-full translate-y-0 skew-y-0 rotate-0 rounded-xl bg-white px-5 py-10 shadow-2xl transition-all duration-700 ease-in-out lg:hidden'
-							: 'absolute  left-0 top-20 z-[50] w-full translate-y-[300%] skew-y-12 rotate-90 rounded-xl bg-white px-5 py-10  shadow-2xl transition-all duration-700 ease-in-out lg:hidden'
+							? 'absolute  left-0 top-20 z-[50] w-full translate-x-0 rounded-xl bg-white px-5 py-10 shadow-2xl transition-all duration-700 ease-in-out lg:hidden'
+							: 'absolute  left-0 top-20 z-[50] w-full translate-x-[300%] rounded-xl bg-white px-5 py-10  shadow-2xl transition-all duration-700 ease-in-out lg:hidden'
 					}>
 					<ul className='flex h-full flex-col items-center justify-start gap-y-8 py-10'>
 						<li className=''>

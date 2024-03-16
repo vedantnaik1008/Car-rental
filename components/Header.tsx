@@ -25,13 +25,15 @@ const [open, setOpen] = useState(false);
 	return (
 		<header
 			id='navbar'
-			className={`fixed z-20 mx-auto mt-5 w-[95%]  py-3.5 drop-shadow-2xl sm:px-[10px] ${
+			className='relative z-20'>
+			<div className={`mx-auto mt-5 w-[95%]  py-3.5 drop-shadow-2xl sm:px-[10px] ${
 				open ? 'rounded-xl bg-white' : 'rounded-xl bg-white'
-			} left-[2.5%]`}>
-			<div className='mx-auto flex max-w-7xl items-center justify-center'>
-				<Nav />
+			} `}>
+				<div className='mx-auto flex max-w-7xl items-center justify-center'>
+					<Nav />
+				</div>
+				<Hamburger open={open} setOpen={setOpen} />
 			</div>
-			<Hamburger open={open} setOpen={setOpen} />
 		</header>
 	);
 };

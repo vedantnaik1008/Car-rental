@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Hero = () => {
 	return (
 		<>
-			<section id='hero' className='sm600:bg-hero relative bg-cover bg-right-bottom bg-no-repeat'>
+			<section id='hero' className='sm600:bg-hero relative bg-cover bg-right-bottom bg-no-repeat mt-10 w-[95%] mx-auto rounded-xl h-[80vh]'>
 				{/* <Image
           width={1023}
           height={1000}
@@ -16,8 +16,8 @@ const Hero = () => {
           placeholder='blur'
           sizes='100vw'
         /> */}
-				<div className='sm600:bg-gradient-to-br sm600:backdrop-blur-[6px] sm600:block absolute inset-0 hidden from-white to-transparent lg:bg-gradient-to-r lg:backdrop-blur-none'></div>
-				<div className='relative mx-auto max-w-screen-xl px-4 py-28 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:h-screen lg:justify-start lg:px-8'>
+				<div className='sm600:bg-gradient-to-br sm600:backdrop-blur-[6px] sm600:block absolute inset-0 hidden from-white to-transparent lg:bg-gradient-to-r rounded-xl lg:backdrop-blur-none'></div>
+				<div className='relative mx-auto max-w-screen-xl px-4 py-28 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:justify-start lg:px-8'>
 					<div className='ltr:sm:text -left max-w-xl text-center sm:mx-auto lg:mx-0 lg:text-left'>
 						<h1 className='text-4xl font-extrabold md:text-5xl'>
 							Book Your Ride

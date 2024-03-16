@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={` ${inter.variable} bg-accent relative font-pop_inter`}>
+			<body className={` ${inter.variable} bg-accent relative font-pop_inter overflow-x-hidden`}>
 				<Header />
 				{children}
 				<GoToTop />

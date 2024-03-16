@@ -9,7 +9,6 @@ const Nav = () => {
 	return (
 		<nav className='hidden lg:block lg:w-full'>
 			<div className='items-center justify-between min-[320px]:hidden md:flex'>
-				<Logo textColor='text-sky-950' spanColor='text-sky-700' />
 				<ul className='text-base font-medium md:flex md:items-center md:justify-center md:gap-8'>
 					<li className=''>
 						<Link
@@ -79,6 +78,7 @@ const Nav = () => {
 						</Link>
 					</li> */}
 				</ul>
+				<Logo textColor='text-sky-950' spanColor='text-sky-700' />
 				<CallChats className='flex items-center justify-center gap-4' />
 			</div>
 		</nav>

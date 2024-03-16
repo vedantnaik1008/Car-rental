@@ -32,12 +32,13 @@ const MobileNav = ({ open, setOpen }: Props) => {
 				<div
 					className={
 						open
-							? 'absolute  left-0 top-20 z-[50] w-full translate-y-0 skew-y-0 rotate-0 rounded-xl bg-white px-5 py-10 shadow-2xl transition-all duration-700 ease-in-out lg:hidden'
-							: 'absolute  left-0 top-20 z-[50] w-full translate-y-[300%] skew-y-12 rotate-90 rounded-xl bg-white px-5 py-10  shadow-2xl transition-all duration-700 ease-in-out lg:hidden'
+							? 'absolute  left-0 top-20 z-[50] w-full translate-x-0 rounded-xl bg-white px-5 py-10 shadow-2xl transition-all duration-700 ease-in-out lg:hidden'
+							: 'absolute  left-0 top-20 z-[50] w-full translate-x-[300%]  rounded-xl bg-white px-5 py-10  shadow-2xl transition-all duration-700 ease-in-out lg:hidden'
 					}>
 					<ul className='flex h-full flex-col items-center justify-start gap-y-8 py-10'>
 						<li className=''>
 							<Link
+								onClick={() => setOpen(false)}
 								href='/'
 								className='cursor-pointer text-black hover:font-semibold hover:text-gray-600'>
 								Home
@@ -60,18 +61,25 @@ const MobileNav = ({ open, setOpen }: Props) => {
 												<div className='flex flex-col items-start gap-3'>
 													<Menu.Item>
 														<Link
+															onClick={() => setOpen(false)}
 															href='/browse-cars'
 															className={`hover:font-semibold hover:text-gray-600`}>
 															Rent a Car
 														</Link>
 													</Menu.Item>
 													<Menu.Item>
-														<Link href='/' className={`hover:font-semibold hover:text-gray-600`}>
+														<Link
+															onClick={() => setOpen(false)}
+															href='/'
+															className={`hover:font-semibold hover:text-gray-600`}>
 															Rent a Bike
 														</Link>
 													</Menu.Item>
 													<Menu.Item>
-														<Link href='/' className={`hover:font-semibold hover:text-gray-600`}>
+														<Link
+															onClick={() => setOpen(false)}
+															href='/'
+															className={`hover:font-semibold hover:text-gray-600`}>
 															Book a Cab
 														</Link>
 													</Menu.Item>
@@ -84,6 +92,7 @@ const MobileNav = ({ open, setOpen }: Props) => {
 						</li>
 						<li className=''>
 							<Link
+								onClick={() => setOpen(false)}
 								href='/about-us'
 								className='cursor-pointer text-black hover:font-semibold hover:text-gray-600'>
 								About us
@@ -91,13 +100,17 @@ const MobileNav = ({ open, setOpen }: Props) => {
 						</li>
 						<li className=''>
 							<Link
+								onClick={() => setOpen(false)}
 								href='/faqs'
 								className='cursor-pointer text-black hover:font-semibold hover:text-gray-600'>
 								FAQs
 							</Link>
 						</li>
 						<li className=''>
-							<Link href='/contact' className='cursor-pointer text-black hover:text-gray-600'>
+							<Link
+								onClick={() => setOpen(false)}
+								href='/contact'
+								className='cursor-pointer text-black hover:text-gray-600'>
 								Contact
 							</Link>
 						</li>

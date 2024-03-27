@@ -70,7 +70,7 @@ const MobileNav = ({ open, setOpen }: Props) => {
 													<Menu.Item>
 														<Link
 															onClick={() => setOpen(false)}
-															href='/'
+															href='/browse-bike'
 															className={`hover:font-semibold hover:text-gray-600`}>
 															Rent a Bike
 														</Link>
@@ -115,7 +115,7 @@ const MobileNav = ({ open, setOpen }: Props) => {
 							</Link>
 						</li> */}
 						<li>
-							<CallChats className='flex flex-col gap-y-8'/>
+							<CallChats className='flex flex-col gap-y-8' />
 						</li>
 					</ul>
 				</div>

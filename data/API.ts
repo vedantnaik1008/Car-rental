@@ -19,7 +19,7 @@ export type Cars = {
     seats: string;
     fuel: string;
     mileage: string;
-    gear: string;
+    gear?: string;
   };
 };
 
@@ -323,3 +323,76 @@ export const brandName : BrandName[] = [
   {id: 7, img: Hyundia},
   {id: 8, img: Renault}
 ]
+
+export const bikes = [
+	{
+		id: 1,
+		brandName: 'Royal Enfield',
+		model: 'Shotgun 650',
+		year: 2022,
+		price: '₹ 2000',
+		image: '/assets/royalSG650.webp',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '22 kmpl',
+      gear: 'Manual'
+		},
+	},
+	{
+		id: 2,
+		brandName: 'Royal Enfield',
+		model: 'Shotgun 650',
+		year: 2022,
+		price: '₹ 2000',
+		image: '/assets/royalSG650.webp',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '22 kmpl',
+      gear: 'Manual'
+		},
+	},
+	{
+		id: 3,
+		brandName: 'Royal Enfield',
+		model: 'Shotgun 650',
+		year: 2022,
+		price: '₹ 2000',
+		image: '/assets/royalSG650.webp',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '22 kmpl',
+      gear: 'Manual'
+		},
+	},
+	{
+		id: 4,
+		brandName: 'Royal Enfield',
+		model: 'Shotgun 650',
+		year: 2022,
+		price: '₹ 2000',
+		image: '/assets/royalSG650.webp',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '22 kmpl',
+      gear: 'Manual'
+		},
+	},
+	{
+		id: 5,
+		brandName: 'Royal Enfield',
+		model: 'Shotgun 650',
+		year: 2022,
+		price: '₹ 2000',
+		image: '/assets/royalSG650.webp',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '22 kmpl',
+      gear: 'Manual'
+		},
+	},
+];

@@ -114,6 +114,9 @@ const MobileNav = ({ open, setOpen }: Props) => {
 								Contact
 							</Link>
 						</li> */}
+						<li>
+							<CallChats className='flex flex-col gap-y-8'/>
+						</li>
 					</ul>
 				</div>
 			</div>

@@ -41,6 +41,7 @@ const config: Config = {
 			backgroundImage: {
 				hero: "url('/assets/whitecar.jpg')",
 				smHero: "url('/assets/one.jpeg')",
+				about: "url('/assets/edo.jpg')",
 			},
 		},
 

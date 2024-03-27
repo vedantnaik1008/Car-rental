@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import './globals.css';
 import GoToTop from '@/components/goToTop';
-import Fixed_Nav_Buttons from '@/components/FixedNavButtons';
+// import Fixed_Nav_Buttons from '@/components/FixedNavButtons';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				{children}
 				<GoToTop />
 				<Footer />
-				<Fixed_Nav_Buttons />
+				{/* <Fixed_Nav_Buttons /> */}
 			</body>
 		</html>
 	);

@@ -19,7 +19,7 @@ const Hero = () => {
           sizes='100vw'
         /> */}
 				<div className=' absolute inset-0 block rounded-xl bg-black opacity-40 lg:hidden'></div>
-				<div className='relative mx-auto py-10 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:justify-start'>
+				<div className='relative mx-auto py-10 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:justify-start lg:pl-8'>
 					<div className='ltr:sm:text max-w-xl text-center sm:mx-auto lg:relative lg:-top-[120px] lg:mx-0 lg:text-left'>
 						<h1 className='text-4xl font-extrabold text-white md:text-5xl'>
 							Book Your Ride

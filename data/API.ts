@@ -1,3 +1,13 @@
+import Toyota from '@/public/assets/to.png' 
+import Tata from '@/public/assets/6578158.webp' 
+import Renault from '@/public/assets/renaultone.png' 
+import Kia from '@/public/assets/OIP (1).jpeg' 
+import Hyundia from '@/public/assets/hyundai-logo-15.gif' 
+import Honda from '@/public/assets/honda.png' 
+import Maruti from '@/public/assets/marutiSuzukii.png' 
+import Mahindra from '@/public/assets/Mahindra-Symbol-1.png' 
+import { StaticImageData } from 'next/image'
+
 export type Cars = {
   id: number;
   brandName: string;
@@ -297,3 +307,19 @@ export const cars = [
     },
   },
 ];
+
+export type BrandName = {
+ id: number;
+ img: StaticImageData
+}
+
+export const brandName : BrandName[] = [
+  {id: 1, img:Toyota },
+  {id: 2, img:Tata },
+  {id: 3, img:Kia },
+  {id: 4, img: Honda },
+  {id: 5, img: Mahindra },
+  {id: 6, img: Maruti },
+  {id: 7, img: Hyundia},
+  {id: 8, img: Renault}
+]

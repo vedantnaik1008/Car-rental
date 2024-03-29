@@ -1,26 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
-// import HeroImage from '../public/assets/hero-car.webp';
 const Hero = () => {
 	return (
 		<>
 			<section
 				id='hero'
 				className='relative mx-auto mt-10 w-[95%] rounded-xl bg-hero bg-cover bg-center bg-no-repeat'>
-				{/* <Image
-          width={1023}
-          height={1000}
-          alt='hero-image'
-          src={HeroImage}
-          className='absolute inset-0 h-screen overflow-hidden bg-cover bg-right-bottom bg-no-repeat sm:block lg:hidden'
-          priority
-          placeholder='blur'
-          sizes='100vw'
-        /> */}
-				<div className=' absolute inset-0 block rounded-xl bg-black opacity-40 lg:hidden'></div>
+				<div className=' absolute inset-0 block rounded-xl bg-black opacity-40 '></div>
 				<div className='relative mx-auto py-10 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:justify-start lg:pl-8'>
-					<div className='ltr:sm:text max-w-xl text-center sm:mx-auto lg:relative lg:-top-[120px] lg:mx-0 lg:text-left'>
+					<div className='ltr:sm:text max-w-xl text-center sm:mx-auto lg:mx-0 lg:text-left'>
 						<h1 className='text-4xl font-extrabold text-white md:text-5xl'>
 							Book Your Ride
 							<strong className=' font-extrabold text-sky-500'> Now!</strong>

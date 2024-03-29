@@ -5,7 +5,7 @@ const Hero = () => {
 		<>
 			<section
 				id='hero'
-				className='relative mx-auto mt-10 w-[95%] rounded-xl bg-hero bg-cover bg-center bg-no-repeat'>
+				className='relative mx-auto mt-5 w-[95%] rounded-xl bg-hero bg-cover bg-center bg-no-repeat'>
 				<div className=' absolute inset-0 block rounded-xl bg-black opacity-40 '></div>
 				<div className='relative mx-auto py-10 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:justify-start lg:pl-8'>
 					<div className='ltr:sm:text max-w-xl text-center sm:mx-auto lg:mx-0 lg:text-left'>

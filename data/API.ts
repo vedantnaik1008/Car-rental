@@ -7,7 +7,7 @@ import Honda from '@/public/assets/honda.png'
 import Maruti from '@/public/assets/marutiSuzukii.png' 
 import Mahindra from '@/public/assets/Mahindra-Symbol-1.png' 
 import { StaticImageData } from 'next/image'
-import RoyalEnfiled from '@/public/assets/BikesLogo/royalEnfield.png';
+import RoyalEnfiled from '@/public/assets/BikesLogo/royalEnfield-removebg-preview.png';
 import Yamaha from '@/public/assets/BikesLogo/yamaha.png';
 import Aprilia from '@/public/assets/BikesLogo/aprilia.png';
 import Vespa from '@/public/assets/BikesLogo/Vespa.png'; 

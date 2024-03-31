@@ -1,6 +1,7 @@
 'use client';
 import { cn } from '@/utils/cn';
 import React, { useEffect, useState } from 'react';
+import RatingStars from '../RatingStars';
 
 export const InfiniteMovingCards = ({
 	items,
@@ -12,6 +13,7 @@ export const InfiniteMovingCards = ({
 	items: {
 		comment: string;
 		user: string;
+		stars: number;
 	}[];
 	direction?: 'left' | 'right';
 	speed?: 'fast' | 'normal' | 'slow';
@@ -90,10 +92,11 @@ export const InfiniteMovingCards = ({
 								{item.comment}
 							</span>
 							<div className='relative z-20 mt-6 flex flex-row items-center'>
-								<span className='flex flex-col gap-1'>
+								<span className='flex justify-between w-full'>
 									<span className=' text-sm font-normal leading-[1.6] text-slate-400'>
 										{item.user}
 									</span>
+									<RatingStars rating={item.stars} />
 								</span>
 							</div>
 						</blockquote>

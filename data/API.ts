@@ -384,7 +384,7 @@ export const bikes = [
 	{
 		id: 5,
 		brandName: 'Vespa',
-		model: 'Vespa SXL 125',
+		model: 'SXL 125',
 		year: 2024,
 		price: '₹ 2000',
 		image: '/assets/Bikes/Vespa Vespa SXL 125.jpeg',

@@ -370,7 +370,7 @@ export const bikes = [
 	{
 		id: 4,
 		brandName: 'Aprilia',
-		model: 'Aprilia SR 160',
+		model: 'SR 160',
 		year: 2024,
 		price: '₹ 2000',
 		image: '/assets/Bikes/sr-160-right-side-view-2.webp',

@@ -34,13 +34,13 @@ const Cards = ({res, key}: Props) => {
 							<span className='font-normal text-gray-600'>/day</span>
 						</p>
 						<button
-							className='flex items-center text-[16px] gap-x-2 rounded-xl border border-black px-2 py-1'
+							className='flex items-center gap-x-2 rounded-xl border border-black px-2 py-1 text-[16px]'
 							onClick={() => setOpen(!open)}>
 							Details{' '}
 							<p
 								className={`${
 									open
-										? 'transition-all duration-200 ease-in-out rotate-0'
+										? 'rotate-0 transition-all duration-200 ease-in-out'
 										: '-rotate-90 transition-all duration-200 ease-in-out'
 								}`}>
 								<FaArrowDown />
@@ -52,19 +52,19 @@ const Cards = ({res, key}: Props) => {
 					className={`${
 						open ? 'grid grid-cols-2 items-center gap-x-12 gap-y-4 text-gray-600' : 'hidden'
 					}`}>
-					<p className='flex items-center gap-x-2 text-[14px]'>
+					<p className='flex items-center gap-x-2 text-[14px]' title='seats'>
 						<GoPeople size='20px' color='gray' />
 						{res.features.seats}
 					</p>
-					<p className='flex items-center gap-x-2 pl-[2px] text-[14px]'>
+					<p className='flex items-center gap-x-2 pl-[2px] text-[14px]' title='fuel'>
 						<BsFuelPumpFill size='20px' color='gray' />
 						{res.features.fuel}
 					</p>
-					<p className='flex items-center gap-x-2 text-[14px]'>
+					<p className='flex items-center gap-x-2 text-[14px]' title='mileage'>
 						<ImMeter size='20px' color='gray' />
 						{res.features.mileage}
 					</p>
-					<p className='flex items-center gap-x-2 text-[14px]'>
+					<p className='flex items-center gap-x-2 text-[14px]' title='gear'>
 						<PiSteeringWheelBold size='20px' color='gray' className='shrink-0' />
 						<span className='truncate'>{res.features.gear}</span>
 					</p>

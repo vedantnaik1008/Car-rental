@@ -7,6 +7,10 @@ import Honda from '@/public/assets/honda.png'
 import Maruti from '@/public/assets/marutiSuzukii.png' 
 import Mahindra from '@/public/assets/Mahindra-Symbol-1.png' 
 import { StaticImageData } from 'next/image'
+import RoyalEnfiled from '@/public/assets/BikesLogo/royalEnfield.png';
+import Yamaha from '@/public/assets/BikesLogo/yamaha.png';
+import Aprilia from '@/public/assets/BikesLogo/aprilia.png';
+import Vespa from '@/public/assets/BikesLogo/Vespa.png'; 
 
 export type Cars = {
   id: number;
@@ -323,6 +327,13 @@ export const brandName : BrandName[] = [
   {id: 7, img: Hyundia},
   {id: 8, img: Renault}
 ]
+
+export const brandBikesName: BrandName[] = [
+	{ id: 1, img: RoyalEnfiled },
+	{ id: 2, img: Yamaha },
+	{ id: 3, img: Aprilia },
+	{ id: 4, img: Vespa }
+];
 
 export const bikes = [
 	{

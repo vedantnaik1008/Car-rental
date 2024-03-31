@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import About from '@/public/assets/edo.jpg';
-import { brandName, cars } from '@/data/API';
+import { brandBikesName, brandName, cars } from '@/data/API';
 
 const AboutUs = () => {
 	const uniqueModels = cars
@@ -66,19 +66,37 @@ const AboutUs = () => {
 
 				<div className='my-14'>
 					<h2 className='mb-8  text-center text-4xl font-bold text-sky-900'>
-						What car brands we have
+						Meet Our Wheels: A Fleet of Excellence
 					</h2>
-					<div className='flex flex-wrap items-center justify-center gap-4 '>
-						{brandName.map((brand) => (
-							<Image
-								key={brand.id}
-								src={brand.img}
-								alt={`${brand.img}`}
-								height={100}
-								width={100}
-								className='aspect-square w-[130px] rounded-xl p-2  bg-white bg-cover'
-							/>
-						))}
+					<div className='my-8'>
+						<h3 className='my-2 text-xl font-bold text-sky-900'>Cars we have</h3>
+						<div className='flex flex-wrap items-center gap-4'>
+							{brandName.map((brand) => (
+								<Image
+									key={brand.id}
+									src={brand.img}
+									alt={`${brand.img}`}
+									height={100}
+									width={100}
+									className='aspect-square w-[130px] rounded-xl bg-white  bg-cover p-2'
+								/>
+							))}
+						</div>
+					</div>
+					<div className='my-8'>
+						<h3 className='my-2 text-xl font-bold text-sky-900'>Bikes we have</h3>
+						<div className='flex flex-wrap items-center gap-4'>
+							{brandBikesName.map((brand) => (
+								<Image
+									key={brand.id}
+									src={brand.img}
+									alt={`${brand.img}`}
+									height={100}
+									width={100}
+									className='aspect-square w-[130px] rounded-xl bg-white  bg-cover p-2'
+								/>
+							))}
+						</div>
 					</div>
 				</div>
 			</section>

@@ -34,7 +34,7 @@ const Cards = ({res, key}: Props) => {
 							<span className='font-normal text-gray-600'>/day</span>
 						</p>
 						<button
-							className='flex items-center gap-x-2 rounded-xl border border-black px-2 py-1'
+							className='flex items-center text-[16px] gap-x-2 rounded-xl border border-black px-2 py-1'
 							onClick={() => setOpen(!open)}>
 							Details{' '}
 							<p

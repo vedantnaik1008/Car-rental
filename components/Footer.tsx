@@ -41,19 +41,19 @@ const Footer = () => {
 					<h3 className='mb-3 text-lg font-semibold tracking-wide text-slate-300'>Services</h3>
 					<ul className='flex flex-col gap-y-4 text-base font-light text-slate-400'>
 						<li className='cursor-pointer duration-200 hover:text-sky-300'>
-							<Link href={'/'} className='focus:outline-none focus-visible:ring'>
+							<Link href={'/browse-bike'} className='focus:outline-none focus-visible:ring'>
 								Rent a Bike
 							</Link>
 						</li>
 
 						<li className='cursor-pointer duration-200 hover:text-sky-300'>
-							<Link href={'/'} className='focus:outline-none focus-visible:ring'>
+							<Link href={'/browse-cars'} className='focus:outline-none focus-visible:ring'>
 								Rent a Car
 							</Link>
 						</li>
 
 						<li className='cursor-pointer duration-200 hover:text-sky-300'>
-							<Link href={'/'} className='focus:outline-none focus-visible:ring'>
+							<Link href={'/rent-cab'} className='focus:outline-none focus-visible:ring'>
 								Book a Cab
 							</Link>
 						</li>

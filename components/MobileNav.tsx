@@ -78,7 +78,7 @@ const MobileNav = ({ open, setOpen }: Props) => {
 													<Menu.Item>
 														<Link
 															onClick={() => setOpen(false)}
-															href='/'
+															href='/rent-cab'
 															className={`hover:font-semibold hover:text-gray-600`}>
 															Book a Cab
 														</Link>

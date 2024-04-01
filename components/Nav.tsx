@@ -40,12 +40,16 @@ const Nav = () => {
 													</Link>
 												</Menu.Item>
 												<Menu.Item>
-													<Link href='/browse-bike' className={`hover:font-semibold hover:text-gray-600`}>
+													<Link
+														href='/browse-bike'
+														className={`hover:font-semibold hover:text-gray-600`}>
 														Rent a Bike
 													</Link>
 												</Menu.Item>
 												<Menu.Item>
-													<Link href='/' className={`hover:font-semibold hover:text-gray-600`}>
+													<Link
+														href='/rent-cab'
+														className={`hover:font-semibold hover:text-gray-600`}>
 														Book a Cab
 													</Link>
 												</Menu.Item>

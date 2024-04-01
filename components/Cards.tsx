@@ -1,8 +1,10 @@
+'use client'
 import { Cars } from '@/data/API';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { BsFuelPumpFill, GoPeople, ImMeter, PiSteeringWheelBold } from '@/lib/ReactIcons';
+import { FaArrowDown } from 'react-icons/fa6';
 
 type Props = {
     res: Cars;
@@ -10,6 +12,7 @@ type Props = {
 }
 
 const Cards = ({res, key}: Props) => {
+	const [open, setOpen] = useState(false)
   return (
 		<>
 			<div key={key} className='rounded-[30px] outline-none'>
@@ -25,25 +28,43 @@ const Cards = ({res, key}: Props) => {
 					<p className='mb-2 text-sky-950'>
 						{res.brandName} {res.model}
 					</p>
-					<p className='text-sky-500'>
-						{res.price}
-						<span className='font-normal text-gray-600'>/day</span>
-					</p>
+					<div className='flex items-center gap-x-2'>
+						<p className='text-sky-500'>
+							{res.price}
+							<span className='font-normal text-gray-600'>/day</span>
+						</p>
+						<button
+							className='flex items-center gap-x-2 rounded-xl border border-black px-2 py-1 text-[16px]'
+							onClick={() => setOpen(!open)}>
+							Details{' '}
+							<p
+								className={`${
+									open
+										? 'rotate-0 transition-all duration-200 ease-in-out'
+										: '-rotate-90 transition-all duration-200 ease-in-out'
+								}`}>
+								<FaArrowDown />
+							</p>
+						</button>
+					</div>
 				</div>
-				<div className='grid grid-cols-2 items-center gap-x-12 gap-y-4 text-gray-600'>
-					<p className='flex items-center gap-x-2 text-[14px]'>
+				<div
+					className={`${
+						open ? 'grid grid-cols-2 items-center gap-x-12 gap-y-4 text-gray-600' : 'hidden'
+					}`}>
+					<p className='flex items-center gap-x-2 text-[14px]' title='seats'>
 						<GoPeople size='20px' color='gray' />
 						{res.features.seats}
 					</p>
-					<p className='flex items-center gap-x-2 pl-[2px] text-[14px]'>
+					<p className='flex items-center gap-x-2 pl-[2px] text-[14px]' title='fuel'>
 						<BsFuelPumpFill size='20px' color='gray' />
 						{res.features.fuel}
 					</p>
-					<p className='flex items-center gap-x-2 text-[14px]'>
+					<p className='flex items-center gap-x-2 text-[14px]' title='mileage'>
 						<ImMeter size='20px' color='gray' />
 						{res.features.mileage}
 					</p>
-					<p className='flex items-center gap-x-2 text-[14px]'>
+					<p className='flex items-center gap-x-2 text-[14px]' title='gear'>
 						<PiSteeringWheelBold size='20px' color='gray' className='shrink-0' />
 						<span className='truncate'>{res.features.gear}</span>
 					</p>

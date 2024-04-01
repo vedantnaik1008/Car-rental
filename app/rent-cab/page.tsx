@@ -1,8 +1,8 @@
-import Contact from '@/components/Contact'
+import RentCab from '@/components/RentCab'
 
 const Page = () => {
   return (
-    <Contact />
+    <RentCab />
   )
 }
 

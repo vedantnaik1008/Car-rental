@@ -36,10 +36,12 @@ const config: Config = {
 			},
 			fontFamily: {
 				zen: ['var(--font-zenDots)'],
-				pop_inter: ['var(--font-inter)', 'var(--font-poppins)', 'sans-serif'],
+				pop_inter: ['var(--font-inter)', 'sans-serif'],
 			},
 			backgroundImage: {
-				hero: "url('/assets/hero-car.webp')",
+				hero: "url('/assets/whitecar.jpg')",
+				smHero: "url('/assets/one.jpeg')",
+				about: "url('/assets/edo.jpg')",
 			},
 		},
 

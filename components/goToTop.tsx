@@ -8,9 +8,9 @@ export default function GoToTop() {
 		showTopButton && (
 			<button
 				type='button'
-				className='fixed bottom-12 right-5 z-10 animate-bounce ltr:right-5 rtl:left-5'
+				className='fixed bottom-12 right-5 z-10 ltr:right-5 rtl:left-5'
 				onClick={goToTop}>
-				<div className='hover:bg-secondary dark:bg-primary dark:hover:bg-secondary group flex size-[52px] items-center justify-center rounded-full border border-sky-950/20 bg-sky-950 text-white transition duration-200'>
+				<div className='hover:bg-secondary dark:bg-primary dark:hover:bg-secondary group flex size-[52px] items-center justify-center rounded-md border border-sky-950/20 bg-sky-950 text-white transition duration-200'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'

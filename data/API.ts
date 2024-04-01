@@ -1,3 +1,17 @@
+import Toyota from '@/public/assets/to.png' 
+import Tata from '@/public/assets/6578158.webp' 
+import Renault from '@/public/assets/renaultone.png' 
+import Kia from '@/public/assets/OIP (1).jpeg' 
+import Hyundia from '@/public/assets/hyundai-logo-15.gif' 
+import Honda from '@/public/assets/honda.png' 
+import Maruti from '@/public/assets/marutiSuzukii.png' 
+import Mahindra from '@/public/assets/Mahindra-Symbol-1.png' 
+import { StaticImageData } from 'next/image'
+import RoyalEnfiled from '@/public/assets/BikesLogo/royalEnfield-removebg-preview.png';
+import Yamaha from '@/public/assets/BikesLogo/yamaha.png';
+import Aprilia from '@/public/assets/BikesLogo/aprilia.png';
+import Vespa from '@/public/assets/BikesLogo/Vespa.png'; 
+
 export type Cars = {
   id: number;
   brandName: string;
@@ -9,11 +23,9 @@ export type Cars = {
     seats: string;
     fuel: string;
     mileage: string;
-    gear: string;
+    gear?: string;
   };
 };
-
-
 
 export const cars = [
   {
@@ -296,4 +308,100 @@ export const cars = [
       gear: 'Automatic',
     },
   },
+];
+
+export type BrandName = {
+ id: number;
+ img: StaticImageData
+}
+
+export const brandName : BrandName[] = [
+  {id: 1, img:Toyota },
+  {id: 2, img:Tata },
+  {id: 3, img:Kia },
+  {id: 4, img: Honda },
+  {id: 5, img: Mahindra },
+  {id: 6, img: Maruti },
+  {id: 7, img: Hyundia},
+  {id: 8, img: Renault}
+]
+
+export const brandBikesName: BrandName[] = [
+	{ id: 1, img: RoyalEnfiled },
+	{ id: 2, img: Yamaha },
+	{ id: 3, img: Aprilia },
+	{ id: 4, img: Vespa }
+];
+
+export const bikes = [
+	{
+		id: 1,
+		brandName: 'Royal Enfield',
+		model: 'Shotgun 650',
+		year: 2024,
+		price: '₹ 2000',
+		image: '/assets/Bikes/royalSG650.webp',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '22 kmpl',
+			gear: 'Manual',
+		},
+	},
+	{
+		id: 2,
+		brandName: 'Royal Enfield',
+		model: 'Meteor 350',
+		year: 2023,
+		price: '₹ 2000',
+		image: '/assets/Bikes/royalMeteor350.png',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '41.88 kmpl',
+			gear: 'Manual',
+		},
+	},
+	{
+		id: 3,
+		brandName: 'Yamaha',
+		model: 'AEROX 155',
+		year: 2024,
+		price: '₹ 2000',
+		image: '/assets/Bikes/AEROX_155.png',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '48.63 kmpl',
+			gear: 'Automatic',
+		},
+	},
+	{
+		id: 4,
+		brandName: 'Aprilia',
+		model: 'SR 160',
+		year: 2024,
+		price: '₹ 2000',
+		image: '/assets/Bikes/sr-160-right-side-view-2.webp',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '35 kmpl',
+			gear: 'Automatic',
+		},
+	},
+	{
+		id: 5,
+		brandName: 'Vespa',
+		model: 'SXL 125',
+		year: 2024,
+		price: '₹ 2000',
+		image: '/assets/Bikes/Vespa Vespa SXL 125.jpeg',
+		features: {
+			seats: 'Single',
+			fuel: 'Petrol',
+			mileage: '36 kmpl',
+			gear: 'Automatic',
+		},
+	},
 ];

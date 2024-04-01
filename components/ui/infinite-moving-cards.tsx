@@ -1,6 +1,7 @@
 'use client';
 import { cn } from '@/utils/cn';
 import React, { useEffect, useState } from 'react';
+import RatingStars from '../RatingStars';
 
 export const InfiniteMovingCards = ({
 	items,
@@ -10,9 +11,9 @@ export const InfiniteMovingCards = ({
 	className,
 }: {
 	items: {
-		quote: string;
-		name: string;
-		title: string;
+		comment: string;
+		user: string;
+		stars: number;
 	}[];
 	direction?: 'left' | 'right';
 	speed?: 'fast' | 'normal' | 'slow';
@@ -82,22 +83,20 @@ export const InfiniteMovingCards = ({
 						style={{
 							background: 'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
 						}}
-						key={item.name}>
+						key={item.user}>
 						<blockquote>
 							<div
 								aria-hidden='true'
 								className='user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]'></div>
 							<span className=' relative z-20 text-sm font-normal leading-[1.6] text-slate-300'>
-								{item.quote}
+								{item.comment}
 							</span>
 							<div className='relative z-20 mt-6 flex flex-row items-center'>
-								<span className='flex flex-col gap-1'>
+								<span className='flex justify-between w-full'>
 									<span className=' text-sm font-normal leading-[1.6] text-slate-400'>
-										{item.name}
+										{item.user}
 									</span>
-									<span className=' text-sm font-normal leading-[1.6] text-slate-400'>
-										{item.title}
-									</span>
+									<RatingStars rating={item.stars} />
 								</span>
 							</div>
 						</blockquote>

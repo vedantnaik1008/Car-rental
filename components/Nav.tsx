@@ -9,7 +9,6 @@ const Nav = () => {
 	return (
 		<nav className='hidden lg:block lg:w-full'>
 			<div className='items-center justify-between min-[320px]:hidden md:flex'>
-				<Logo textColor='text-sky-950' spanColor='text-sky-700' />
 				<ul className='text-base font-medium md:flex md:items-center md:justify-center md:gap-8'>
 					<li className=''>
 						<Link
@@ -41,12 +40,16 @@ const Nav = () => {
 													</Link>
 												</Menu.Item>
 												<Menu.Item>
-													<Link href='/' className={`hover:font-semibold hover:text-gray-600`}>
+													<Link
+														href='/browse-bike'
+														className={`hover:font-semibold hover:text-gray-600`}>
 														Rent a Bike
 													</Link>
 												</Menu.Item>
 												<Menu.Item>
-													<Link href='/' className={`hover:font-semibold hover:text-gray-600`}>
+													<Link
+														href='/rent-cab'
+														className={`hover:font-semibold hover:text-gray-600`}>
 														Book a Cab
 													</Link>
 												</Menu.Item>
@@ -71,14 +74,8 @@ const Nav = () => {
 							FAQs
 						</Link>
 					</li>
-					{/* <li className=''>
-						<Link
-							href='/contact'
-							className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring  focus-visible:ring-sky-500'>
-							Contact
-						</Link>
-					</li> */}
 				</ul>
+				<Logo textColor='text-sky-950' spanColor='text-sky-700' />
 				<CallChats className='flex items-center justify-center gap-4' />
 			</div>
 		</nav>

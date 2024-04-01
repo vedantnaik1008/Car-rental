@@ -7,15 +7,15 @@ import Faqs from '@/components/Faqs';
 
 export default function Home() {
   return (
-    <>
-      <main className='bg-accent'>
-        <Hero />
-        <OurServices />
-        <RentalProcess />
-        <FeaturedCars />
-        <Testimonials />
-        <Faqs />
-      </main>
-    </>
-  );
+		<>
+			<main className={`bg-accent`}>
+				<Hero />
+				<OurServices />
+				<RentalProcess />
+				<FeaturedCars />
+				<Testimonials />
+				<Faqs />
+			</main>
+		</>
+	);
 }

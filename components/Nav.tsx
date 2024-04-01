@@ -74,13 +74,6 @@ const Nav = () => {
 							FAQs
 						</Link>
 					</li>
-					{/* <li className=''>
-						<Link
-							href='/contact'
-							className='cursor-pointer text-black hover:font-semibold hover:text-gray-600 focus:outline-none focus-visible:ring  focus-visible:ring-sky-500'>
-							Contact
-						</Link>
-					</li> */}
 				</ul>
 				<Logo textColor='text-sky-950' spanColor='text-sky-700' />
 				<CallChats className='flex items-center justify-center gap-4' />

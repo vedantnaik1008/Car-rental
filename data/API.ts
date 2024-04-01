@@ -27,8 +27,6 @@ export type Cars = {
   };
 };
 
-
-
 export const cars = [
   {
     id: 1,

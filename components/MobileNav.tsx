@@ -106,14 +106,6 @@ const MobileNav = ({ open, setOpen }: Props) => {
 								FAQs
 							</Link>
 						</li>
-						{/* <li className=''>
-							<Link
-								onClick={() => setOpen(false)}
-								href='/contact'
-								className='cursor-pointer text-black hover:text-gray-600'>
-								Contact
-							</Link>
-						</li> */}
 						<li>
 							<CallChats className='flex flex-col gap-y-8' />
 						</li>

@@ -1,10 +1,22 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import HeroImg from '@/public/whitecar.webp';
+
 const Hero = () => {
 	return (
 		<>
 			<section
 				id='hero'
-				className='relative mx-auto mt-5 w-[95%] rounded-xl bg-hero bg-cover bg-center bg-no-repeat'>
+				className='relative mx-auto mt-5 w-[95%] rounded-xl overflow-hidden'>
+				<Image
+					src={HeroImg}
+					alt='items-image'
+					sizes='200'
+					priority={true}
+					width={100}
+					height={100}
+					className='rounded-xl w-full h-full object-cover  bg-no-repeat absolute top-0 left-0 '
+				/>
 				<div className=' absolute inset-0 block rounded-xl bg-black opacity-40 '></div>
 				<div className='relative mx-auto py-10 sm:flex sm:items-center sm:justify-center sm:px-6 min-[500px]:py-40 lg:justify-start lg:pl-8'>
 					<div className='ltr:sm:text max-w-xl text-center sm:mx-auto lg:mx-0 lg:text-left'>
@@ -13,7 +25,7 @@ const Hero = () => {
 							<strong className=' font-extrabold text-sky-500'> Now!</strong>
 						</h1>
 
-						<p className='mx-auto mt-6 max-w-lg text-white text-xl/relaxed'>
+						<p className='mx-auto mt-6 max-w-lg text-xl/relaxed text-white'>
 							Experience the joy of driving in Goa with our wide range of rental cars. Compact or
 							spacious, find the perfect ride for your journey.
 						</p>

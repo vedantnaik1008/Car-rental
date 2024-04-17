@@ -18,6 +18,7 @@ const AboutUs = () => {
 					src={About}
 					alt='items-image'
 					sizes='200'
+					priority={true}
 					width={100}
 					height={100}
 					className=' mb-8  w-full rounded-xl bg-cover'

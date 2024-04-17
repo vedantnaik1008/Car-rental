@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Faqs = () => {
 	const pathname = usePathname();
-	const dynamicFaqsStyles = pathname === '/faqs' ? 'py-28 md:py-36 lg:py-36' : 'py-20';
+	const dynamicFaqsStyles = pathname === '/faqs' ? 'py-28' : 'py-20';
 	const dynamicFaqsSlice = pathname === '/' ? queries.slice(0, -1) : queries;
 
 	return (

@@ -39,7 +39,7 @@ const config: Config = {
 				pop_inter: ['var(--font-inter)', 'sans-serif'],
 			},
 			backgroundImage: {
-				hero: "url('/assets/whitecar.jpg')",
+				hero: "url('/whitecar.webp')",
 				smHero: "url('/assets/one.jpeg')",
 				about: "url('/assets/edo.jpg')",
 			},

@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import About from '@/public/assets/edo.jpg';
+import About from '@/public/edo.webp';
 import { brandBikesName, brandName, cars } from '@/data/API';
 
 const AboutUs = () => {
@@ -12,7 +12,7 @@ const AboutUs = () => {
 
 	return (
 		<>
-			<section className='mx-auto flex w-[90%] flex-col items-center justify-center bg-sky-50 py-28 md:py-36 lg:py-36'>
+			<section className='mx-auto flex w-[90%] flex-col items-center justify-center bg-sky-50 py-28'>
 				<h1 className='mb-8  text-4xl font-bold text-sky-900'>About Us</h1>
 				<Image
 					src={About}
